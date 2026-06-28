@@ -43,9 +43,11 @@ demselben Muster mit den jeweiligen Seiten.
 
 ## Verhältnis zu Elementor
 
-- **Tokens** sind die Quelle für Farben, Schrift, Abstände, Radien. Greifen global,
-  sobald das Theme aktiv ist — auch in Elementor-Widgets, sofern diese die
-  CSS-Variablen nutzen oder die Komponenten-Klassen tragen.
+- **Tokens** sind die Quelle für Farben, Schrift, Abstände, Radien. `tokens.css` wird
+  vom Child-Theme als versionierte Basis geladen und greift global, sobald das Theme
+  aktiv ist — auch in Elementor-Widgets, sofern diese die CSS-Variablen nutzen oder die
+  Komponenten-Klassen tragen. Die zusätzliche, UI-editierbare Token-Quelle in
+  **Customizer → Zusätzliches CSS** wird später ausgegeben und überschreibt die Basis.
 - **Global Colors** in Elementor zusätzlich auf Navy/Blau/Gold/Lime mappen, damit
   der Editor dieselben Werte anbietet.
 - **Global Fonts**: Display = Hanken Grotesk, Body = Inter. Greift `functions.php`,
@@ -69,7 +71,9 @@ demselben Muster mit den jeweiligen Seiten.
   **nicht** Textfarbe auf Weiß (Kontrast < WCAG AA).
 - Logo ist Platzhalter, bis die Wortbildmarke final ist; die Token-Struktur bleibt
   davon unberührt.
-- Version 0.2.0 — beide One-Pager (assesi.eu + assesi-label.eu) validiert. Enthält
+- Version 0.11.0 — beide One-Pager (assesi.eu + assesi-label.eu) validiert; enthält
   Label-Module (Siegel-Showcase, Zielgruppen-Split, horizontaler Stepper, warmes
   CTA-Band) und die AA-Korrektur der Eyebrow-/Titel-Akzente im Label-Theme.
+  `tokens.css` wird nun als Basis enqueued; gemeinsamer `assesi_is_label()`-Helfer
+  für Theme-Klasse und Schema; a11y-/Resize-Feinschliff in `ui.js`.
 ```

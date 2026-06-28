@@ -18,18 +18,35 @@ document.addEventListener('DOMContentLoaded', function () {
         setOpen(h, !isOpen);
       });
     });
+    /* Bei Resize die max-height des offenen Panels neu messen (sonst clippt
+       umgebrochener Text auf schmaleren Breiten). */
+    window.addEventListener('resize', function () {
+      heads.forEach(function (h) {
+        if (h.getAttribute('aria-expanded') === 'true') setOpen(h, true);
+      });
+    });
   });
 
   /* Mobile-Menü */
   var burger = document.querySelector('.nav__burger');
   var panel = document.getElementById('navPanel');
   if (burger && panel) {
-    function close() { panel.classList.remove('is-open'); burger.setAttribute('aria-expanded', 'false'); }
+    function close(returnFocus) {
+      panel.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false');
+      if (returnFocus) burger.focus();
+    }
     burger.addEventListener('click', function () {
       var open = panel.classList.toggle('is-open');
       burger.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
-    panel.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', close); });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+    panel.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { close(false); }); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && panel.classList.contains('is-open')) close(true);
+    });
+    // Beim Wechsel auf Desktop (Burger ausgeblendet) Panel-Zustand zurücksetzen.
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 920 && panel.classList.contains('is-open')) close(false);
+    });
   }
 });

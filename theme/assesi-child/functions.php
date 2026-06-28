@@ -7,6 +7,17 @@
 
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
+/* ------------------------------------------------------------
+ * Domain-Erkennung (eine Quelle für Theme-Klasse + Schema)
+ * assesi-label.eu → true, sonst false.
+ * ---------------------------------------------------------- */
+if ( ! function_exists( 'assesi_is_label' ) ) {
+	function assesi_is_label() {
+		$host = isset( $_SERVER['HTTP_HOST'] ) ? strtolower( $_SERVER['HTTP_HOST'] ) : '';
+		return ( false !== strpos( $host, 'assesi-label' ) );
+	}
+}
+
 /* Module */
 require_once get_stylesheet_directory() . '/inc/schema.php';
 
@@ -29,11 +40,15 @@ add_action( 'wp_enqueue_scripts', function () {
 		null
 	);
 
-	// Design-Tokens liegen jetzt in Elementor → Benutzerdefiniertes CSS
-	// (UI-editierbare globale Stellschraube). tokens.css bleibt im Repo als Quelle.
+	// Design-Tokens: versionierte Basis aus dem Repo. Greift sofort nach
+	// Aktivierung, ohne manuellen Schritt. Die zusätzliche, UI-editierbare
+	// Token-Quelle in WordPress → Customizer → Zusätzliches CSS wird in
+	// wp_head später ausgegeben und überschreibt diese Basis bei gleichem
+	// Selektor — Tokens bleiben also UI-editierbar.
+	wp_enqueue_style( 'assesi-tokens', $uri . '/assets/css/tokens.css', array( 'hello-elementor' ), $ver );
 
-	// Komponenten (setzen die Tokens aus Elementor-Custom-CSS voraus)
-	wp_enqueue_style( 'assesi-components', $uri . '/assets/css/components.css', array( 'hello-elementor' ), $ver );
+	// Komponenten (setzen die Tokens voraus)
+	wp_enqueue_style( 'assesi-components', $uri . '/assets/css/components.css', array( 'assesi-tokens' ), $ver );
 
 	// Child-style.css (eigene Overrides, zuletzt)
 	wp_enqueue_style( 'assesi-child', $uri . '/style.css', array( 'assesi-components' ), $ver );
@@ -48,6 +63,7 @@ add_action( 'wp_enqueue_scripts', function () {
  * ---------------------------------------------------------- */
 add_filter( 'wp_resource_hints', function ( $hints, $relation ) {
 	if ( 'preconnect' === $relation ) {
+		$hints[] = 'https://fonts.googleapis.com';
 		$hints[] = array( 'href' => 'https://fonts.gstatic.com', 'crossorigin' );
 	}
 	return $hints;
@@ -59,11 +75,6 @@ add_filter( 'wp_resource_hints', function ( $hints, $relation ) {
  * (Ein Codebestand, zwei Domains.)
  * ---------------------------------------------------------- */
 add_filter( 'body_class', function ( $classes ) {
-	$host = isset( $_SERVER['HTTP_HOST'] ) ? strtolower( $_SERVER['HTTP_HOST'] ) : '';
-	if ( false !== strpos( $host, 'assesi-label' ) ) {
-		$classes[] = 'theme-label';
-	} else {
-		$classes[] = 'theme-assesi';
-	}
+	$classes[] = assesi_is_label() ? 'theme-label' : 'theme-assesi';
 	return $classes;
 } );

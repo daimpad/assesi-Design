@@ -17,8 +17,8 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
  * Domain-Profil
  * ---------------------------------------------------------- */
 function assesi_schema_profile() {
-	$host     = isset( $_SERVER['HTTP_HOST'] ) ? strtolower( $_SERVER['HTTP_HOST'] ) : '';
-	$is_label = ( false !== strpos( $host, 'assesi-label' ) );
+	$is_label = function_exists( 'assesi_is_label' ) ? assesi_is_label()
+		: ( isset( $_SERVER['HTTP_HOST'] ) && false !== strpos( strtolower( $_SERVER['HTTP_HOST'] ), 'assesi-label' ) );
 
 	$profiles = array(
 		'assesi' => array(
