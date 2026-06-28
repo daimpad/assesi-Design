@@ -71,9 +71,12 @@ demselben Muster mit den jeweiligen Seiten.
   **nicht** Textfarbe auf Weiß (Kontrast < WCAG AA).
 - Logo ist Platzhalter, bis die Wortbildmarke final ist; die Token-Struktur bleibt
   davon unberührt.
-- Version 0.11.0 — beide One-Pager (assesi.eu + assesi-label.eu) validiert; enthält
-  Label-Module (Siegel-Showcase, Zielgruppen-Split, horizontaler Stepper, warmes
-  CTA-Band) und die AA-Korrektur der Eyebrow-/Titel-Akzente im Label-Theme.
-  `tokens.css` wird nun als Basis enqueued; gemeinsamer `assesi_is_label()`-Helfer
-  für Theme-Klasse und Schema; a11y-/Resize-Feinschliff in `ui.js`.
+- Version 0.12.0 — assesi-label.eu nativ als Elementor-Vorlagen (Header, Footer,
+  Startseite HTML-Route + native Route) im warmen Muster, parallel zu assesi.eu;
+  siehe `elementor/README.md`.
+- Version 0.11.0 — `tokens.css` wird als Basis enqueued; gemeinsamer
+  `assesi_is_label()`-Helfer für Theme-Klasse und Schema; a11y-/Resize-Feinschliff
+  in `ui.js`. Beide One-Pager validiert; enthält Label-Module (Siegel-Showcase,
+  Zielgruppen-Split, horizontaler Stepper, warmes CTA-Band) und die AA-Korrektur
+  der Eyebrow-/Titel-Akzente im Label-Theme.
 ```

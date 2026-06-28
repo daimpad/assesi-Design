@@ -1,0 +1,585 @@
+{
+ "version": "0.4",
+ "title": "ASSESI Label \u2013 Startseite NATIV (assesi-label.eu)",
+ "type": "page",
+ "content": [
+  {
+   "id": "lb00002c",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "lb00002b",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<nav class=\"nav\" aria-label=\"Hauptnavigation\"><div class=\"nav__in\"><a class=\"brand\" href=\"#\" aria-label=\"ASSESI Label Startseite\"><span class=\"brand__mark\">A</span><span><span class=\"brand__name\">ASSESI</span><span class=\"brand__tag\">Label</span></span></a><div class=\"nav__links\"><a href=\"#warum\">Warum</a><a href=\"#prozess\">Zertifizierung</a><a href=\"#produkte\">Produkte</a></div><div class=\"nav__util\"><div class=\"lang\" aria-label=\"Sprache\"><a href=\"#\" aria-current=\"true\">DE</a><a href=\"#\">EN</a></div><a class=\"nav__cross\" href=\"https://assesi.eu/\">&rarr; Verband</a><a class=\"nav__cta\" href=\"#prozess\">Siegel pr\u00fcfen</a><button class=\"nav__burger\" aria-label=\"Men\u00fc \u00f6ffnen\" aria-expanded=\"false\" aria-controls=\"navPanel\">&#9776;</button></div></div><div class=\"nav__panel\" id=\"navPanel\"><a href=\"#warum\">Warum</a><a href=\"#prozess\">Zertifizierung</a><a href=\"#produkte\">Produkte</a><a href=\"https://assesi.eu/\" class=\"nav__panel-cross\">&rarr; assesi.eu</a><a href=\"#prozess\" class=\"btn btn--cta nav__panel-cta\">Siegel pr\u00fcfen</a></div></nav>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "lb000038",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "0",
+     "bottom": "80",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "lb000037",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_align_items": "center",
+      "flex_gap": {
+       "column": "40",
+       "row": "40",
+       "unit": "px",
+       "isLinked": false
+      },
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "lb000034",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 56,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "lb00002d",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "EmpCo-konform",
+          "header_size": "h6",
+          "title_color": "#020044",
+          "typography_typography": "custom",
+          "typography_text_transform": "uppercase",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 1.5,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "lb00002e",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Das Siegel f\u00fcr nachhaltige Versicherungs\u00adprodukte.",
+          "header_size": "h1",
+          "title_color": "#020044"
+         },
+         "elements": []
+        },
+        {
+         "id": "lb00002f",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Gepr\u00fcft nach klaren Kriterien. F\u00fcr Verbraucher eine einfache Orientierung &mdash; f\u00fcr Makler ein schnelles Argument beim Kunden.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "lb000033",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_align_items": "center",
+          "flex_gap": {
+           "column": "12",
+           "row": "12",
+           "unit": "px",
+           "isLinked": false
+          },
+          "flex_wrap": "wrap",
+          "flex_direction_mobile": "column"
+         },
+         "elements": [
+          {
+           "id": "lb000030",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Siegel pr\u00fcfen",
+            "link": {
+             "url": "#produkte",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "#B4CD00",
+            "button_text_color": "#020044",
+            "border_radius": {
+             "unit": "px",
+             "top": "100",
+             "right": "100",
+             "bottom": "100",
+             "left": "100",
+             "isLinked": true
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "lb000031",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Zertifizierung starten",
+            "link": {
+             "url": "#prozess",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "#020044",
+            "button_text_color": "#FFFFFF",
+            "border_radius": {
+             "unit": "px",
+             "top": "100",
+             "right": "100",
+             "bottom": "100",
+             "left": "100",
+             "isLinked": true
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "lb000032",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Wie es funktioniert",
+            "link": {
+             "url": "#warum",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "#FFFFFF00",
+            "button_text_color": "#020044",
+            "border_radius": {
+             "unit": "px",
+             "top": "100",
+             "right": "100",
+             "bottom": "100",
+             "left": "100",
+             "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_color": "#02004433"
+           },
+           "elements": []
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "lb000036",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 44,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "lb000035",
+         "elType": "widget",
+         "widgetType": "html",
+         "settings": {
+          "html": "<aside class=\"showcase\" aria-label=\"Zertifiziertes Produkt\"><div class=\"seal\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg><span>Zertifiziert</span></div><div class=\"showcase__product\"><div class=\"showcase__pname\">Nachhaltige Hausrat\u00adversicherung</div><div class=\"showcase__issuer\">ausgestellt f\u00fcr <b>Muster Versicherung AG</b></div></div><div class=\"crit\"><div class=\"crit-row\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Nachhaltige Kapitalanlage</div><div class=\"crit-row\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Transparente Schadenregulierung</div><div class=\"crit-row\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>EmpCo-konforme Kommunikation</div></div></aside>"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "lb00003d",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "0",
+     "bottom": "80",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#F7F7F5",
+    "_element_id": "warum"
+   },
+   "elements": [
+    {
+     "id": "lb000039",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Warum ein Siegel",
+      "header_size": "h6",
+      "title_color": "#020044",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "lb00003a",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Vertrauen, das man <span style=\"color:#020044\">sehen</span> kann.",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lb00003b",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Nachhaltigkeit in Versicherungen ist schwer vergleichbar. Das ASSESI-Label macht sie auf einen Blick erkennbar &mdash; gepr\u00fcft, nicht behauptet.</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lb00003c",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<div class=\"split\"><article class=\"aud-card\"><div class=\"aud-card__icon\"><svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"8\" r=\"3.5\"/><path d=\"M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7\"/></svg></div><div class=\"aud-card__k\">F\u00fcr Verbraucher</div><h3 class=\"aud-card__t\">Einfach erkennen, was nachhaltig ist</h3><p class=\"aud-card__d\">Kein Greenwashing-R\u00e4tselraten: Das Siegel zeigt, dass ein Produkt unabh\u00e4ngig nach klaren Kriterien gepr\u00fcft wurde.</p><ul class=\"aud-list\"><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Auf einen Blick erkennbar</li><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Unabh\u00e4ngig gepr\u00fcft</li><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>EmpCo-konform</li></ul></article><article class=\"aud-card\"><div class=\"aud-card__icon\"><svg viewBox=\"0 0 24 24\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"13\" rx=\"2\"/><path d=\"M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2\"/><path d=\"M3 12h18\"/></svg></div><div class=\"aud-card__k\">F\u00fcr Makler &amp; Berater</div><h3 class=\"aud-card__t\">Ein schnelles Argument beim Kunden</h3><p class=\"aud-card__d\">Belegen Sie Nachhaltigkeit ohne langen Erkl\u00e4rungsaufwand &mdash; mit einem anerkannten, normbasierten Siegel.</p><ul class=\"aud-list\"><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Schneller Nachweis</li><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Beratungssicherheit</li><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Differenzierung im Wettbewerb</li></ul></article></div>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "lb000042",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "0",
+     "bottom": "80",
+     "left": "0",
+     "isLinked": false
+    },
+    "_element_id": "prozess"
+   },
+   "elements": [
+    {
+     "id": "lb00003e",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Zertifizierung",
+      "header_size": "h6",
+      "title_color": "#020044",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "lb00003f",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "In vier Schritten zum Siegel.",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lb000040",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Ein klar definierter Prozess &mdash; vom Antrag bis zur Listung in der Produktdatenbank.</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lb000041",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<div class=\"proc\"><div class=\"proc-step\"><div class=\"proc-step__n\">1</div><div class=\"proc-step__t\">Antrag &amp; Selbstauskunft</div><div class=\"proc-step__d\">Produktdaten einreichen, Selbstauskunft zu den Nachhaltigkeitskriterien ausf\u00fcllen.</div></div><div class=\"proc-step is-active\"><div class=\"proc-step__n\">2</div><div class=\"proc-step__t\">Kriterienpr\u00fcfung</div><div class=\"proc-step__d\">Abgleich mit dem Kriterienkatalog und der EmpCo-Richtlinie.</div></div><div class=\"proc-step\"><div class=\"proc-step__n\">3</div><div class=\"proc-step__t\">Bewertung &amp; Award</div><div class=\"proc-step__d\">Fachliche Bewertung und Einstufung des Produkts (Non-Life Award).</div></div><div class=\"proc-step\"><div class=\"proc-step__n\">4</div><div class=\"proc-step__t\">Siegel &amp; Listung</div><div class=\"proc-step__d\">Vergabe des Siegels und Aufnahme in die \u00f6ffentliche Produktdatenbank.</div></div></div>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "lb00004a",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "0",
+     "bottom": "80",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#F6F9E9",
+    "_element_id": "produkte"
+   },
+   "elements": [
+    {
+     "id": "lb000043",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Produktdatenbank",
+      "header_size": "h6",
+      "title_color": "#020044",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "lb000044",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Finden Sie zertifizierte Produkte.",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lb000045",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Bald durchsuchbar: alle Versicherungsprodukte mit ASSESI-Siegel &mdash; auf einen Blick.</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lb000046",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<div class=\"search-mock\"><input type=\"text\" readonly placeholder=\"Produkt oder Versicherer suchen \u2026\" aria-label=\"Produktsuche (in Vorbereitung)\"><button type=\"button\">Suchen</button></div><p class=\"search-note\">Die Produktdatenbank startet in einer sp\u00e4teren Phase (Platzhalter).</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lb000049",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_align_items": "center",
+      "flex_gap": {
+       "column": "12",
+       "row": "12",
+       "unit": "px",
+       "isLinked": false
+      },
+      "flex_wrap": "wrap",
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "lb000047",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Produkt zertifizieren lassen",
+        "link": {
+         "url": "#prozess",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "background_color": "#020044",
+        "button_text_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "100",
+         "right": "100",
+         "bottom": "100",
+         "left": "100",
+         "isLinked": true
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "lb000048",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Mehr \u00fcber das Siegel",
+        "link": {
+         "url": "#warum",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "background_color": "#FFFFFF00",
+        "button_text_color": "#020044",
+        "border_radius": {
+         "unit": "px",
+         "top": "100",
+         "right": "100",
+         "bottom": "100",
+         "left": "100",
+         "isLinked": true
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_color": "#02004433"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "lb00004c",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "lb00004b",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<footer class=\"footer\"><div class=\"footer__in\"><div class=\"footer__brand\"><span class=\"brand__name\" style=\"font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:#fff\">ASSESI Label</span><p class=\"footer__tag\">Das Siegel f\u00fcr nachhaltige Versicherungsprodukte &mdash; gepr\u00fcft nach dem ASSESI-Standard, EmpCo-konform.</p><a class=\"footer__cross\" href=\"https://assesi.eu/\">&rarr; Zum Verband: assesi.eu</a></div><div class=\"footer__col\"><h4>Navigation</h4><a href=\"#warum\">Warum</a><a href=\"#prozess\">Zertifizierung</a><a href=\"#produkte\">Produkte</a></div><div class=\"footer__col\"><h4>Rechtliches</h4><a href=\"#\">Impressum</a><a href=\"#\">Datenschutz\u00aderkl\u00e4rung</a></div><div class=\"footer__col\"><h4>Kontakt</h4><a href=\"mailto:info@assesi-label.eu\">info@assesi-label.eu</a><a href=\"#\">Green Insurance Stiftung</a><span style=\"display:block;font-size:.85rem;color:rgba(255,255,255,.55);padding-top:6px\">Anschrift folgt</span></div></div><div class=\"footer__bar\"><div class=\"footer__bar-in\"><span>&copy; 2026 ASSESI Label &middot; Nachhaltige Versicherungsprodukte</span><span class=\"footer__legal\"><a href=\"#\">Impressum</a><a href=\"#\">Datenschutz</a><a href=\"#\">DE / EN</a></span></div></div></footer>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "template": "elementor_canvas",
+  "hide_title": "yes"
+ }
+}

@@ -1,0 +1,224 @@
+{
+ "version": "0.4",
+ "title": "ASSESI Label \u2013 Startseite (assesi-label.eu)",
+ "type": "page",
+ "content": [
+  {
+   "id": "lb000017",
+   "elType": "container",
+   "settings": {
+    "content_width": "full"
+   },
+   "elements": [
+    {
+     "id": "lb000016",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<nav class=\"nav\" aria-label=\"Hauptnavigation\"><div class=\"nav__in\"><a class=\"brand\" href=\"#\" aria-label=\"ASSESI Label Startseite\"><span class=\"brand__mark\">A</span><span><span class=\"brand__name\">ASSESI</span><span class=\"brand__tag\">Label</span></span></a><div class=\"nav__links\"><a href=\"#warum\">Warum</a><a href=\"#prozess\">Zertifizierung</a><a href=\"#produkte\">Produkte</a></div><div class=\"nav__util\"><div class=\"lang\" aria-label=\"Sprache\"><a href=\"#\" aria-current=\"true\">DE</a><a href=\"#\">EN</a></div><a class=\"nav__cross\" href=\"https://assesi.eu/\">&rarr; Verband</a><a class=\"nav__cta\" href=\"#prozess\">Siegel pr\u00fcfen</a><button class=\"nav__burger\" aria-label=\"Men\u00fc \u00f6ffnen\" aria-expanded=\"false\" aria-controls=\"navPanel\">&#9776;</button></div></div><div class=\"nav__panel\" id=\"navPanel\"><a href=\"#warum\">Warum</a><a href=\"#prozess\">Zertifizierung</a><a href=\"#produkte\">Produkte</a><a href=\"https://assesi.eu/\" class=\"nav__panel-cross\">&rarr; assesi.eu</a><a href=\"#prozess\" class=\"btn btn--cta nav__panel-cta\">Siegel pr\u00fcfen</a></div></nav>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "lb000019",
+   "elType": "container",
+   "settings": {
+    "content_width": "full"
+   },
+   "elements": [
+    {
+     "id": "lb000018",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<header class=\"hero\"><div><div class=\"eyebrow\">EmpCo-konform</div><h1>Das Siegel f\u00fcr <em>nachhaltige</em> Versicherungs\u00adprodukte.</h1><p class=\"hero__lede\">Gepr\u00fcft nach klaren Kriterien. F\u00fcr Verbraucher eine einfache Orientierung &mdash; f\u00fcr Makler ein schnelles Argument beim Kunden.</p><div class=\"btn-row\"><a class=\"btn btn--cta\" href=\"#produkte\">Siegel pr\u00fcfen</a><a class=\"btn btn--primary\" href=\"#prozess\">Zertifizierung starten</a><a class=\"btn btn--ghost\" href=\"#warum\">Wie es funktioniert</a></div><div class=\"hero__trust\"><span class=\"trust__item\">EmpCo-konform</span><span class=\"trust__item\">Non-Life Award</span><span class=\"trust__item\">Unabh\u00e4ngig gepr\u00fcft</span></div></div><aside class=\"showcase\" aria-label=\"Zertifiziertes Produkt\"><div class=\"seal\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg><span>Zertifiziert</span></div><div class=\"showcase__product\"><div class=\"showcase__pname\">Nachhaltige Hausrat\u00adversicherung</div><div class=\"showcase__issuer\">ausgestellt f\u00fcr <b>Muster Versicherung AG</b></div></div><div class=\"crit\"><div class=\"crit-row\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Nachhaltige Kapitalanlage</div><div class=\"crit-row\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Transparente Schadenregulierung</div><div class=\"crit-row\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>EmpCo-konforme Kommunikation</div></div></aside></header>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "lb000020",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "_css_classes": "band-warm",
+    "_element_id": "warum"
+   },
+   "elements": [
+    {
+     "id": "lb00001f",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "_css_classes": "section"
+     },
+     "elements": [
+      {
+       "id": "lb00001d",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "_css_classes": "sec-head"
+       },
+       "elements": [
+        {
+         "id": "lb00001a",
+         "elType": "widget",
+         "widgetType": "html",
+         "settings": {
+          "html": "<div class=\"eyebrow\">Warum ein Siegel</div>"
+         },
+         "elements": []
+        },
+        {
+         "id": "lb00001b",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Vertrauen, das man <em>sehen</em> kann.",
+          "header_size": "h2",
+          "title_color": "#020044",
+          "_css_classes": "sec-title"
+         },
+         "elements": []
+        },
+        {
+         "id": "lb00001c",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Nachhaltigkeit in Versicherungen ist schwer vergleichbar. Das ASSESI-Label macht sie auf einen Blick erkennbar &mdash; gepr\u00fcft, nicht behauptet.</p>",
+          "_css_classes": "sec-lede"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "lb00001e",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"split\"><article class=\"aud-card\"><div class=\"aud-card__icon\"><svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"8\" r=\"3.5\"/><path d=\"M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7\"/></svg></div><div class=\"aud-card__k\">F\u00fcr Verbraucher</div><h3 class=\"aud-card__t\">Einfach erkennen, was nachhaltig ist</h3><p class=\"aud-card__d\">Kein Greenwashing-R\u00e4tselraten: Das Siegel zeigt, dass ein Produkt unabh\u00e4ngig nach klaren Kriterien gepr\u00fcft wurde.</p><ul class=\"aud-list\"><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Auf einen Blick erkennbar</li><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Unabh\u00e4ngig gepr\u00fcft</li><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>EmpCo-konform</li></ul></article><article class=\"aud-card\"><div class=\"aud-card__icon\"><svg viewBox=\"0 0 24 24\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"13\" rx=\"2\"/><path d=\"M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2\"/><path d=\"M3 12h18\"/></svg></div><div class=\"aud-card__k\">F\u00fcr Makler &amp; Berater</div><h3 class=\"aud-card__t\">Ein schnelles Argument beim Kunden</h3><p class=\"aud-card__d\">Belegen Sie Nachhaltigkeit ohne langen Erkl\u00e4rungsaufwand &mdash; mit einem anerkannten, normbasierten Siegel.</p><ul class=\"aud-list\"><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Schneller Nachweis</li><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Beratungssicherheit</li><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Differenzierung im Wettbewerb</li></ul></article></div>"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "lb000026",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "_css_classes": "section",
+    "_element_id": "prozess"
+   },
+   "elements": [
+    {
+     "id": "lb000024",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "_css_classes": "sec-head"
+     },
+     "elements": [
+      {
+       "id": "lb000021",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"eyebrow\">Zertifizierung</div>"
+       },
+       "elements": []
+      },
+      {
+       "id": "lb000022",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "In vier Schritten zum <em>Siegel</em>.",
+        "header_size": "h2",
+        "title_color": "#020044",
+        "_css_classes": "sec-title"
+       },
+       "elements": []
+      },
+      {
+       "id": "lb000023",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Ein klar definierter Prozess &mdash; vom Antrag bis zur Listung in der Produktdatenbank.</p>",
+        "_css_classes": "sec-lede"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "lb000025",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<div class=\"proc\"><div class=\"proc-step\"><div class=\"proc-step__n\">1</div><div class=\"proc-step__t\">Antrag &amp; Selbstauskunft</div><div class=\"proc-step__d\">Produktdaten einreichen, Selbstauskunft zu den Nachhaltigkeitskriterien ausf\u00fcllen.</div></div><div class=\"proc-step is-active\"><div class=\"proc-step__n\">2</div><div class=\"proc-step__t\">Kriterienpr\u00fcfung</div><div class=\"proc-step__d\">Abgleich mit dem Kriterienkatalog und der EmpCo-Richtlinie.</div></div><div class=\"proc-step\"><div class=\"proc-step__n\">3</div><div class=\"proc-step__t\">Bewertung &amp; Award</div><div class=\"proc-step__d\">Fachliche Bewertung und Einstufung des Produkts (Non-Life Award).</div></div><div class=\"proc-step\"><div class=\"proc-step__n\">4</div><div class=\"proc-step__t\">Siegel &amp; Listung</div><div class=\"proc-step__d\">Vergabe des Siegels und Aufnahme in die \u00f6ffentliche Produktdatenbank.</div></div></div>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "lb000028",
+   "elType": "container",
+   "settings": {
+    "content_width": "full"
+   },
+   "elements": [
+    {
+     "id": "lb000027",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<section class=\"cta-warm\" id=\"produkte\"><div class=\"section\"><div class=\"sec-head\"><div class=\"eyebrow\">Produktdatenbank</div><h2 class=\"sec-title\">Finden Sie <em>zertifizierte</em> Produkte.</h2><p class=\"sec-lede\">Bald durchsuchbar: alle Versicherungsprodukte mit ASSESI-Siegel &mdash; auf einen Blick.</p></div><div class=\"search-mock\"><input type=\"text\" readonly placeholder=\"Produkt oder Versicherer suchen \u2026\" aria-label=\"Produktsuche (in Vorbereitung)\"><button type=\"button\">Suchen</button></div><p class=\"search-note\">Die Produktdatenbank startet in einer sp\u00e4teren Phase (Platzhalter).</p><div class=\"btn-row\"><a class=\"btn btn--primary\" href=\"#prozess\">Produkt zertifizieren lassen</a><a class=\"btn btn--ghost\" href=\"#warum\">Mehr \u00fcber das Siegel</a></div></div></section>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "lb00002a",
+   "elType": "container",
+   "settings": {
+    "content_width": "full"
+   },
+   "elements": [
+    {
+     "id": "lb000029",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<footer class=\"footer\"><div class=\"footer__in\"><div class=\"footer__brand\"><span class=\"brand__name\" style=\"font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:#fff\">ASSESI Label</span><p class=\"footer__tag\">Das Siegel f\u00fcr nachhaltige Versicherungsprodukte &mdash; gepr\u00fcft nach dem ASSESI-Standard, EmpCo-konform.</p><a class=\"footer__cross\" href=\"https://assesi.eu/\">&rarr; Zum Verband: assesi.eu</a></div><div class=\"footer__col\"><h4>Navigation</h4><a href=\"#warum\">Warum</a><a href=\"#prozess\">Zertifizierung</a><a href=\"#produkte\">Produkte</a></div><div class=\"footer__col\"><h4>Rechtliches</h4><a href=\"#\">Impressum</a><a href=\"#\">Datenschutz\u00aderkl\u00e4rung</a></div><div class=\"footer__col\"><h4>Kontakt</h4><a href=\"mailto:info@assesi-label.eu\">info@assesi-label.eu</a><a href=\"#\">Green Insurance Stiftung</a><span style=\"display:block;font-size:.85rem;color:rgba(255,255,255,.55);padding-top:6px\">Anschrift folgt</span></div></div><div class=\"footer__bar\"><div class=\"footer__bar-in\"><span>&copy; 2026 ASSESI Label &middot; Nachhaltige Versicherungsprodukte</span><span class=\"footer__legal\"><a href=\"#\">Impressum</a><a href=\"#\">Datenschutz</a><a href=\"#\">DE / EN</a></span></div></div></footer>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "template": "elementor_canvas",
+  "hide_title": "yes"
+ }
+}
