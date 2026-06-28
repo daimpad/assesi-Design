@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASSESI · Design-Referenz</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ===== Token-Kern (Auszug aus assesi-tokens.css) ===== */
+:root{
+  --ci-gold:#F5C503; --ci-navy:#020044; --ci-blue:#3055A0; --ci-lime:#B4CD00; --ci-white:#FFFFFF;
+  --surface-soft:#F7F7F5;
+  --text-strong:var(--ci-navy); --text-body:var(--ci-navy);
+  --text-soft:rgba(2,0,68,.62); --text-faint:rgba(2,0,68,.45);
+  --border:rgba(2,0,68,.12); --border-strong:rgba(2,0,68,.22);
+  --font-display:'Hanken Grotesk',system-ui,sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
+  --fs-base:1.0625rem;
+  --fs-2xl:clamp(1.875rem,1.4rem + 2vw,2.375rem);
+  --section-x:clamp(1.25rem,5vw,3.5rem);
+  --dur-base:.32s; --ease-out:cubic-bezier(.22,1,.36,1);
+  --focus-ring:var(--ci-blue);
+}
+
+/* ===== Rollen-Tokens: hier entsteht der Theme-Kontrast =====
+   Gemeinsamer Kern, zwei Charaktere. Nur diese Variablen kippen. */
+.theme-assesi{                         /* institutionell */
+  --accent:var(--ci-blue);
+  --accent-2:var(--ci-gold);
+  --r-card:10px; --r-btn:10px; --r-chip:6px;
+  --card-shadow:none;
+  --card-border:1px solid var(--border);
+  --depth-rule:var(--ci-blue);         /* feine Linie statt Schatten */
+  --panel-bg:var(--ci-white);
+  --cta-bg:var(--ci-gold); --cta-fg:var(--ci-navy);
+}
+.theme-label{                          /* wärmer */
+  --accent:var(--ci-lime);
+  --accent-2:var(--ci-blue);
+  --r-card:22px; --r-btn:100px; --r-chip:100px;
+  --card-shadow:0 14px 34px rgba(2,0,68,.10);
+  --card-border:1px solid rgba(2,0,68,.05);
+  --depth-rule:transparent;
+  --panel-bg:#FCFDF8;                  /* hauchzarter Lime-Ton = Wärme */
+  --cta-bg:var(--ci-lime); --cta-fg:var(--ci-navy);
+}
+
+/* ===== Reset / Bühne ===== */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-body);font-size:var(--fs-base);line-height:1.7;
+  color:var(--text-body);background:#EDEDF0;-webkit-font-smoothing:antialiased}
+:focus-visible{outline:2px solid var(--focus-ring);outline-offset:3px}
+
+.sg-top{padding:clamp(2rem,5vw,3.5rem) var(--section-x) 1.5rem;max-width:1320px;margin:0 auto}
+.sg-kicker{font-family:var(--font-display);font-weight:700;font-size:.72rem;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ci-blue)}
+.sg-top h1{font-family:var(--font-display);font-weight:800;letter-spacing:-.02em;
+  font-size:clamp(1.6rem,3vw,2.2rem);color:var(--ci-navy);margin:.4rem 0 .5rem}
+.sg-top p{color:var(--text-soft);max-width:60ch;font-size:.95rem}
+
+.sg-stage{display:grid;grid-template-columns:1fr 1fr;gap:24px;
+  max-width:1320px;margin:0 auto;padding:1rem var(--section-x) 4rem}
+@media(max-width:960px){.sg-stage{grid-template-columns:1fr}}
+
+.panel{background:var(--panel-bg);border:1px solid var(--border);border-radius:18px;
+  padding:clamp(1.5rem,3vw,2.5rem);overflow:hidden}
+.panel__tag{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-display);
+  font-weight:700;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+  padding:6px 14px;border-radius:100px;margin-bottom:1.75rem}
+.theme-assesi .panel__tag{background:var(--ci-navy);color:#fff}
+.theme-label  .panel__tag{background:#fff;color:var(--ci-navy);border:1px solid var(--border)}
+.panel__tag b{color:var(--accent);font-weight:700}
+
+.block{margin-top:2.25rem}
+.block:first-of-type{margin-top:0}
+.block__label{font-family:var(--font-body);font-size:.66rem;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--text-faint);
+  margin-bottom:1rem;padding-bottom:.4rem;border-bottom:1px dashed var(--border)}
+
+/* ===== Komponente: Sektionskopf ===== */
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-display);
+  font-weight:700;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:.7rem}
+.theme-assesi .eyebrow::before{content:'';width:20px;height:2px;background:var(--accent-2)}
+.theme-label  .eyebrow::before{content:'✓';color:var(--ci-lime);font-size:.85rem}
+.sec-title{font-family:var(--font-display);font-weight:800;letter-spacing:-.025em;
+  line-height:1.12;font-size:var(--fs-2xl);color:var(--text-strong)}
+.sec-title em{font-style:normal;color:var(--accent)}
+.lede{color:var(--text-soft);font-size:1rem;line-height:1.75;max-width:46ch;margin-top:.7rem}
+
+/* ===== Komponente: Buttons ===== */
+.btn-row{display:flex;flex-wrap:wrap;gap:12px}
+.btn{font-family:var(--font-body);font-weight:600;font-size:.9rem;line-height:1;
+  padding:13px 24px;border-radius:var(--r-btn);text-decoration:none;cursor:pointer;
+  border:1.5px solid transparent;transition:transform var(--dur-base) var(--ease-out),
+  box-shadow var(--dur-base) var(--ease-out),background var(--dur-base),border-color var(--dur-base)}
+.btn--primary{background:var(--ci-navy);color:#fff}
+.btn--primary:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(2,0,68,.22)}
+.btn--cta{background:var(--cta-bg);color:var(--cta-fg);font-weight:700}
+.btn--cta:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(2,0,68,.18)}
+.btn--ghost{background:transparent;color:var(--ci-navy);border-color:var(--border-strong)}
+.btn--ghost:hover{border-color:var(--ci-navy);background:rgba(2,0,68,.04)}
+
+/* ===== Komponente: Card ===== */
+.card{position:relative;background:#fff;border:var(--card-border);border-radius:var(--r-card);
+  box-shadow:var(--card-shadow);padding:1.6rem 1.5rem;overflow:hidden;
+  transition:transform var(--dur-base) var(--ease-out),box-shadow var(--dur-base) var(--ease-out)}
+.theme-assesi .card::before{content:'';position:absolute;inset:0 0 auto 0;height:3px;background:var(--depth-rule)}
+.theme-label  .card::before{content:'';position:absolute;inset:0 0 auto 0;height:5px;
+  background:linear-gradient(90deg,var(--ci-gold),var(--ci-lime))}
+.card:hover{transform:translateY(-3px)}
+.theme-label .card:hover{box-shadow:0 20px 44px rgba(2,0,68,.14)}
+.card__index{font-family:var(--font-display);font-weight:800;font-size:1.4rem;
+  color:var(--accent);font-variant-numeric:tabular-nums;line-height:1}
+.theme-label .card__chip{display:inline-flex;align-items:center;gap:6px;font-size:.68rem;
+  font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ci-navy);
+  background:rgba(180,205,0,.18);padding:5px 12px;border-radius:var(--r-chip)}
+.card__title{font-family:var(--font-display);font-weight:700;font-size:1.05rem;
+  color:var(--text-strong);margin:.7rem 0 .4rem}
+.card__desc{font-size:.9rem;color:var(--text-soft);line-height:1.6}
+
+/* ===== Komponente: Timeline → Accordion ===== */
+.acc{border-top:1px solid var(--border)}
+.theme-label .acc{border-top:none;display:flex;flex-direction:column;gap:10px}
+.acc__item{border-bottom:1px solid var(--border)}
+.theme-label .acc__item{border:1px solid var(--border);border-radius:var(--r-card);
+  background:#fff;box-shadow:var(--card-shadow);overflow:hidden}
+.acc__head{width:100%;display:flex;align-items:center;gap:16px;text-align:left;
+  background:none;border:none;cursor:pointer;padding:18px 4px;font-family:var(--font-body)}
+.theme-label .acc__head{padding:18px 20px}
+.acc__dot{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+  font-family:var(--font-display);font-weight:800;font-size:.8rem;font-variant-numeric:tabular-nums}
+.acc__item.is-done   .acc__dot{background:var(--ci-lime);color:var(--ci-navy)}
+.acc__item.is-active .acc__dot{background:var(--ci-gold);color:var(--ci-navy);box-shadow:0 0 0 5px rgba(245,197,3,.2)}
+.acc__item.is-future .acc__dot{background:#fff;border:2px solid var(--border-strong);color:var(--text-faint)}
+.acc__meta{flex:1;min-width:0}
+.acc__date{font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent)}
+.acc__title{font-family:var(--font-display);font-weight:700;font-size:.98rem;color:var(--text-strong)}
+.acc__chev{flex:none;color:var(--text-faint);transition:transform var(--dur-base) var(--ease-out)}
+.acc__head[aria-expanded="true"] .acc__chev{transform:rotate(180deg)}
+.acc__panel{overflow:hidden;max-height:0;transition:max-height var(--dur-base) var(--ease-out)}
+.acc__panel-inner{padding:0 4px 20px 66px;font-size:.9rem;color:var(--text-soft);line-height:1.65}
+.theme-label .acc__panel-inner{padding:0 20px 20px 70px}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:.001ms!important}
+}
+</style>
+</head>
+<body>
+
+<header class="sg-top">
+  <div class="sg-kicker">Design-Referenz · Schritt 2</div>
+  <h1>Eine Designsprache, zwei Charaktere</h1>
+  <p>Gemeinsamer Token-Kern stiftet die Verwandtschaft; die Rollen-Tokens (Radius, Tiefe,
+  Akzent, Struktur-Motiv) kippen den Charakter: assesi.eu institutionell-editorial,
+  assesi-label.eu wärmer. Texte sind Platzhalter.</p>
+</header>
+
+<main class="sg-stage">
+
+  <!-- ================= assesi.eu ================= -->
+  <section class="panel theme-assesi">
+    <span class="panel__tag">assesi.eu — <b>institutionell</b></span>
+
+    <div class="block">
+      <div class="block__label">Sektionskopf</div>
+      <div class="eyebrow">DIN 77237 · Verband</div>
+      <h2 class="sec-title">Der europäische Standard für <em>nachhaltige Versicherer</em></h2>
+      <p class="lede">Normbasiert, transparent, prüfbar. Mitgliedschaft schafft Sichtbarkeit
+      und sichert die Anschlussfinanzierung nach der DBU-Förderung.</p>
+    </div>
+
+    <div class="block">
+      <div class="block__label">Buttons</div>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="#">Mitglied werden</a>
+        <a class="btn btn--cta" href="#">Kosten ansehen</a>
+        <a class="btn btn--ghost" href="#">Mehr erfahren</a>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block__label">Card · Argument</div>
+      <article class="card">
+        <div class="card__index">01</div>
+        <h3 class="card__title">Kostentransparenz</h3>
+        <p class="card__desc">Beiträge und Leistungen offen ausgewiesen — kein Kleingedrucktes,
+        nachvollziehbar für Vorstand und Gremien.</p>
+      </article>
+    </div>
+
+    <div class="block">
+      <div class="block__label">Timeline → Accordion</div>
+      <div class="acc" data-acc>
+        <div class="acc__item is-done">
+          <button class="acc__head" aria-expanded="false"><span class="acc__dot">✓</span>
+            <span class="acc__meta"><span class="acc__date">2023</span><span class="acc__title">Gründung des Verbands</span></span>
+            <span class="acc__chev">▾</span></button>
+          <div class="acc__panel"><div class="acc__panel-inner">Zusammenschluss der Gründungs­versicherer; Definition von Auftrag und Governance.</div></div>
+        </div>
+        <div class="acc__item is-done">
+          <button class="acc__head" aria-expanded="false"><span class="acc__dot">✓</span>
+            <span class="acc__meta"><span class="acc__date">2024</span><span class="acc__title">DIN-Normungsverfahren 77237</span></span>
+            <span class="acc__chev">▾</span></button>
+          <div class="acc__panel"><div class="acc__panel-inner">Einbringung des Standards in das formelle Normungsverfahren.</div></div>
+        </div>
+        <div class="acc__item is-active">
+          <button class="acc__head" aria-expanded="true"><span class="acc__dot">3</span>
+            <span class="acc__meta"><span class="acc__date">2025 · laufend</span><span class="acc__title">DBU-Förderung & Pilotmitglieder</span></span>
+            <span class="acc__chev">▾</span></button>
+          <div class="acc__panel"><div class="acc__panel-inner">Aufbau der Webpräsenz und Gewinnung erster Pilotversicherer im Förderzeitraum.</div></div>
+        </div>
+        <div class="acc__item is-future">
+          <button class="acc__head" aria-expanded="false"><span class="acc__dot">4</span>
+            <span class="acc__meta"><span class="acc__date">2026</span><span class="acc__title">Anschlussfinanzierung</span></span>
+            <span class="acc__chev">▾</span></button>
+          <div class="acc__panel"><div class="acc__panel-inner">Tragfähigkeit über Mitgliedsbeiträge nach Auslaufen der Förderung.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= assesi-label.eu ================= -->
+  <section class="panel theme-label">
+    <span class="panel__tag">assesi-label.eu — <b>wärmer</b></span>
+
+    <div class="block">
+      <div class="block__label">Sektionskopf</div>
+      <div class="eyebrow">EmpCo-konform</div>
+      <h2 class="sec-title">Das Siegel für <em>nachhaltige Versicherungs­produkte</em></h2>
+      <p class="lede">Geprüft nach klaren Kriterien. Für Makler ein schnelles Argument,
+      für Verbraucher eine einfache Orientierung.</p>
+    </div>
+
+    <div class="block">
+      <div class="block__label">Buttons</div>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="#">Zertifizierung starten</a>
+        <a class="btn btn--cta" href="#">Siegel prüfen</a>
+        <a class="btn btn--ghost" href="#">So funktioniert's</a>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block__label">Card · Kriterium</div>
+      <article class="card">
+        <span class="card__chip">✓ Kriterium erfüllt</span>
+        <h3 class="card__title">Non-Life Award</h3>
+        <p class="card__desc">Auszeichnung für nachhaltige Schaden- und Unfallprodukte
+        nach geprüftem ASSESI-Kriterienkatalog.</p>
+      </article>
+    </div>
+
+    <div class="block">
+      <div class="block__label">Timeline → Accordion</div>
+      <div class="acc" data-acc>
+        <div class="acc__item is-done">
+          <button class="acc__head" aria-expanded="false"><span class="acc__dot">✓</span>
+            <span class="acc__meta"><span class="acc__date">Schritt 1</span><span class="acc__title">Antrag & Selbstauskunft</span></span>
+            <span class="acc__chev">▾</span></button>
+          <div class="acc__panel"><div class="acc__panel-inner">Produktdaten einreichen, Selbstauskunft zu Nachhaltigkeitskriterien ausfüllen.</div></div>
+        </div>
+        <div class="acc__item is-active">
+          <button class="acc__head" aria-expanded="true"><span class="acc__dot">2</span>
+            <span class="acc__meta"><span class="acc__date">Schritt 2 · laufend</span><span class="acc__title">Kriterienprüfung (EmpCo)</span></span>
+            <span class="acc__chev">▾</span></button>
+          <div class="acc__panel"><div class="acc__panel-inner">Abgleich mit dem Kriterienkatalog und der EmpCo-Richtlinie.</div></div>
+        </div>
+        <div class="acc__item is-future">
+          <button class="acc__head" aria-expanded="false"><span class="acc__dot">3</span>
+            <span class="acc__meta"><span class="acc__date">Schritt 3</span><span class="acc__title">Bewertung & Award</span></span>
+            <span class="acc__chev">▾</span></button>
+          <div class="acc__panel"><div class="acc__panel-inner">Fachliche Bewertung und Einstufung des Produkts.</div></div>
+        </div>
+        <div class="acc__item is-future">
+          <button class="acc__head" aria-expanded="false"><span class="acc__dot">4</span>
+            <span class="acc__meta"><span class="acc__date">Schritt 4</span><span class="acc__title">Siegelvergabe & Listung</span></span>
+            <span class="acc__chev">▾</span></button>
+          <div class="acc__panel"><div class="acc__panel-inner">Vergabe des Siegels und Aufnahme in die öffentliche Produktdatenbank.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+/* Accordion: zugänglich (echte <button>, aria-expanded), eine Sektion offen */
+document.querySelectorAll('[data-acc]').forEach(acc=>{
+  const heads=[...acc.querySelectorAll('.acc__head')];
+  const setOpen=(head,open)=>{
+    head.setAttribute('aria-expanded',open);
+    const panel=head.nextElementSibling;
+    panel.style.maxHeight=open?panel.scrollHeight+'px':null;
+  };
+  heads.forEach(h=>{
+    if(h.getAttribute('aria-expanded')==='true') setOpen(h,true);
+    h.addEventListener('click',()=>{
+      const isOpen=h.getAttribute('aria-expanded')==='true';
+      heads.forEach(o=>setOpen(o,false));
+      setOpen(h,!isOpen);
+    });
+  });
+});
+</script>
+</body>
+</html>

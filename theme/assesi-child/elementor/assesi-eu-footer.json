@@ -1,0 +1,324 @@
+{
+ "version": "0.4",
+ "title": "ASSESI – Footer (assesi.eu)",
+ "type": "footer",
+ "content": [
+  {
+   "id": "5106c752",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "background_background": "classic",
+    "background_color": "#020044",
+    "padding": {
+     "unit": "px",
+     "top": "56",
+     "right": "32",
+     "bottom": "28",
+     "left": "32",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "929cdb2d",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "flex_direction": "row",
+      "flex_wrap": "wrap",
+      "flex_gap": {
+       "column": "40",
+       "row": "32",
+       "unit": "px",
+       "isLinked": false
+      },
+      "flex_align_items": "flex-start",
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "7c4aa746",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 34,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "2d8ed0f5",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "ASSESI",
+          "header_size": "h4",
+          "title_color": "#FFFFFF",
+          "typography_typography": "custom",
+          "typography_font_family": "Hanken Grotesk",
+          "typography_font_weight": "800",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 20,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "52d267ab",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p style=\"color:rgba(255,255,255,.6);line-height:1.7;margin:10px 0 14px\">Association of European Sustainable Insurers &mdash; der normbasierte Standard f&uuml;r nachhaltige Versicherer in Europa.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "3c7c1c61",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "→ Zum Siegel: assesi-label.eu",
+          "link": {
+           "url": "#",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "background_color": "#02004400",
+          "button_text_color": "#B4CD00",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "#B4CD0066",
+          "border_radius": {
+           "unit": "px",
+           "top": "100",
+           "right": "100",
+           "bottom": "100",
+           "left": "100",
+           "isLinked": true
+          },
+          "typography_typography": "custom",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "600"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "3abc711d",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 22,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "ecb94c08",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Navigation",
+          "header_size": "h4",
+          "title_color": "rgba(255,255,255,.5)",
+          "typography_typography": "custom",
+          "typography_font_family": "Hanken Grotesk",
+          "typography_font_weight": "700",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 12,
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase",
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 1,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "08eca7d0",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<a href=\"#vorteile\" style=\"display:block;color:rgba(255,255,255,.8);padding:6px 0;text-decoration:none\">Vorteile</a><a href=\"#verlauf\" style=\"display:block;color:rgba(255,255,255,.8);padding:6px 0;text-decoration:none\">Verlauf</a><a href=\"#mitmachen\" style=\"display:block;color:rgba(255,255,255,.8);padding:6px 0;text-decoration:none\">Mitmachen</a>"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "5f74ed08",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 22,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "54b3ba6e",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Rechtliches",
+          "header_size": "h4",
+          "title_color": "rgba(255,255,255,.5)",
+          "typography_typography": "custom",
+          "typography_font_family": "Hanken Grotesk",
+          "typography_font_weight": "700",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 12,
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase",
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 1,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "b874e638",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<a href=\"#\" style=\"display:block;color:rgba(255,255,255,.8);padding:6px 0;text-decoration:none\">Impressum</a><a href=\"#\" style=\"display:block;color:rgba(255,255,255,.8);padding:6px 0;text-decoration:none\">Datenschutzerklärung</a>"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "9c25efec",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 22,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "bdfd081c",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Kontakt",
+          "header_size": "h4",
+          "title_color": "rgba(255,255,255,.5)",
+          "typography_typography": "custom",
+          "typography_font_family": "Hanken Grotesk",
+          "typography_font_weight": "700",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 12,
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase",
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 1,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "bc554202",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<a href=\"#\" style=\"display:block;color:rgba(255,255,255,.8);padding:6px 0;text-decoration:none\">info@assesi.eu</a><a href=\"#\" style=\"display:block;color:rgba(255,255,255,.8);padding:6px 0;text-decoration:none\">Green Insurance Stiftung</a>"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "7b2d5d2e",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed",
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "1",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "border_color": "rgba(255,255,255,.16)",
+      "padding": {
+       "unit": "px",
+       "top": "20",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      },
+      "margin": {
+       "unit": "px",
+       "top": "40",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": false
+      }
+     },
+     "elements": [
+      {
+       "id": "43b55304",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p style=\"color:rgba(255,255,255,.55);font-size:13px;margin:0\">&copy; 2026 ASSESI &middot; Association of European Sustainable Insurers</p>"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

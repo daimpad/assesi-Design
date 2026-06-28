@@ -1,0 +1,870 @@
+{
+ "version": "0.4",
+ "title": "ASSESI – Startseite NATIV (assesi.eu)",
+ "type": "page",
+ "content": [
+  {
+   "id": "81af5a68",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "338f9737",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<nav class=\"nav\" aria-label=\"Hauptnavigation\"><div class=\"nav__in\"><a class=\"brand\" href=\"#\"><span class=\"brand__mark\">A</span><span><span class=\"brand__name\">ASSESI</span><span class=\"brand__tag\">Sustainable Insurers</span></span></a><div class=\"nav__links\"><a href=\"#vorteile\">Vorteile</a><a href=\"#verlauf\">Verlauf</a><a href=\"#mitmachen\">Mitmachen</a></div><div class=\"nav__util\"><div class=\"lang\"><a href=\"#\" aria-current=\"true\">DE</a><a href=\"#\">EN</a></div><a class=\"nav__cross\" href=\"#\">&rarr; Label-Seite</a><a class=\"nav__cta\" href=\"#mitmachen\">Mitglied werden</a><button class=\"nav__burger\" aria-label=\"Men&uuml;\" aria-expanded=\"false\" aria-controls=\"navPanel\">&#9776;</button></div></div><div class=\"nav__panel\" id=\"navPanel\"><a href=\"#vorteile\">Vorteile</a><a href=\"#verlauf\">Verlauf</a><a href=\"#mitmachen\">Mitmachen</a><a href=\"#\" class=\"nav__panel-cross\">&rarr; assesi-label.eu</a><a href=\"#mitmachen\" class=\"btn btn--cta nav__panel-cta\">Mitglied werden</a></div></nav>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "94e6074d",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "0",
+     "bottom": "80",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "52c34132",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_align_items": "center",
+      "flex_gap": {
+       "column": "40",
+       "row": "40",
+       "unit": "px",
+       "isLinked": true
+      },
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "3454b0af",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 56,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "a997a6d0",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "DIN 77237 &middot; Verband",
+          "header_size": "h6",
+          "title_color": "#3055A0",
+          "typography_typography": "custom",
+          "typography_text_transform": "uppercase",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 1.5,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "304fd508",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Der europ&auml;ische Standard f&uuml;r <span style=\"color:#3055A0\">nachhaltige Versicherer</span>.",
+          "header_size": "h1",
+          "title_color": "#020044"
+         },
+         "elements": []
+        },
+        {
+         "id": "78072518",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>ASSESI macht Nachhaltigkeit in der Versicherungswirtschaft pr&uuml;fbar &mdash; normbasiert, transparent und von seinen Mitgliedern getragen.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "34d66156",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_align_items": "center",
+          "flex_gap": {
+           "column": "12",
+           "row": "12",
+           "unit": "px",
+           "isLinked": true
+          },
+          "flex_direction_mobile": "column"
+         },
+         "elements": [
+          {
+           "id": "fd6b73fb",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Mitglied werden",
+            "link": {
+             "url": "#mitmachen",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "#020044",
+            "button_text_color": "#FFFFFF",
+            "border_radius": {
+             "unit": "px",
+             "top": "10",
+             "right": "10",
+             "bottom": "10",
+             "left": "10",
+             "isLinked": true
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "107136dc",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Kosten ansehen",
+            "link": {
+             "url": "#kosten",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "#F5C503",
+            "button_text_color": "#020044",
+            "border_radius": {
+             "unit": "px",
+             "top": "10",
+             "right": "10",
+             "bottom": "10",
+             "left": "10",
+             "isLinked": true
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "4e3cb102",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Was ist ASSESI?",
+            "link": {
+             "url": "#vorteile",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "#FFFFFF00",
+            "button_text_color": "#020044",
+            "border_radius": {
+             "unit": "px",
+             "top": "10",
+             "right": "10",
+             "bottom": "10",
+             "left": "10",
+             "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_color": "#02004433"
+           },
+           "elements": []
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "4c646caa",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 44,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "01a4939d",
+         "elType": "widget",
+         "widgetType": "html",
+         "settings": {
+          "html": "<aside class=\"std-card\" aria-label=\"Was Mitgliedschaft bedeutet\">\n<div class=\"std-card__label\">Was Mitgliedschaft bedeutet</div>\n<div class=\"std-row\"><span class=\"std-row__num\">01</span><span><span class=\"std-row__t\">Sichtbarkeit</span><span class=\"std-row__d\">Listung im Verbund europ&auml;ischer nachhaltiger Versicherer.</span></span></div>\n<div class=\"std-row\"><span class=\"std-row__num\">02</span><span><span class=\"std-row__t\">Kostentransparenz</span><span class=\"std-row__d\">Beitr&auml;ge und Leistungen offen ausgewiesen.</span></span></div>\n<div class=\"std-row\"><span class=\"std-row__num\">03</span><span><span class=\"std-row__t\">Compliance</span><span class=\"std-row__d\">Anschluss an DIN-Norm und EmpCo-Richtlinie.</span></span></div>\n<div class=\"std-card__foot\"><span>Getragen von</span><span class=\"supporter\">DBU</span><span class=\"supporter\">Green Insurance Stiftung</span></div>\n</aside>"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "37e26ef3",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "0",
+     "bottom": "80",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#F7F7F5"
+   },
+   "elements": [
+    {
+     "id": "6b52afe3",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Warum mitmachen",
+      "header_size": "h6",
+      "title_color": "#3055A0",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "2225e2db",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Mitgliedschaft, die <span style=\"color:#3055A0\">Wirkung zeigt</span>.",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "845baf03",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Nachhaltigkeit nachweisbar machen &mdash; gegen&uuml;ber Aufsicht, Partnern und Markt. Vier konkrete Gr&uuml;nde, dem Verband beizutreten.</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "1debc536",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_align_items": "stretch",
+      "flex_gap": {
+       "column": "18",
+       "row": "18",
+       "unit": "px",
+       "isLinked": true
+      },
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "ac25da31",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-file-invoice-dollar",
+         "library": "fa-solid"
+        },
+        "title_text": "Kostentransparenz",
+        "description_text": "Beitr&auml;ge und Leistungen offen ausgewiesen &mdash; nachvollziehbar f&uuml;r Vorstand und Gremien.",
+        "position": "top",
+        "title_color": "#020044",
+        "description_color": "#5a5a78",
+        "primary_color": "#3055A0",
+        "_background_background": "classic",
+        "_background_color": "#FFFFFF",
+        "_border_border": "solid",
+        "_border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "_border_color": "#02004420",
+        "_border_radius": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": true
+        },
+        "_padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "26",
+         "bottom": "28",
+         "left": "26",
+         "isLinked": false
+        },
+        "_element_width": "initial",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "7c4b0b55",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-shield-alt",
+         "library": "fa-solid"
+        },
+        "title_text": "EmpCo-Compliance",
+        "description_text": "Angeschlossen an EmpCo-Richtlinie und DIN-Normungsverfahren 77237.",
+        "position": "top",
+        "title_color": "#020044",
+        "description_color": "#5a5a78",
+        "primary_color": "#3055A0",
+        "_background_background": "classic",
+        "_background_color": "#FFFFFF",
+        "_border_border": "solid",
+        "_border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "_border_color": "#02004420",
+        "_border_radius": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": true
+        },
+        "_padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "26",
+         "bottom": "28",
+         "left": "26",
+         "isLinked": false
+        },
+        "_element_width": "initial",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "007e7c56",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-project-diagram",
+         "library": "fa-solid"
+        },
+        "title_text": "Sichtbarkeit im Verbund",
+        "description_text": "Listung im europ&auml;ischen Netzwerk nachhaltiger Versicherer.",
+        "position": "top",
+        "title_color": "#020044",
+        "description_color": "#5a5a78",
+        "primary_color": "#3055A0",
+        "_background_background": "classic",
+        "_background_color": "#FFFFFF",
+        "_border_border": "solid",
+        "_border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "_border_color": "#02004420",
+        "_border_radius": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": true
+        },
+        "_padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "26",
+         "bottom": "28",
+         "left": "26",
+         "isLinked": false
+        },
+        "_element_width": "initial",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "3edf75c4",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-edit",
+         "library": "fa-solid"
+        },
+        "title_text": "Mitgestaltung",
+        "description_text": "Mitglieder pr&auml;gen die Weiterentwicklung des Standards aktiv mit.",
+        "position": "top",
+        "title_color": "#020044",
+        "description_color": "#5a5a78",
+        "primary_color": "#3055A0",
+        "_background_background": "classic",
+        "_background_color": "#FFFFFF",
+        "_border_border": "solid",
+        "_border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "_border_color": "#02004420",
+        "_border_radius": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": true
+        },
+        "_padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "26",
+         "bottom": "28",
+         "left": "26",
+         "isLinked": false
+        },
+        "_element_width": "initial",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": 23,
+         "sizes": []
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "8c26d25e",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "0",
+     "bottom": "80",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "0b1d63b6",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Verlauf",
+      "header_size": "h6",
+      "title_color": "#3055A0",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "414b6e42",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Vom Verband zur <span style=\"color:#3055A0\">tragf&auml;higen Norm</span>.",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "35ff79a1",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Der Weg von der Gr&uuml;ndung bis zur Finanzierung aus eigener Kraft.</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "43f93f7f",
+     "elType": "widget",
+     "widgetType": "accordion",
+     "settings": {
+      "title_color": "#020044",
+      "tab_active_color": "#3055A0",
+      "tabs": [
+       {
+        "tab_title": "2023 — Gr&uuml;ndung des Verbands",
+        "tab_content": "<p>Zusammenschluss der Gr&uuml;ndungsversicherer; Definition von Auftrag und Governance.</p>",
+        "_id": "8c9de909"
+       },
+       {
+        "tab_title": "2024 — DIN-Normungsverfahren 77237",
+        "tab_content": "<p>Einbringung des Standards in das formelle Normungsverfahren.</p>",
+        "_id": "571750f4"
+       },
+       {
+        "tab_title": "2025 — DBU-F&ouml;rderung &amp; Pilotmitglieder",
+        "tab_content": "<p>Aufbau der Webpr&auml;senz und Gewinnung erster Pilotversicherer.</p>",
+        "_id": "7e8a2a86"
+       },
+       {
+        "tab_title": "2026 — Anschlussfinanzierung",
+        "tab_content": "<p>Tragf&auml;higkeit &uuml;ber Mitgliedsbeitr&auml;ge nach Auslaufen der F&ouml;rderung.</p>",
+        "_id": "6f6771d9"
+       }
+      ]
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "f1062382",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "80",
+     "right": "0",
+     "bottom": "80",
+     "left": "0",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#020044"
+   },
+   "elements": [
+    {
+     "id": "2de29f76",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_align_items": "center",
+      "flex_gap": {
+       "column": "40",
+       "row": "40",
+       "unit": "px",
+       "isLinked": true
+      },
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "2fbd033a",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 55,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "ee27a382",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Mitmachen",
+          "header_size": "h6",
+          "title_color": "#B4CD00",
+          "typography_typography": "custom",
+          "typography_text_transform": "uppercase",
+          "typography_font_size": {
+           "unit": "px",
+           "size": 13,
+           "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": 1.5,
+           "sizes": []
+          }
+         },
+         "elements": []
+        },
+        {
+         "id": "0a9e1a14",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Werden Sie Teil des <span style=\"color:#B4CD00\">Standards</span>.",
+          "header_size": "h2",
+          "title_color": "#FFFFFF"
+         },
+         "elements": []
+        },
+        {
+         "id": "ce35171c",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p style=\"color:rgba(255,255,255,.8)\">Transparente Beitr&auml;ge, klarer Gegenwert. Die Mitgliedschaft tr&auml;gt den Verband.</p>"
+         },
+         "elements": []
+        },
+        {
+         "id": "7691a8cd",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_align_items": "center",
+          "flex_gap": {
+           "column": "12",
+           "row": "12",
+           "unit": "px",
+           "isLinked": true
+          },
+          "flex_direction_mobile": "column"
+         },
+         "elements": [
+          {
+           "id": "d8434866",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Mitglied werden",
+            "link": {
+             "url": "#",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "#F5C503",
+            "button_text_color": "#020044",
+            "border_radius": {
+             "unit": "px",
+             "top": "10",
+             "right": "10",
+             "bottom": "10",
+             "left": "10",
+             "isLinked": true
+            }
+           },
+           "elements": []
+          },
+          {
+           "id": "0da2ec3d",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "Beitrag anfragen",
+            "link": {
+             "url": "#",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "background_color": "#FFFFFF00",
+            "button_text_color": "#FFFFFF",
+            "border_radius": {
+             "unit": "px",
+             "top": "10",
+             "right": "10",
+             "bottom": "10",
+             "left": "10",
+             "isLinked": true
+            },
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_color": "#02004433"
+           },
+           "elements": []
+          }
+         ],
+         "isInner": false
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "7fd10bdf",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "width": {
+         "unit": "%",
+         "size": 45,
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "968d7d8b",
+         "elType": "widget",
+         "widgetType": "html",
+         "settings": {
+          "html": "<aside class=\"price-card\" id=\"kosten\">\n<div class=\"price-card__label\">Was enthalten ist</div>\n<ul class=\"price-list\">\n<li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Listung im europ&auml;ischen Verbund</li>\n<li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Nutzung des ASSESI-Siegels</li>\n<li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Mitgestaltung des Standards</li>\n<li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Teilnahme an Verbandsveranstaltungen</li>\n</ul>\n<div class=\"price-foot\"><div class=\"price-foot__k\">Beitrag</div><div class=\"price-foot__v\">Gestaffelt nach Beitragsvolumen<small>Konkrete Beitragsstaffel wird von ASSESI festgelegt (Platzhalter).</small></div></div>\n</aside>"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "91b6b2b0",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "5fa223b1",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<footer class=\"footer\"><div class=\"footer__in\"><div class=\"footer__brand\"><span class=\"brand__name\" style=\"font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:#fff\">ASSESI</span><p class=\"footer__tag\">Association of European Sustainable Insurers.</p><a class=\"footer__cross\" href=\"#\">&rarr; Zum Siegel: assesi-label.eu</a></div><div class=\"footer__col\"><h4>Navigation</h4><a href=\"#vorteile\">Vorteile</a><a href=\"#verlauf\">Verlauf</a><a href=\"#mitmachen\">Mitmachen</a></div><div class=\"footer__col\"><h4>Rechtliches</h4><a href=\"#\">Impressum</a><a href=\"#\">Datenschutz</a></div><div class=\"footer__col\"><h4>Kontakt</h4><a href=\"#\">info@assesi.eu</a></div></div><div class=\"footer__bar\"><div class=\"footer__bar-in\"><span>&copy; 2026 ASSESI</span><span class=\"footer__legal\"><a href=\"#\">Impressum</a><a href=\"#\">Datenschutz</a></span></div></div></footer>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "template": "elementor_canvas",
+  "hide_title": "yes"
+ }
+}

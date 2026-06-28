@@ -1,0 +1,100 @@
+/* ASSESI — TOKENS für Elementor (Site-Einstellungen → Benutzerdefiniertes CSS).
+   Deine globale Stellschraube für Farben/Größen/Abstände. Komponenten-Overrides
+   kannst du unten anhängen. Änderungen gelegentlich in tokens.css (Repo) spiegeln. */
+
+/* ============================================================
+   ASSESI — DESIGN TOKENS (Kit, konsolidiert)
+   Single Source of Truth für assesi.eu UND assesi-label.eu
+   Farbquelle:  Farben_Fonts.docx (CI-/Logo-verbindlich)
+   Schrift:     Hanken Grotesk (Display) + Inter (Fließtext)
+
+   Aufbau: gemeinsamer :root-Kern + zwei Charakter-Themes
+   (.theme-assesi institutionell / .theme-label wärmer).
+   Die Theme-Klasse wird per functions.php domain-abhängig am
+   <body> gesetzt; sie funktioniert aber auf jedem Container.
+   ============================================================ */
+
+:root{
+  /* ---- CI-Kernfarben (verbindlich) ---- */
+  --ci-gold:#F5C503; --ci-navy:#020044; --ci-blue:#3055A0; --ci-lime:#B4CD00; --ci-white:#FFFFFF;
+
+  /* ---- Flächen (Navy-getönte Neutralwerte) ---- */
+  --surface-page:#FFFFFF; --surface-soft:#F7F7F5; --surface-mute:#EFEFF2;
+  --surface-invert:var(--ci-navy);
+
+  /* ---- Text (CI: nur Navy/Weiß/Blau) ---- */
+  --text-strong:var(--ci-navy); --text-body:var(--ci-navy);
+  --text-soft:rgba(2,0,68,.62); --text-faint:rgba(2,0,68,.45);
+  --text-on-dark:var(--ci-white); --text-link:var(--ci-blue);
+
+  /* ---- Linien / Rahmen ---- */
+  --border:rgba(2,0,68,.12); --border-strong:rgba(2,0,68,.22);
+  --border-on-dark:rgba(255,255,255,.16);
+
+  /* ---- Typografie ---- */
+  --font-display:'Hanken Grotesk',system-ui,sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
+  --fw-regular:400; --fw-medium:500; --fw-semibold:600; --fw-bold:700; --fw-black:800;
+  --fs-2xs:.6875rem; --fs-xs:.75rem; --fs-sm:.8125rem; --fs-base:1.0625rem;
+  --fs-md:1.1875rem; --fs-lg:1.375rem;
+  --fs-xl:clamp(1.5rem,1.10rem + 1.4vw,1.75rem);
+  --fs-2xl:clamp(1.875rem,1.40rem + 2.0vw,2.375rem);
+  --fs-3xl:clamp(2.25rem,1.60rem + 2.8vw,3rem);
+  --fs-display:clamp(2.5rem,1.70rem + 3.6vw,3.875rem);
+  --lh-tight:1.08; --lh-snug:1.25; --lh-normal:1.5; --lh-relaxed:1.7; --lh-loose:1.85;
+  --ls-tight:-.03em; --ls-snug:-.015em; --ls-normal:0; --ls-wide:.08em; --ls-caps:.12em;
+
+  /* ---- Abstände ---- */
+  --space-1:.25rem; --space-2:.5rem; --space-3:.75rem; --space-4:1rem; --space-5:1.5rem;
+  --space-6:2rem; --space-7:2.5rem; --space-8:3rem; --space-9:4rem; --space-10:5rem;
+  --space-11:6rem; --space-12:8rem;
+  --section-y:clamp(4rem,8vw,6rem); --section-x:clamp(1.25rem,5vw,3.5rem);
+
+  /* ---- Radien ---- */
+  --radius-sm:8px; --radius-md:12px; --radius-lg:16px; --radius-xl:24px; --radius-pill:100px;
+
+  /* ---- Elevation (Navy-getönt) ---- */
+  --shadow-xs:0 1px 2px rgba(2,0,68,.06); --shadow-sm:0 2px 8px rgba(2,0,68,.06);
+  --shadow-md:0 8px 24px rgba(2,0,68,.10); --shadow-lg:0 18px 48px rgba(2,0,68,.14);
+
+  /* ---- Bewegung ---- */
+  --dur-fast:.18s; --dur-base:.32s; --dur-slow:.6s;
+  --ease-out:cubic-bezier(.22,1,.36,1); --ease-inout:cubic-bezier(.65,0,.35,1);
+
+  /* ---- Fokus / A11y ---- */
+  --focus-ring:var(--ci-blue); --shadow-focus:0 0 0 3px rgba(48,85,160,.45);
+
+  /* ---- Semantische Defaults (von Themes überschrieben) ---- */
+  --nav-bg:var(--ci-navy); --nav-fg:var(--ci-white);
+  --accent:var(--ci-blue); --accent-2:var(--ci-lime); --eyebrow:var(--ci-blue);
+  --cta-bg:var(--ci-gold); --cta-fg:var(--ci-navy);
+  --r-card:12px; --r-btn:12px; --r-chip:8px;
+  --card-border:1px solid var(--border); --card-shadow:none; --panel-bg:var(--ci-white);
+}
+
+/* ============================================================
+   THEME: assesi.eu — institutionell (validiert)
+   ============================================================ */
+.theme-assesi{
+  --nav-bg:var(--ci-navy); --nav-fg:var(--ci-white);
+  --accent:var(--ci-blue); --accent-2:var(--ci-gold); --eyebrow:var(--ci-blue);
+  --cta-bg:var(--ci-gold); --cta-fg:var(--ci-navy);
+  --r-card:10px; --r-btn:10px; --r-chip:6px;
+  --card-border:1px solid var(--border); --card-shadow:none;
+  --panel-bg:var(--ci-white);
+}
+
+/* ============================================================
+   THEME: assesi-label.eu — wärmer (validiert)
+   ============================================================ */
+.theme-label{
+  --nav-bg:var(--ci-white); --nav-fg:var(--ci-navy);
+  --accent:var(--ci-lime); --accent-2:var(--ci-blue); --eyebrow:var(--ci-navy);
+  --cta-bg:var(--ci-lime); --cta-fg:var(--ci-navy);
+  --r-card:22px; --r-btn:100px; --r-chip:100px;
+  --card-border:1px solid rgba(2,0,68,.05); --card-shadow:0 14px 34px rgba(2,0,68,.10);
+  --panel-bg:#FCFDF8;
+}
+
+/* Hinweis: Lime/Gold sind Flächen-/Akzentfarben, NICHT Textfarbe
+   auf Weiß (Kontrast < AA). Fließ-/Sekundärtext bleibt Navy. */

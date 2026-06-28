@@ -1,0 +1,220 @@
+{
+ "version": "0.4",
+ "title": "ASSESI – Startseite (assesi.eu)",
+ "type": "page",
+ "content": [
+  {
+   "id": "0d90097e",
+   "elType": "container",
+   "settings": {
+    "content_width": "full"
+   },
+   "elements": [
+    {
+     "id": "fa9d3d48",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<nav class=\"nav\" aria-label=\"Hauptnavigation\">\n  <div class=\"nav__in\">\n    <a class=\"brand\" href=\"#\" aria-label=\"ASSESI Startseite\">\n      <span class=\"brand__mark\">A</span>\n      <span><span class=\"brand__name\">ASSESI</span><span class=\"brand__tag\">Sustainable Insurers</span></span>\n    </a>\n    <div class=\"nav__links\">\n      <a href=\"#was\">Was ist ASSESI</a><a href=\"#vorteile\">Vorteile</a><a href=\"#verlauf\">Verlauf</a><a href=\"#mitmachen\">Mitmachen</a>\n    </div>\n    <div class=\"nav__util\">\n      <div class=\"lang\" aria-label=\"Sprache\"><a href=\"#\" aria-current=\"true\">DE</a><a href=\"#\">EN</a></div>\n      <a class=\"nav__cross\" href=\"#\">&rarr; Label-Seite</a>\n      <a class=\"nav__cta\" href=\"#mitmachen\">Mitglied werden</a>\n      <button class=\"nav__burger\" aria-label=\"Men&uuml; &ouml;ffnen\" aria-expanded=\"false\" aria-controls=\"navPanel\">&#9776;</button>\n    </div>\n  </div>\n  <div class=\"nav__panel\" id=\"navPanel\">\n    <a href=\"#was\">Was ist ASSESI</a><a href=\"#vorteile\">Vorteile</a><a href=\"#verlauf\">Verlauf</a><a href=\"#mitmachen\">Mitmachen</a>\n    <a href=\"#\" class=\"nav__panel-cross\">&rarr; assesi-label.eu</a>\n    <a href=\"#mitmachen\" class=\"btn btn--cta nav__panel-cta\">Mitglied werden</a>\n  </div>\n</nav>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "8c6911c3",
+   "elType": "container",
+   "settings": {
+    "content_width": "full"
+   },
+   "elements": [
+    {
+     "id": "0af4cfff",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<header class=\"hero\">\n  <div class=\"hero__copy\">\n    <div class=\"hero__eyebrow\">DIN 77237 &middot; Verband</div>\n    <h1>Der europ&auml;ische Standard f&uuml;r <em>nachhaltige Versicherer</em>.</h1>\n    <p class=\"hero__lede\">ASSESI macht Nachhaltigkeit in der Versicherungswirtschaft pr&uuml;fbar &mdash; normbasiert, transparent und von seinen Mitgliedern getragen.</p>\n    <div class=\"btn-row\">\n      <a class=\"btn btn--primary\" href=\"#mitmachen\">Mitglied werden</a>\n      <a class=\"btn btn--cta\" href=\"#kosten\">Kosten ansehen</a>\n      <a class=\"btn btn--ghost\" href=\"#was\">Was ist ASSESI?</a>\n    </div>\n    <div class=\"hero__trust\">\n      <span class=\"trust__item\">DBU-gef&ouml;rdert</span><span class=\"trust__item\">DIN 77237 in Arbeit</span><span class=\"trust__item\">EmpCo-Richtlinie</span>\n    </div>\n  </div>\n  <aside class=\"std-card\" aria-label=\"Was Mitgliedschaft bedeutet\">\n    <div class=\"std-card__label\">Was Mitgliedschaft bedeutet</div>\n    <div class=\"std-row\"><span class=\"std-row__num\">01</span><span><span class=\"std-row__t\">Sichtbarkeit</span><span class=\"std-row__d\">Listung im Verbund europ&auml;ischer nachhaltiger Versicherer.</span></span></div>\n    <div class=\"std-row\"><span class=\"std-row__num\">02</span><span><span class=\"std-row__t\">Kostentransparenz</span><span class=\"std-row__d\">Beitr&auml;ge und Leistungen offen ausgewiesen.</span></span></div>\n    <div class=\"std-row\"><span class=\"std-row__num\">03</span><span><span class=\"std-row__t\">Compliance</span><span class=\"std-row__d\">Anschluss an DIN-Norm und EmpCo-Richtlinie.</span></span></div>\n    <div class=\"std-card__foot\"><span>Getragen von</span><span class=\"supporter\">DBU</span><span class=\"supporter\">Green Insurance Stiftung</span></div>\n  </aside>\n</header>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "46865885",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "_css_classes": "band"
+   },
+   "elements": [
+    {
+     "id": "27e72c1d",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "_css_classes": "section"
+     },
+     "elements": [
+      {
+       "id": "b667b53f",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "_css_classes": "sec-head"
+       },
+       "elements": [
+        {
+         "id": "d743729c",
+         "elType": "widget",
+         "widgetType": "html",
+         "settings": {
+          "html": "<div class=\"eyebrow\">Warum mitmachen</div>"
+         },
+         "elements": []
+        },
+        {
+         "id": "2df996cc",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "Mitgliedschaft, die <em>Wirkung zeigt</em>.",
+          "header_size": "h2",
+          "_css_classes": "sec-title"
+         },
+         "elements": []
+        },
+        {
+         "id": "59017359",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>Nachhaltigkeit nachweisbar machen &mdash; gegen&uuml;ber Aufsicht, Partnern und Markt. Vier konkrete Gr&uuml;nde, dem Verband beizutreten.</p>",
+          "_css_classes": "sec-lede"
+         },
+         "elements": []
+        }
+       ],
+       "isInner": false
+      },
+      {
+       "id": "ea6350af",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"v-grid\">\n  <article class=\"v-card\"><div class=\"v-card__icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M6 3h9l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z\"/><path d=\"M14 3v5h5\"/><path d=\"M9 13h6M9 17h4\"/></svg></div><h3 class=\"v-card__title\">Kostentransparenz</h3><p class=\"v-card__desc\">Beitr&auml;ge und Leistungen offen ausgewiesen. Vorstand und Gremien sehen auf einen Blick, was die Mitgliedschaft kostet und bringt.</p></article>\n  <article class=\"v-card\"><div class=\"v-card__icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z\"/><path d=\"M9 12l2 2 4-4\"/></svg></div><h3 class=\"v-card__title\">EmpCo-Compliance</h3><p class=\"v-card__desc\">Der Standard ist an die EmpCo-Richtlinie und das DIN-Normungsverfahren 77237 angeschlossen &mdash; Compliance mit Anschluss an die Norm.</p></article>\n  <article class=\"v-card\"><div class=\"v-card__icon\"><svg viewBox=\"0 0 24 24\"><circle cx=\"6\" cy=\"7\" r=\"2.4\"/><circle cx=\"18\" cy=\"7\" r=\"2.4\"/><circle cx=\"12\" cy=\"18\" r=\"2.4\"/><path d=\"M7.6 8.6l3 7.2M16.4 8.6l-3 7.2M8 7h8\"/></svg></div><h3 class=\"v-card__title\">Sichtbarkeit im Verbund</h3><p class=\"v-card__desc\">Listung im europ&auml;ischen Netzwerk nachhaltiger Versicherer &mdash; sichtbar f&uuml;r Partner, Makler und Markt.</p></article>\n  <article class=\"v-card\"><div class=\"v-card__icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M4 20l1-4L16 5l3 3L8 19l-4 1z\"/><path d=\"M14 7l3 3\"/></svg></div><h3 class=\"v-card__title\">Mitgestaltung</h3><p class=\"v-card__desc\">Mitglieder pr&auml;gen die Weiterentwicklung des Standards aktiv mit und sitzen an der Quelle k&uuml;nftiger Kriterien.</p></article>\n</div>"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "cc2c20e9",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "_css_classes": "section"
+   },
+   "elements": [
+    {
+     "id": "0c1a7cc2",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "_css_classes": "sec-head"
+     },
+     "elements": [
+      {
+       "id": "41c9d08b",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"eyebrow\">Verlauf</div>"
+       },
+       "elements": []
+      },
+      {
+       "id": "0b7fef78",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Vom Verband zur <em>tragf&auml;higen Norm</em>.",
+        "header_size": "h2",
+        "_css_classes": "sec-title"
+       },
+       "elements": []
+      },
+      {
+       "id": "8ccdafda",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Der Weg von der Gr&uuml;ndung bis zur Finanzierung aus eigener Kraft &mdash; aufklappbar statt endlos scrollend.</p>",
+        "_css_classes": "sec-lede"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "025575d0",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<div class=\"acc\" data-acc>\n  <div class=\"acc__item is-done\"><button class=\"acc__head\" aria-expanded=\"false\"><span class=\"acc__dot\">&#10003;</span><span class=\"acc__meta\"><span class=\"acc__date\">2023</span><span class=\"acc__title\">Gr&uuml;ndung des Verbands</span></span><span class=\"acc__chev\">&#9662;</span></button><div class=\"acc__panel\"><div class=\"acc__panel-inner\">Zusammenschluss der Gr&uuml;ndungsversicherer; Definition von Auftrag, Governance und Zielbild des Standards.</div></div></div>\n  <div class=\"acc__item is-done\"><button class=\"acc__head\" aria-expanded=\"false\"><span class=\"acc__dot\">&#10003;</span><span class=\"acc__meta\"><span class=\"acc__date\">2024</span><span class=\"acc__title\">DIN-Normungsverfahren 77237</span></span><span class=\"acc__chev\">&#9662;</span></button><div class=\"acc__panel\"><div class=\"acc__panel-inner\">Einbringung des Standards in das formelle Normungsverfahren als belastbare, geteilte Grundlage.</div></div></div>\n  <div class=\"acc__item is-active\"><button class=\"acc__head\" aria-expanded=\"true\"><span class=\"acc__dot\">3</span><span class=\"acc__meta\"><span class=\"acc__date\">2025 &middot; laufend</span><span class=\"acc__title\">DBU-F&ouml;rderung &amp; Pilotmitglieder</span></span><span class=\"acc__chev\">&#9662;</span></button><div class=\"acc__panel\"><div class=\"acc__panel-inner\">Aufbau der Webpr&auml;senz und Gewinnung erster Pilotversicherer im F&ouml;rderzeitraum der DBU.</div></div></div>\n  <div class=\"acc__item is-future\"><button class=\"acc__head\" aria-expanded=\"false\"><span class=\"acc__dot\">4</span><span class=\"acc__meta\"><span class=\"acc__date\">2026</span><span class=\"acc__title\">Anschlussfinanzierung</span></span><span class=\"acc__chev\">&#9662;</span></button><div class=\"acc__panel\"><div class=\"acc__panel-inner\">Tragf&auml;higkeit des Verbands &uuml;ber Mitgliedsbeitr&auml;ge nach Auslaufen der F&ouml;rderung.</div></div></div>\n</div>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "a0297e49",
+   "elType": "container",
+   "settings": {
+    "content_width": "full"
+   },
+   "elements": [
+    {
+     "id": "a378ec81",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<section class=\"cta-band\" id=\"mitmachen\">\n  <div class=\"section\">\n    <div class=\"cta-grid\">\n      <div>\n        <div class=\"eyebrow\">Mitmachen</div>\n        <h2 class=\"sec-title\">Werden Sie Teil des <em>Standards</em>.</h2>\n        <p class=\"cta-lede\">Transparente Beitr&auml;ge, klarer Gegenwert. Die Mitgliedschaft tr&auml;gt den Verband &mdash; und macht Ihre Nachhaltigkeit sichtbar und pr&uuml;fbar.</p>\n        <div class=\"btn-row\">\n          <a class=\"btn btn--cta\" href=\"#\">Mitglied werden</a>\n          <a class=\"btn btn--ghost-dark\" href=\"#\">Beitrag anfragen</a>\n        </div>\n      </div>\n      <aside class=\"price-card\" id=\"kosten\">\n        <div class=\"price-card__label\">Was enthalten ist</div>\n        <ul class=\"price-list\">\n          <li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Listung im europ&auml;ischen Verbund</li>\n          <li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Nutzung des ASSESI-Siegels</li>\n          <li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Mitgestaltung des Standards</li>\n          <li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Teilnahme an Verbandsveranstaltungen</li>\n        </ul>\n        <div class=\"price-foot\">\n          <div class=\"price-foot__k\">Beitrag</div>\n          <div class=\"price-foot__v\">Gestaffelt nach Beitragsvolumen<small>Konkrete Beitragsstaffel wird von ASSESI festgelegt (Platzhalter).</small></div>\n        </div>\n      </aside>\n    </div>\n  </div>\n</section>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "5d014444",
+   "elType": "container",
+   "settings": {
+    "content_width": "full"
+   },
+   "elements": [
+    {
+     "id": "5068816c",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<footer class=\"footer\">\n  <div class=\"footer__in\">\n    <div class=\"footer__brand\">\n      <span class=\"brand__name\" style=\"font-family:var(--font-display);font-weight:800;font-size:1.2rem;color:#fff\">ASSESI</span>\n      <p class=\"footer__tag\">Association of European Sustainable Insurers &mdash; der normbasierte Standard f&uuml;r nachhaltige Versicherer in Europa.</p>\n      <a class=\"footer__cross\" href=\"#\">&rarr; Zum Siegel: assesi-label.eu</a>\n    </div>\n    <div class=\"footer__col\"><h4>Navigation</h4><a href=\"#was\">Was ist ASSESI</a><a href=\"#vorteile\">Vorteile</a><a href=\"#verlauf\">Verlauf</a><a href=\"#mitmachen\">Mitmachen</a></div>\n    <div class=\"footer__col\"><h4>Rechtliches</h4><a href=\"#\">Impressum</a><a href=\"#\">Datenschutzerkl&auml;rung</a></div>\n    <div class=\"footer__col\"><h4>Kontakt</h4><a href=\"#\">info@assesi.eu</a><a href=\"#\">Green Insurance Stiftung</a><span style=\"display:block;font-size:.85rem;color:rgba(255,255,255,.55);padding-top:6px\">Anschrift folgt</span></div>\n  </div>\n  <div class=\"footer__bar\"><div class=\"footer__bar-in\"><span>&copy; 2026 ASSESI &middot; Association of European Sustainable Insurers</span><span class=\"footer__legal\"><a href=\"#\">Impressum</a><a href=\"#\">Datenschutz</a><a href=\"#\">DE / EN</a></span></div></div>\n</footer>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "template": "elementor_canvas",
+  "hide_title": "yes"
+ }
+}

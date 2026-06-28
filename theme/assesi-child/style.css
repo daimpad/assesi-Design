@@ -1,0 +1,15 @@
+/*
+Theme Name:   ASSESI Child
+Theme URI:    https://assesi.eu
+Description:  Child-Theme für Hello Elementor. Trägt das ASSESI-Design-System
+              (Tokens + Komponenten) für assesi.eu und assesi-label.eu. Die
+              Theme-Klasse (.theme-assesi / .theme-label) wird domain-abhängig
+              in functions.php am <body> gesetzt.
+Author:       ASSESI
+Template:     hello-elementor
+Version:      0.10.0
+Text Domain:  assesi-child
+*/
+
+/* Eigentliche Stile liegen modular unter assets/css/ (tokens.css, components.css)
+   und werden über functions.php geladen. Projektspezifische Overrides hier ergänzen. */
