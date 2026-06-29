@@ -71,6 +71,10 @@ demselben Muster mit den jeweiligen Seiten.
   **nicht** Textfarbe auf Weiß (Kontrast < WCAG AA).
 - Logo ist Platzhalter, bis die Wortbildmarke final ist; die Token-Struktur bleibt
   davon unberührt.
+- Version 0.14.0 — Schriften selbst gehostet (Hanken Grotesk + Inter unter
+  `assets/fonts/`, kein Google-CDN → keine IP-Übermittlung; Datenschutz-Vorlagen
+  entsprechend angepasst). CI-Handbuch `handbook.html` überarbeitet und über
+  `elementor/assesi-handbook.json` in beide Präsenzen einbettbar.
 - Version 0.13.0 — Pflichtseiten Impressum + Datenschutzerklärung als eigenständige
   Vorlagen je Domain (Gerüst mit `[TODO]`-Platzhaltern, nativ editierbar; inkl.
   Google-Fonts/DSGVO-Hinweis). Siehe `elementor/README.md`.

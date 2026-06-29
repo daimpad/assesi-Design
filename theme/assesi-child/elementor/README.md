@@ -55,6 +55,20 @@ Visuals bleiben pixelgenau im HTML-Widget:
 Die Label-Titel nutzen in der HTML-Route `<em>` für die Lime-Unterstreichung
 (`.theme-label .sec-title em`); Lime/Gold bleiben Flächen-/Akzentfarben, nie Textfarbe.
 
+## Design-Handbuch (beide Domains)
+
+`assesi-handbook.json` (`type: page`) bettet das CI-Handbuch
+`theme/assesi-child/handbook.html` über ein `<iframe>` ein und passt dessen Höhe
+automatisch an den Inhalt an. Dieselbe Vorlage funktioniert auf beiden Domains —
+die Quelle liegt unter dem festen Pfad `/wp-content/themes/assesi-child/handbook.html`.
+
+Das Handbuch ist self-contained: es verlinkt die echten `tokens.css`, `components.css`
+und die selbst gehosteten Schriften aus dem Theme und kann daher nicht von der
+Single Source of Truth abweichen. Inhalt: Farben (klick-kopierbar, HEX oder
+CSS-Variable), Typografie, Formen/Tiefe je Präsenz, Abstände, Bewegung (mit
+Hover-/Klick-Beispiel) und alle Komponenten in beiden Charakteren. Die Datei lässt
+sich auch direkt im Browser öffnen.
+
 ## Pflichtseiten (Impressum + Datenschutz)
 
 `*-impressum.json` und `*-datenschutz.json` sind eigenständige Seiten je Domain

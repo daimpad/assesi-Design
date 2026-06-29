@@ -9,7 +9,7 @@ ASSESI-Nachhaltigkeitsstandards:
 Ein gemeinsamer Token-Kern stiftet die Verwandtschaft; zwei Charakter-Themes
 schalten Akzent, Radius, Tiefe und Navigation um. Farbquelle ist
 `Farben_Fonts.docx` (Gold `#F5C503`, Navy `#020044`, Blau `#3055A0`,
-Lime `#B4CD00`). Schrift: Hanken Grotesk (Display) + Inter (Fließtext).
+Lime `#B4CD00`). Schrift: Hanken Grotesk (Display) + Inter (Fließtext), selbst gehostet.
 
 ## Struktur
 
@@ -19,14 +19,14 @@ Assesi/
 │  ├─ assets/css/
 │  │  ├─ tokens.css           Design-Tokens — Quelle (Repo)
 │  │  └─ components.css       Komponenten, token-getrieben
+│  ├─ assets/fonts/           Selbst gehostete Schriften (Hanken Grotesk, Inter) + fonts.css
 │  ├─ assets/js/ui.js         Accordion + Mobile-Menü
 │  ├─ inc/schema.php          Schema.org JSON-LD (domain-abhängig)
 │  ├─ elementor/*.json        Importierbare Elementor-/Theme-Builder-Vorlagen
+│  ├─ handbook.html           CI-Handbuch (beide Präsenzen), deploybar je Domain
 │  ├─ functions.php           Enqueue + domain-abhängige Body-Klasse
 │  └─ style.css               Theme-Header (Version)
 └─ design/                    Referenzen & Snippets (nicht deploybar)
-   ├─ handbook.html           CI-Handbuch (beide Präsenzen): Farben klick-kopierbar,
-   │                          Typografie, Formen, Tiefe, Abstände, Komponenten
    ├─ styleguide.html         Komponenten-Referenz, beide Themes nebeneinander
    ├─ assesi-eu-onepager.html      Validierte HTML-Referenz assesi.eu
    ├─ assesi-label-onepager.html   Validierte HTML-Referenz assesi-label.eu
