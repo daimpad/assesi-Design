@@ -129,7 +129,7 @@
      "elType": "widget",
      "widgetType": "heading",
      "settings": {
-      "title": "5. Schriftarten (Google Fonts)",
+      "title": "5. Schriftarten",
       "header_size": "h2",
       "title_color": "#020044"
      },
@@ -140,7 +140,7 @@
      "elType": "widget",
      "widgetType": "text-editor",
      "settings": {
-      "editor": "<p>Diese Website bindet die Schriftarten \u201eHanken Grotesk\" und \u201eInter\" \u00fcber Google Fonts ein. Anbieter ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Beim Aufruf einer Seite l\u00e4dt Ihr Browser die ben\u00f6tigten Schriften von Servern von Google, um Texte korrekt darzustellen. Dabei wird Ihre IP-Adresse an Google \u00fcbermittelt; eine \u00dcbermittlung in die USA kann nicht ausgeschlossen werden.</p><p style=\"background:#FFF8DA;border-left:4px solid #F5C503;border-radius:8px;padding:12px 16px;color:#020044;font-size:.92rem\"><strong>[TODO / Empfehlung:</strong> Werden Google Fonts vom Google-CDN geladen, ist die IP-\u00dcbermittlung ohne Einwilligung datenschutzrechtlich kritisch (vgl. LG M\u00fcnchen I, Urt. v. 20.01.2022 \u2014 3 O 17493/20). Empfehlung: Schriften <em>self-hosten</em> (lokal ausliefern); dann entf\u00e4llt die \u00dcbermittlung an Google und dieser Abschnitt kann angepasst werden. Andernfalls Rechtsgrundlage/Einwilligung (Consent-Banner) kl\u00e4ren.]</p>"
+      "editor": "<p>Diese Website verwendet die Schriftarten \u201eHanken Grotesk\" und \u201eInter\". Die Schriften werden lokal vom Server dieser Website ausgeliefert (Self-Hosting). Es besteht dabei keine Verbindung zu Servern von Google; eine \u00dcbermittlung Ihrer IP-Adresse an Google oder Dritte findet durch die Schriftauslieferung nicht statt.</p>"
      },
      "elements": []
     },

@@ -32,13 +32,10 @@ add_action( 'wp_enqueue_scripts', function () {
 	// Parent-Theme (Hello Elementor)
 	wp_enqueue_style( 'hello-elementor', get_template_directory_uri() . '/style.css', array(), null );
 
-	// Google Fonts: Hanken Grotesk + Inter
-	wp_enqueue_style(
-		'assesi-fonts',
-		'https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap',
-		array(),
-		null
-	);
+	// Schriften: selbst gehostet (Hanken Grotesk + Inter, OFL). Kein Google-CDN —
+	// keine Übermittlung der Besucher-IP an Google (DSGVO). Variable Fonts unter
+	// assets/fonts/, eingebunden über fonts.css.
+	wp_enqueue_style( 'assesi-fonts', $uri . '/assets/fonts/fonts.css', array(), $ver );
 
 	// Design-Tokens: versionierte Basis aus dem Repo. Greift sofort nach
 	// Aktivierung, ohne manuellen Schritt. Die zusätzliche, UI-editierbare
@@ -59,15 +56,16 @@ add_action( 'wp_enqueue_scripts', function () {
 }, 20 );
 
 /* ------------------------------------------------------------
- * Preconnect für schnelleres Font-Loading
+ * Preload der primären (latin) Schriftdateien — schnellerer Erst-Render,
+ * ersetzt den früheren Google-Preconnect (Schriften sind jetzt lokal).
  * ---------------------------------------------------------- */
-add_filter( 'wp_resource_hints', function ( $hints, $relation ) {
-	if ( 'preconnect' === $relation ) {
-		$hints[] = 'https://fonts.googleapis.com';
-		$hints[] = array( 'href' => 'https://fonts.gstatic.com', 'crossorigin' );
+add_action( 'wp_head', function () {
+	$uri = get_stylesheet_directory_uri();
+	foreach ( array( 'hanken-grotesk-latin', 'inter-latin' ) as $f ) {
+		echo '<link rel="preload" as="font" type="font/woff2" crossorigin href="'
+			. esc_url( $uri . '/assets/fonts/' . $f . '.woff2' ) . '">' . "\n";
 	}
-	return $hints;
-}, 10, 2 );
+}, 1 );
 
 /* ------------------------------------------------------------
  * Theme-Klasse domain-abhängig setzen
