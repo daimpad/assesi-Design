@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASSESI · CI-Handbuch (beide Präsenzen)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   Quelle: theme/assesi-child/assets/css/tokens.css (verbatim)
+   ============================================================ */
+/* ============================================================
+   ASSESI — DESIGN TOKENS (Kit, konsolidiert)
+   Single Source of Truth für assesi.eu UND assesi-label.eu
+   Farbquelle:  Farben_Fonts.docx (CI-/Logo-verbindlich)
+   Schrift:     Hanken Grotesk (Display) + Inter (Fließtext)
+
+   Aufbau: gemeinsamer :root-Kern + zwei Charakter-Themes
+   (.theme-assesi institutionell / .theme-label wärmer).
+   Die Theme-Klasse wird per functions.php domain-abhängig am
+   <body> gesetzt; sie funktioniert aber auf jedem Container.
+   ============================================================ */
+
+:root{
+  /* ---- CI-Kernfarben (verbindlich) ---- */
+  --ci-gold:#F5C503; --ci-navy:#020044; --ci-blue:#3055A0; --ci-lime:#B4CD00; --ci-white:#FFFFFF;
+
+  /* ---- Flächen (Navy-getönte Neutralwerte) ---- */
+  --surface-page:#FFFFFF; --surface-soft:#F7F7F5; --surface-mute:#EFEFF2;
+  --surface-invert:var(--ci-navy);
+
+  /* ---- Text (CI: nur Navy/Weiß/Blau) ---- */
+  --text-strong:var(--ci-navy); --text-body:var(--ci-navy);
+  --text-soft:rgba(2,0,68,.62); --text-faint:rgba(2,0,68,.45);
+  --text-on-dark:var(--ci-white); --text-link:var(--ci-blue);
+
+  /* ---- Linien / Rahmen ---- */
+  --border:rgba(2,0,68,.12); --border-strong:rgba(2,0,68,.22);
+  --border-on-dark:rgba(255,255,255,.16);
+
+  /* ---- Typografie ---- */
+  --font-display:'Hanken Grotesk',system-ui,sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
+  --fw-regular:400; --fw-medium:500; --fw-semibold:600; --fw-bold:700; --fw-black:800;
+  --fs-2xs:.6875rem; --fs-xs:.75rem; --fs-sm:.8125rem; --fs-base:1.0625rem;
+  --fs-md:1.1875rem; --fs-lg:1.375rem;
+  --fs-xl:clamp(1.5rem,1.10rem + 1.4vw,1.75rem);
+  --fs-2xl:clamp(1.875rem,1.40rem + 2.0vw,2.375rem);
+  --fs-3xl:clamp(2.25rem,1.60rem + 2.8vw,3rem);
+  --fs-display:clamp(2.5rem,1.70rem + 3.6vw,3.875rem);
+  --lh-tight:1.08; --lh-snug:1.25; --lh-normal:1.5; --lh-relaxed:1.7; --lh-loose:1.85;
+  --ls-tight:-.03em; --ls-snug:-.015em; --ls-normal:0; --ls-wide:.08em; --ls-caps:.12em;
+
+  /* ---- Abstände ---- */
+  --space-1:.25rem; --space-2:.5rem; --space-3:.75rem; --space-4:1rem; --space-5:1.5rem;
+  --space-6:2rem; --space-7:2.5rem; --space-8:3rem; --space-9:4rem; --space-10:5rem;
+  --space-11:6rem; --space-12:8rem;
+  --section-y:clamp(4rem,8vw,6rem); --section-x:clamp(1.25rem,5vw,3.5rem);
+
+  /* ---- Radien ---- */
+  --radius-sm:8px; --radius-md:12px; --radius-lg:16px; --radius-xl:24px; --radius-pill:100px;
+
+  /* ---- Elevation (Navy-getönt) ---- */
+  --shadow-xs:0 1px 2px rgba(2,0,68,.06); --shadow-sm:0 2px 8px rgba(2,0,68,.06);
+  --shadow-md:0 8px 24px rgba(2,0,68,.10); --shadow-lg:0 18px 48px rgba(2,0,68,.14);
+
+  /* ---- Bewegung ---- */
+  --dur-fast:.18s; --dur-base:.32s; --dur-slow:.6s;
+  --ease-out:cubic-bezier(.22,1,.36,1); --ease-inout:cubic-bezier(.65,0,.35,1);
+
+  /* ---- Fokus / A11y ---- */
+  --focus-ring:var(--ci-blue); --shadow-focus:0 0 0 3px rgba(48,85,160,.45);
+
+  /* ---- Semantische Defaults (von Themes überschrieben) ---- */
+  --nav-bg:var(--ci-navy); --nav-fg:var(--ci-white);
+  --accent:var(--ci-blue); --accent-2:var(--ci-lime); --eyebrow:var(--ci-blue);
+  --cta-bg:var(--ci-gold); --cta-fg:var(--ci-navy);
+  --r-card:12px; --r-btn:12px; --r-chip:8px;
+  --card-border:1px solid var(--border); --card-shadow:none; --panel-bg:var(--ci-white);
+}
+
+/* ============================================================
+   THEME: assesi.eu — institutionell (validiert)
+   ============================================================ */
+.theme-assesi{
+  --nav-bg:var(--ci-navy); --nav-fg:var(--ci-white);
+  --accent:var(--ci-blue); --accent-2:var(--ci-gold); --eyebrow:var(--ci-blue);
+  --cta-bg:var(--ci-gold); --cta-fg:var(--ci-navy);
+  --r-card:10px; --r-btn:10px; --r-chip:6px;
+  --card-border:1px solid var(--border); --card-shadow:none;
+  --panel-bg:var(--ci-white);
+}
+
+/* ============================================================
+   THEME: assesi-label.eu — wärmer (validiert)
+   ============================================================ */
+.theme-label{
+  --nav-bg:var(--ci-white); --nav-fg:var(--ci-navy);
+  --accent:var(--ci-lime); --accent-2:var(--ci-blue); --eyebrow:var(--ci-navy);
+  --cta-bg:var(--ci-lime); --cta-fg:var(--ci-navy);
+  --r-card:22px; --r-btn:100px; --r-chip:100px;
+  --card-border:1px solid rgba(2,0,68,.05); --card-shadow:0 14px 34px rgba(2,0,68,.10);
+  --panel-bg:#FCFDF8;
+}
+
+/* Hinweis: Lime/Gold sind Flächen-/Akzentfarben, NICHT Textfarbe
+   auf Weiß (Kontrast < AA). Fließ-/Sekundärtext bleibt Navy. */
+
+/* ============================================================
+   Quelle: theme/assesi-child/assets/css/components.css (verbatim)
+   ============================================================ */
+/* ============================================================
+   ASSESI — KOMPONENTEN (validiert)
+   Token-getrieben: Themes (.theme-assesi/.theme-label) liefern
+   Akzent, Radius, Tiefe; die Komponenten färben sich automatisch.
+   Setzt assets/css/tokens.css voraus.
+   ============================================================ */
+
+/* ---- Basis-Bindung (entfernen, falls Elementor Global Fonts greift) ---- */
+body{font-family:var(--font-body);font-size:var(--fs-base);line-height:var(--lh-loose);
+  color:var(--text-body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-display);color:var(--text-strong);
+  letter-spacing:var(--ls-snug);line-height:var(--lh-snug)}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--focus-ring);outline-offset:3px}
+
+/* ---- Elementor-Widget-Defaults (an Token-System angeglichen) ----
+   Setzt sinnvolle Marken-Größen für native Widgets. Pro Widget in
+   Elementor weiterhin übersteuerbar (höhere Spezifität gewinnt). */
+.elementor-widget-icon-box .elementor-icon-box-title{
+  font-family:var(--font-display);font-weight:600;font-size:1rem;line-height:1.3;
+  color:var(--text-strong);overflow-wrap:break-word;hyphens:auto}
+.elementor-widget-icon-box .elementor-icon-box-description{
+  font-size:.9rem;line-height:1.6;color:var(--text-soft)}
+.elementor-accordion .elementor-accordion-title{
+  font-family:var(--font-display);font-weight:700;font-size:1.0625rem;color:var(--text-strong)}
+.elementor-accordion .elementor-tab-content{
+  font-size:.95rem;line-height:1.65;color:var(--text-soft)}
+
+/* ---- Layout: Band / Section / Sektionskopf ---- */
+.band{background:var(--surface-soft);border-top:1px solid var(--border)}
+.section{max-width:1240px;margin:0 auto;padding:var(--section-y) var(--section-x)}
+.sec-head{max-width:60ch;margin-bottom:clamp(2.5rem,5vw,3.5rem)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-display);
+  font-weight:700;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--eyebrow);margin-bottom:1rem}
+.eyebrow::before{content:'';width:22px;height:2px;background:var(--accent-2)}
+.theme-label .eyebrow::before{content:'✓';width:auto;height:auto;background:none;color:var(--ci-lime);font-size:.9rem;font-weight:800}
+.sec-title{font-family:var(--font-display);font-weight:800;letter-spacing:-.025em;line-height:1.1;
+  font-size:clamp(1.875rem,1.4rem + 2vw,2.5rem);color:var(--text-strong)}
+.sec-title em{font-style:normal;position:relative;z-index:0;color:var(--accent)}
+.theme-label .sec-title em{color:var(--text-strong)}
+.theme-label .sec-title em::after{content:'';position:absolute;left:0;right:0;bottom:.06em;height:.3em;background:var(--ci-lime);opacity:.4;z-index:-1;border-radius:3px}
+.sec-lede{font-size:1.05rem;line-height:1.75;color:var(--text-soft);margin-top:1rem}
+
+/* ---- Navigation (adaptiv über --nav-bg/--nav-fg) ---- */
+.nav{position:sticky;top:0;z-index:50;background:var(--nav-bg);color:var(--nav-fg);
+  border-bottom:1px solid color-mix(in srgb,var(--nav-fg) 16%,transparent)}
+.nav__in{max-width:1240px;margin:0 auto;padding:0 var(--section-x);height:68px;
+  display:flex;align-items:center;gap:28px}
+.brand{display:flex;align-items:center;gap:11px;margin-right:auto}
+.brand__mark{width:34px;height:34px;border-radius:7px;flex:none;
+  background:linear-gradient(135deg,var(--ci-blue),var(--ci-navy));
+  border:1px solid rgba(255,255,255,.25);display:grid;place-items:center;
+  font-family:var(--font-display);font-weight:800;font-size:.95rem;color:#fff}
+.brand__name{display:block;font-family:var(--font-display);font-weight:800;font-size:1.12rem;letter-spacing:.02em;line-height:1.05;color:var(--nav-fg)}
+.brand__tag{display:block;font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--nav-fg) 60%,transparent);margin-top:4px}
+.nav__links{display:flex;gap:24px}
+.nav__links a{font-size:.9rem;font-weight:500;color:color-mix(in srgb,var(--nav-fg) 82%,transparent);transition:color var(--dur-base)}
+.nav__links a:hover{color:var(--nav-fg)}
+.nav__util{display:flex;align-items:center;gap:14px}
+.lang{display:flex;gap:2px;font-size:.78rem;font-weight:600}
+.lang a{padding:4px 7px;border-radius:6px;color:color-mix(in srgb,var(--nav-fg) 55%,transparent)}
+.lang a[aria-current="true"]{color:var(--nav-bg);background:var(--nav-fg)}
+.nav__cross{font-size:.78rem;font-weight:600;color:var(--accent);
+  border:1px solid color-mix(in srgb,var(--accent) 40%,transparent);padding:6px 13px;border-radius:100px;transition:background var(--dur-base)}
+.nav__cross:hover{background:color-mix(in srgb,var(--accent) 14%,transparent)}
+.nav__cta{background:var(--cta-bg);color:var(--cta-fg);font-weight:700;font-size:.82rem;
+  padding:9px 18px;border-radius:var(--r-btn);transition:transform var(--dur-base) var(--ease-out)}
+.nav__cta:hover{transform:translateY(-1px)}
+.nav__burger{display:none;background:none;border:none;color:var(--nav-fg);font-size:1.4rem;cursor:pointer}
+@media(max-width:920px){.nav__links,.nav__cross{display:none}.nav__burger{display:block}}
+
+/* ---- Mobile-Menü ---- */
+.nav__panel{display:none;position:fixed;top:68px;left:0;right:0;z-index:49;
+  background:var(--nav-bg);border-top:1px solid color-mix(in srgb,var(--nav-fg) 16%,transparent);
+  padding:.5rem var(--section-x) 1.5rem;flex-direction:column}
+.nav__panel.is-open{display:flex}
+.nav__panel a{color:color-mix(in srgb,var(--nav-fg) 90%,transparent);font-size:1.02rem;font-weight:500;
+  padding:15px 0;border-bottom:1px solid color-mix(in srgb,var(--nav-fg) 16%,transparent)}
+.nav__panel-cross{color:var(--accent)!important}
+.nav__panel-cta{margin-top:1.2rem;text-align:center;border-bottom:none!important}
+@media(min-width:921px){.nav__panel{display:none!important}}
+
+/* ---- Buttons ---- */
+.btn-row{display:flex;flex-wrap:wrap;gap:12px}
+.btn{font-family:var(--font-body);font-weight:600;font-size:.92rem;line-height:1;
+  padding:14px 26px;border-radius:var(--r-btn);cursor:pointer;border:1.5px solid transparent;
+  transition:transform var(--dur-base) var(--ease-out),box-shadow var(--dur-base) var(--ease-out),
+  background var(--dur-base),border-color var(--dur-base)}
+.btn--primary{background:var(--ci-navy);color:#fff}
+.btn--primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(2,0,68,.24)}
+.btn--cta{background:var(--cta-bg);color:var(--cta-fg);font-weight:700}
+.btn--cta:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(2,0,68,.18)}
+.btn--ghost{background:transparent;color:var(--ci-navy);border-color:var(--border-strong)}
+.btn--ghost:hover{border-color:var(--ci-navy);background:rgba(2,0,68,.04)}
+.btn--ghost-dark{background:transparent;color:#fff;border-color:rgba(255,255,255,.35)}
+.btn--ghost-dark:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+
+/* ---- Hero ---- */
+.hero{max-width:1240px;margin:0 auto;padding:var(--section-y) var(--section-x);
+  display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+@media(max-width:880px){.hero{grid-template-columns:1fr;gap:2.5rem}}
+.hero__eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-display);
+  font-weight:700;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:1.4rem}
+.hero__eyebrow::before{content:'';width:22px;height:2px;background:var(--accent-2)}
+.hero h1{font-family:var(--font-display);font-weight:800;letter-spacing:-.03em;line-height:1.05;
+  font-size:var(--fs-display);color:var(--text-strong);margin-bottom:1.3rem}
+.hero h1 em{font-style:normal;position:relative;z-index:0;color:var(--accent)}
+.theme-label .hero h1 em{color:var(--text-strong)}
+.theme-label .hero h1 em::after{content:'';position:absolute;left:0;right:0;bottom:.08em;height:.32em;background:var(--ci-lime);opacity:.4;z-index:-1;border-radius:3px}
+.hero__lede{font-size:1.12rem;line-height:1.75;color:var(--text-soft);max-width:48ch;margin-bottom:2.2rem}
+.hero__trust{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;padding-top:1.6rem;border-top:1px solid var(--border)}
+.trust__item{display:flex;align-items:center;gap:8px;font-size:.8rem;font-weight:500;color:var(--text-soft)}
+.trust__item::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--ci-lime);flex:none}
+
+/* ---- Karte: Standard/Index (Hero) ---- */
+.std-card{background:var(--surface-soft);border:1px solid var(--border);border-radius:16px;padding:2rem 1.9rem}
+.std-card__label{font-family:var(--font-display);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:1.3rem}
+.std-row{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid var(--border)}
+.std-row:last-of-type{border-bottom:none}
+.std-row__num{font-family:var(--font-display);font-weight:800;font-size:.95rem;color:var(--accent);font-variant-numeric:tabular-nums;flex:none;width:22px}
+.std-row__t{display:block;font-family:var(--font-display);font-weight:700;font-size:.92rem;color:var(--text-strong);margin-bottom:3px}
+.std-row__d{display:block;font-size:.82rem;color:var(--text-soft);line-height:1.5}
+.std-card__foot{display:flex;align-items:center;gap:10px;margin-top:1.4rem;padding-top:1.2rem;border-top:1px solid var(--border)}
+.std-card__foot span{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-faint);white-space:nowrap}
+.supporter{background:#fff;border:1px solid var(--border);border-radius:7px;padding:5px 12px;font-size:.76rem;font-weight:600;color:var(--text-strong)}
+
+/* ---- Karten-Raster (Vorteile) ---- */
+.v-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.v-card{background:#fff;border:var(--card-border);border-radius:var(--r-card);box-shadow:var(--card-shadow);
+  padding:1.7rem 1.6rem;transition:transform var(--dur-base) var(--ease-out),border-color var(--dur-base),box-shadow var(--dur-base)}
+.v-card:hover{transform:translateY(-3px)}
+.v-card__icon{width:46px;height:46px;border-radius:11px;display:grid;place-items:center;
+  background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent);margin-bottom:1.2rem}
+.v-card__icon svg{width:23px;height:23px;stroke:currentColor;stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.v-card__title{font-family:var(--font-display);font-weight:700;font-size:1.06rem;color:var(--text-strong);margin-bottom:.5rem}
+.v-card__desc{font-size:.9rem;line-height:1.6;color:var(--text-soft)}
+
+/* ---- Timeline → Accordion ---- */
+.acc{border-top:1px solid var(--border);max-width:840px}
+.acc__item{border-bottom:1px solid var(--border)}
+.acc__head{width:100%;display:flex;align-items:center;gap:16px;text-align:left;background:none;border:none;cursor:pointer;padding:20px 4px;font-family:var(--font-body)}
+.acc__dot{flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-family:var(--font-display);font-weight:800;font-size:.82rem;font-variant-numeric:tabular-nums}
+.acc__item.is-done   .acc__dot{background:var(--ci-lime);color:var(--ci-navy)}
+.acc__item.is-active .acc__dot{background:var(--ci-gold);color:var(--ci-navy);box-shadow:0 0 0 5px rgba(245,197,3,.2)}
+.acc__item.is-future .acc__dot{background:#fff;border:2px solid var(--border-strong);color:var(--text-faint)}
+.acc__meta{flex:1;min-width:0}
+.acc__date{display:block;font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
+.acc__title{display:block;font-family:var(--font-display);font-weight:700;font-size:1rem;color:var(--text-strong)}
+.acc__chev{flex:none;color:var(--text-faint);font-size:.8rem;transition:transform var(--dur-base) var(--ease-out)}
+.acc__head[aria-expanded="true"] .acc__chev{transform:rotate(180deg)}
+.acc__panel{overflow:hidden;max-height:0;transition:max-height var(--dur-base) var(--ease-out)}
+.acc__panel-inner{padding:0 4px 22px 68px;font-size:.92rem;color:var(--text-soft);line-height:1.65;max-width:60ch}
+
+/* ---- CTA / Kosten-Band ---- */
+.cta-band{background:var(--ci-navy);color:#fff}
+.cta-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+@media(max-width:880px){.cta-grid{grid-template-columns:1fr;gap:2.5rem}}
+.cta-band .eyebrow{color:var(--ci-lime)}
+.cta-band .eyebrow::before{background:var(--ci-gold)}
+.cta-band .sec-title{color:#fff}
+.cta-band .sec-title em{color:var(--ci-lime)}
+.cta-lede{font-size:1.08rem;line-height:1.75;color:rgba(255,255,255,.78);margin:1rem 0 2rem;max-width:44ch}
+.price-card{background:#fff;color:var(--text-body);border-radius:16px;padding:2rem 1.9rem;position:relative;overflow:hidden}
+.price-card::before{content:'';position:absolute;inset:0 0 auto 0;height:4px;background:linear-gradient(90deg,var(--ci-blue),var(--ci-gold))}
+.price-card__label{font-family:var(--font-display);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:1.2rem}
+.price-list{list-style:none;margin:0 0 1.4rem;padding:0}
+.price-list li{display:flex;align-items:flex-start;gap:11px;padding:9px 0;font-size:.92rem}
+.price-list svg{flex:none;width:19px;height:19px;stroke:var(--ci-lime);stroke-width:2.4;fill:none;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+.price-foot{border-top:1px solid var(--border);padding-top:1.2rem}
+.price-foot__k{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-faint);margin-bottom:5px}
+.price-foot__v{font-family:var(--font-display);font-weight:700;font-size:1.02rem;color:var(--text-strong)}
+.price-foot__v small{display:block;font-family:var(--font-body);font-weight:400;font-size:.78rem;color:var(--text-soft);margin-top:5px}
+
+/* ---- Footer ---- */
+.footer{background:var(--ci-navy);color:rgba(255,255,255,.75)}
+.footer__in{max-width:1240px;margin:0 auto;padding:clamp(3rem,6vw,4.5rem) var(--section-x) 2.5rem;
+  display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2.5rem}
+@media(max-width:820px){.footer__in{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.footer__in{grid-template-columns:1fr}}
+.footer__brand .brand__name{color:#fff}
+.footer__tag{font-size:.9rem;line-height:1.7;color:rgba(255,255,255,.6);margin-top:1rem;max-width:34ch}
+.footer__cross{display:inline-flex;margin-top:1.3rem;font-size:.82rem;font-weight:600;color:var(--ci-lime);
+  border:1px solid rgba(180,205,0,.4);padding:7px 15px;border-radius:100px;transition:background var(--dur-base)}
+.footer__cross:hover{background:rgba(180,205,0,.14)}
+.footer__col h4{font-family:var(--font-display);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:1.1rem}
+.footer__col a{display:block;font-size:.92rem;color:rgba(255,255,255,.8);padding:6px 0;transition:color var(--dur-base)}
+.footer__col a:hover{color:#fff}
+.footer__bar{border-top:1px solid var(--border-on-dark)}
+.footer__bar-in{max-width:1240px;margin:0 auto;padding:1.5rem var(--section-x);display:flex;flex-wrap:wrap;
+  gap:10px 22px;justify-content:space-between;align-items:center;font-size:.8rem;color:rgba(255,255,255,.55)}
+.footer__bar-in a{color:rgba(255,255,255,.7)}
+.footer__legal{display:flex;gap:18px}
+
+/* ============================================================
+   LABEL-MODULE (validiert an assesi-label.eu)
+   Token-getrieben; primär für .theme-label, generisch nutzbar.
+   ============================================================ */
+.band-warm{background:var(--surface-soft)}
+
+/* Siegel-Showcase (Hero-Signatur Label) */
+.showcase{background:#fff;border:var(--card-border);border-radius:var(--r-card);box-shadow:var(--card-shadow);padding:2.4rem 2rem}
+.seal{width:128px;height:128px;border-radius:50%;margin:0 auto 1.7rem;background:var(--ci-navy);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+  box-shadow:0 0 0 4px #fff,0 0 0 7px var(--ci-lime),0 14px 30px rgba(2,0,68,.20)}
+.seal svg{width:38px;height:38px;stroke:var(--ci-lime);stroke-width:2.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.seal span{font-family:var(--font-display);font-size:.58rem;font-weight:800;letter-spacing:.16em;color:#fff;text-transform:uppercase}
+.showcase__product{text-align:center;margin-bottom:1.5rem}
+.showcase__pname{font-family:var(--font-display);font-weight:800;font-size:1.08rem;color:var(--text-strong)}
+.showcase__issuer{font-size:.8rem;color:var(--text-soft);margin-top:4px}
+.showcase__issuer b{color:var(--accent-2);font-weight:600}
+.crit{display:flex;flex-direction:column;gap:9px}
+.crit-row{display:flex;align-items:center;gap:11px;padding:12px 15px;border-radius:13px;background:var(--surface-soft);font-size:.88rem;font-weight:500}
+.crit-row svg{flex:none;width:18px;height:18px;stroke:var(--ci-lime);stroke-width:2.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+
+/* Zielgruppen-Split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:760px){.split{grid-template-columns:1fr}}
+.aud-card{background:#fff;border:var(--card-border);border-radius:var(--r-card);box-shadow:var(--card-shadow);padding:2rem 1.9rem}
+.aud-card__icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;
+  background:color-mix(in srgb,var(--accent) 18%,transparent);color:var(--ci-navy);margin-bottom:1.3rem}
+.aud-card__icon svg{width:24px;height:24px;stroke:currentColor;stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.aud-card__k{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-2);margin-bottom:.4rem}
+.aud-card__t{font-family:var(--font-display);font-weight:800;font-size:1.22rem;color:var(--text-strong);margin-bottom:.7rem}
+.aud-card__d{font-size:.95rem;line-height:1.65;color:var(--text-soft);margin-bottom:1.2rem}
+.aud-list{list-style:none;display:flex;flex-direction:column;gap:9px}
+.aud-list li{display:flex;gap:10px;align-items:flex-start;font-size:.9rem;color:var(--text-body)}
+.aud-list svg{flex:none;width:17px;height:17px;stroke:var(--ci-lime);stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round;margin-top:3px}
+
+/* Horizontaler Prozess-Stepper */
+.proc{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media(max-width:860px){.proc{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.proc{grid-template-columns:1fr}}
+.proc-step{background:#fff;border:var(--card-border);border-radius:var(--r-card);box-shadow:var(--card-shadow);padding:1.7rem 1.5rem}
+.proc-step__n{width:40px;height:40px;border-radius:50%;background:var(--ci-navy);color:#fff;display:grid;place-items:center;
+  font-family:var(--font-display);font-weight:800;font-size:1rem;margin-bottom:1.1rem}
+.proc-step.is-active .proc-step__n{background:var(--ci-lime);color:var(--ci-navy);box-shadow:0 0 0 5px rgba(180,205,0,.25)}
+.proc-step__t{font-family:var(--font-display);font-weight:700;font-size:1.02rem;color:var(--text-strong);margin-bottom:.45rem}
+.proc-step__d{font-size:.88rem;line-height:1.6;color:var(--text-soft)}
+
+/* Warmes CTA-Band + Such-Mock */
+.cta-warm{background:linear-gradient(180deg,#F6F9E9,#FCFDF8)}
+.cta-warm .section{text-align:center}
+.cta-warm .eyebrow{justify-content:center}
+.cta-warm .sec-head{max-width:none;margin-bottom:2rem}
+.cta-warm .sec-lede{margin-left:auto;margin-right:auto;max-width:52ch}
+.search-mock{max-width:560px;margin:0 auto 1.2rem;display:flex;gap:10px;align-items:center;
+  background:#fff;border:1px solid var(--border);border-radius:100px;padding:8px 8px 8px 22px;box-shadow:var(--card-shadow)}
+.search-mock input{flex:1;border:none;background:none;font-family:var(--font-body);font-size:.95rem;color:var(--text-body);outline:none}
+.search-mock button{background:var(--ci-lime);color:var(--ci-navy);font-weight:700;font-size:.88rem;border:none;border-radius:100px;padding:12px 22px;cursor:pointer}
+.search-note{font-size:.82rem;color:var(--text-soft)}
+.cta-warm .btn-row{justify-content:center;margin-top:1.8rem;margin-bottom:0}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.001ms!important;scroll-behavior:auto!important}}
+
+/* ===== Handbuch-Chrome ===== */
+body{background:#EDEDF0}
+.hb-wrap{max-width:1320px;margin:0 auto;padding:0 var(--section-x)}
+.hb-top{padding:clamp(2rem,5vw,3.5rem) 0 1rem}
+.hb-kicker{font-family:var(--font-display);font-weight:700;font-size:.72rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ci-blue)}
+.hb-top h1{font-family:var(--font-display);font-weight:800;letter-spacing:-.02em;
+  font-size:clamp(1.7rem,3.5vw,2.6rem);color:var(--ci-navy);margin:.4rem 0 .6rem}
+.hb-top p{color:var(--text-soft);max-width:64ch;font-size:1rem}
+.hb-toc{display:flex;flex-wrap:wrap;gap:8px;margin:1.4rem 0 0}
+.hb-toc a{font-size:.8rem;font-weight:600;color:var(--ci-navy);background:#fff;border:1px solid var(--border);
+  padding:7px 14px;border-radius:100px;text-decoration:none;transition:background var(--dur-base)}
+.hb-toc a:hover{background:#fff;border-color:var(--ci-blue);color:var(--ci-blue)}
+.hb-sec{padding:2.5rem 0 1rem}
+.hb-sec__h{font-family:var(--font-display);font-weight:800;font-size:1.4rem;color:var(--ci-navy);
+  letter-spacing:-.01em;margin-bottom:.3rem}
+.hb-sec__d{color:var(--text-soft);font-size:.92rem;max-width:62ch;margin-bottom:1.6rem}
+.hb-card{background:#fff;border:1px solid var(--border);border-radius:18px;
+  padding:clamp(1.3rem,3vw,2rem);margin-bottom:1.2rem}
+.hb-sub{font-family:var(--font-body);font-size:.66rem;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--text-faint);margin:0 0 1rem;padding-bottom:.4rem;
+  border-bottom:1px dashed var(--border)}
+.hb-sub:not(:first-child){margin-top:2rem}
+
+/* Farb-Swatches */
+.sw-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
+.sw{display:flex;align-items:center;gap:12px;text-align:left;background:#fff;border:1px solid var(--border);
+  border-radius:12px;padding:9px 12px 9px 9px;cursor:pointer;font-family:var(--font-body);position:relative;
+  transition:border-color var(--dur-base),transform var(--dur-base)}
+.sw:hover{border-color:var(--ci-blue);transform:translateY(-1px)}
+.sw:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
+.sw__chip{width:44px;height:44px;border-radius:9px;flex:none;background:var(--c)}
+.sw--light .sw__chip{box-shadow:inset 0 0 0 1px var(--border)}
+.sw__meta{display:flex;flex-direction:column;min-width:0;line-height:1.3}
+.sw__name{font-weight:700;font-size:.88rem;color:var(--ci-navy)}
+.sw__val{font-size:.74rem;color:var(--text-soft);font-variant-numeric:tabular-nums}
+.sw__var{font-size:.7rem;color:var(--text-faint);font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.sw::after{content:'Kopiert ✓';position:absolute;top:8px;right:10px;font-size:.66rem;font-weight:700;
+  color:#fff;background:var(--ci-navy);padding:3px 8px;border-radius:100px;opacity:0;transform:translateY(-3px);
+  transition:opacity var(--dur-fast),transform var(--dur-fast);pointer-events:none}
+.sw.is-copied::after{opacity:1;transform:translateY(0)}
+
+.copy-mode{display:inline-flex;align-items:center;gap:8px;margin:0 0 1.2rem;font-size:.8rem;color:var(--text-soft)}
+.copy-mode label{display:inline-flex;align-items:center;gap:5px;cursor:pointer}
+.note{font-size:.82rem;color:var(--text-soft);margin-top:1rem;padding:10px 14px;background:var(--surface-soft);
+  border-left:3px solid var(--ci-gold);border-radius:8px}
+
+/* inline copy code chips */
+.copy{cursor:pointer;position:relative;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  background:var(--surface-soft);border:1px solid var(--border);border-radius:6px;padding:2px 7px;font-size:.78rem;color:var(--ci-navy)}
+.copy:hover{border-color:var(--ci-blue)}
+.copy.is-copied::after{content:'✓';margin-left:6px;color:var(--ci-blue);font-weight:700}
+
+/* Typo */
+.ts-row{display:flex;align-items:baseline;gap:18px;padding:10px 0;border-bottom:1px solid var(--border)}
+.ts-row:last-child{border-bottom:none}
+.ts-sample{font-family:var(--font-display);font-weight:800;color:var(--ci-navy);line-height:1;flex:none;width:120px}
+.ts-meta{display:flex;flex-direction:column;gap:3px}
+.ts-val{font-size:.74rem;color:var(--text-faint)}
+.wt-row{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:9px 0;
+  border-bottom:1px solid var(--border);font-family:var(--font-display);font-size:1.3rem;color:var(--ci-navy)}
+.wt-row:last-child{border-bottom:none}
+.wt-meta{font-family:var(--font-body);font-size:.78rem;font-weight:500;color:var(--text-faint)}
+.font-card{display:flex;flex-direction:column;gap:6px;margin-bottom:1.4rem}
+.font-card .fc-name{font-family:var(--font-display);font-size:1.5rem;font-weight:800;color:var(--ci-navy)}
+.font-card .fc-name--body{font-family:var(--font-body)}
+
+/* Formen / Schatten */
+.shape-grid{display:flex;flex-wrap:wrap;gap:20px}
+.shape{display:flex;flex-direction:column;align-items:center;gap:8px;width:108px}
+.shape__box{width:84px;height:64px;background:linear-gradient(135deg,var(--ci-blue),var(--ci-navy))}
+.shape__box--white{background:#fff;border:1px solid var(--border)}
+.shape__val{font-size:.72rem;color:var(--text-faint)}
+.tbl{width:100%;border-collapse:collapse;font-size:.86rem}
+.tbl th,.tbl td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--border);vertical-align:middle}
+.tbl th{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--text-faint);font-weight:700}
+.rpv{display:inline-block;width:34px;height:20px;background:var(--ci-navy);vertical-align:middle;margin-right:6px}
+.rpv--lime{background:var(--ci-lime)}
+
+/* Abstände */
+.sp-row{display:flex;align-items:center;gap:14px;padding:5px 0}
+.sp-bar{height:14px;background:var(--ci-blue);border-radius:3px;flex:none}
+.sp-val{font-size:.74rem;color:var(--text-faint)}
+
+/* Motion */
+.mo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;font-size:.84rem}
+.mo-grid code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--ci-navy)}
+
+/* Komponenten-Bühne (beide Themes) */
+.hb-stage{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+@media(max-width:980px){.hb-stage{grid-template-columns:1fr}}
+.panel{background:var(--panel-bg);border:1px solid var(--border);border-radius:18px;
+  padding:clamp(1.4rem,3vw,2.2rem);overflow:hidden}
+.panel__tag{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-display);font-weight:700;
+  font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border-radius:100px;margin-bottom:1.5rem}
+.theme-assesi .panel__tag{background:var(--ci-navy);color:#fff}
+.theme-label .panel__tag{background:#fff;color:var(--ci-navy);border:1px solid var(--border)}
+.panel__tag b{color:var(--accent);font-weight:700}
+.block{margin-top:2rem}
+.block:first-of-type{margin-top:0}
+.block__label{font-family:var(--font-body);font-size:.64rem;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--text-faint);margin-bottom:.9rem;padding-bottom:.35rem;border-bottom:1px dashed var(--border)}
+/* Sticky/Fixed in der Bühne neutralisieren */
+.panel .nav{position:static;border-radius:12px;overflow:hidden}
+.panel .nav__panel,.panel .nav__burger{display:none!important}
+.hb-foot{padding:2rem 0 4rem;color:var(--text-faint);font-size:.8rem;text-align:center}
+</style>
+</head>
+<body>
+<div class="hb-wrap">
+  <header class="hb-top">
+    <div class="hb-kicker">CI-Handbuch · Design-System</div>
+    <h1>Eine Designsprache, zwei Präsenzen</h1>
+    <p>Gemeinsamer Token-Kern, zwei Charaktere: <b>assesi.eu</b> institutionell (Blau-Akzent,
+    10&nbsp;px-Radien, Hairlines, Navy-Nav) und <b>assesi-label.eu</b> wärmer (Lime-Akzent,
+    Pill-Radien, weiche Schatten, weiße Nav). Farben sind per Klick kopierbar. Single Source
+    of Truth bleibt <code>tokens.css</code> — diese Seite spiegelt sie verbatim.</p>
+    <nav class="hb-toc" aria-label="Inhalt"><a href="#farben">Farben</a><a href="#typografie">Typografie</a><a href="#formen">Formen &amp; Tiefe</a><a href="#abstaende">Abstände</a><a href="#bewegung">Bewegung</a><a href="#komponenten">Komponenten</a></nav>
+  </header>
+
+  <section class="hb-sec" id="farben"><div class="hb-sec__h">Farben</div><p class="hb-sec__d">CI-Kern, Flächen, Text, Linien und die semantischen Rollen je Theme. Klick auf eine Kachel kopiert den Wert (oder die CSS-Variable).</p><div class="copy-mode" role="radiogroup" aria-label="Kopiermodus">Klick kopiert:<label><input type="radio" name="cmode" value="hex" checked> HEX / Wert</label><label><input type="radio" name="cmode" value="var"> CSS-Variable</label></div><div class="hb-card"><div class="hb-sub">CI-Kernfarben (verbindlich · Farben_Fonts.docx)</div><div class="sw-grid"><button class="sw" data-hex="#F5C503" data-var="--ci-gold" style="--c:#F5C503" aria-label="Gold kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Gold</span><span class="sw__val">#F5C503</span><span class="sw__var">--ci-gold</span></span></button><button class="sw sw--dark" data-hex="#020044" data-var="--ci-navy" style="--c:#020044" aria-label="Navy kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Navy</span><span class="sw__val">#020044</span><span class="sw__var">--ci-navy</span></span></button><button class="sw sw--dark" data-hex="#3055A0" data-var="--ci-blue" style="--c:#3055A0" aria-label="Blau kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Blau</span><span class="sw__val">#3055A0</span><span class="sw__var">--ci-blue</span></span></button><button class="sw" data-hex="#B4CD00" data-var="--ci-lime" style="--c:#B4CD00" aria-label="Lime kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Lime</span><span class="sw__val">#B4CD00</span><span class="sw__var">--ci-lime</span></span></button><button class="sw sw--light" data-hex="#FFFFFF" data-var="--ci-white" style="--c:#FFFFFF" aria-label="Weiß kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Weiß</span><span class="sw__val">#FFFFFF</span><span class="sw__var">--ci-white</span></span></button></div><div class="hb-sub">Flächen</div><div class="sw-grid"><button class="sw sw--light" data-hex="#FFFFFF" data-var="--surface-page" style="--c:#FFFFFF" aria-label="Seite kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Seite</span><span class="sw__val">#FFFFFF</span><span class="sw__var">--surface-page</span></span></button><button class="sw sw--light" data-hex="#F7F7F5" data-var="--surface-soft" style="--c:#F7F7F5" aria-label="Soft kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Soft</span><span class="sw__val">#F7F7F5</span><span class="sw__var">--surface-soft</span></span></button><button class="sw sw--light" data-hex="#EFEFF2" data-var="--surface-mute" style="--c:#EFEFF2" aria-label="Mute kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Mute</span><span class="sw__val">#EFEFF2</span><span class="sw__var">--surface-mute</span></span></button><button class="sw sw--dark" data-hex="#020044" data-var="--surface-invert" style="--c:#020044" aria-label="Invert kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Invert</span><span class="sw__val">#020044</span><span class="sw__var">--surface-invert</span></span></button></div><div class="hb-sub">Text</div><div class="sw-grid"><button class="sw sw--dark" data-hex="#020044" data-var="--text-strong" style="--c:#020044" aria-label="Stark kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Stark</span><span class="sw__val">#020044</span><span class="sw__var">--text-strong</span></span></button><button class="sw sw--dark" data-hex="#020044" data-var="--text-body" style="--c:#020044" aria-label="Fließtext kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Fließtext</span><span class="sw__val">#020044</span><span class="sw__var">--text-body</span></span></button><button class="sw" data-hex="rgba(2,0,68,.62)" data-var="--text-soft" style="--c:rgba(2,0,68,.62)" aria-label="Soft kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Soft</span><span class="sw__val">rgba(2,0,68,.62)</span><span class="sw__var">--text-soft</span></span></button><button class="sw" data-hex="rgba(2,0,68,.45)" data-var="--text-faint" style="--c:rgba(2,0,68,.45)" aria-label="Faint kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Faint</span><span class="sw__val">rgba(2,0,68,.45)</span><span class="sw__var">--text-faint</span></span></button><button class="sw sw--light" data-hex="#FFFFFF" data-var="--text-on-dark" style="--c:#FFFFFF" aria-label="Auf Dunkel kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Auf Dunkel</span><span class="sw__val">#FFFFFF</span><span class="sw__var">--text-on-dark</span></span></button><button class="sw sw--dark" data-hex="#3055A0" data-var="--text-link" style="--c:#3055A0" aria-label="Link kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Link</span><span class="sw__val">#3055A0</span><span class="sw__var">--text-link</span></span></button></div><div class="hb-sub">Linien / Rahmen</div><div class="sw-grid"><button class="sw" data-hex="rgba(2,0,68,.12)" data-var="--border" style="--c:rgba(2,0,68,.12)" aria-label="Linie kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Linie</span><span class="sw__val">rgba(2,0,68,.12)</span><span class="sw__var">--border</span></span></button><button class="sw" data-hex="rgba(2,0,68,.22)" data-var="--border-strong" style="--c:rgba(2,0,68,.22)" aria-label="Linie stark kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Linie stark</span><span class="sw__val">rgba(2,0,68,.22)</span><span class="sw__var">--border-strong</span></span></button><button class="sw sw--dark" data-hex="rgba(255,255,255,.16)" data-var="--border-on-dark" style="--c:rgba(255,255,255,.16)" aria-label="Auf Dunkel kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Auf Dunkel</span><span class="sw__val">rgba(255,255,255,.16)</span><span class="sw__var">--border-on-dark</span></span></button></div><p class="note"><b>Regel:</b> Lime und Gold sind Flächen-/Akzentfarben — nie Textfarbe auf Weiß (Kontrast &lt; WCAG AA). Fließ- und Sekundärtext bleibt Navy.</p></div><div class="hb-card"><div class="hb-sub">Semantische Rollen — assesi.eu (.theme-assesi)</div><div class="sw-grid"><button class="sw sw--dark" data-hex="#3055A0" data-var="--accent" style="--c:#3055A0" aria-label="Akzent kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Akzent</span><span class="sw__val">#3055A0</span><span class="sw__var">--accent</span></span></button><button class="sw" data-hex="#F5C503" data-var="--accent-2" style="--c:#F5C503" aria-label="Akzent 2 kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Akzent 2</span><span class="sw__val">#F5C503</span><span class="sw__var">--accent-2</span></span></button><button class="sw sw--dark" data-hex="#3055A0" data-var="--eyebrow" style="--c:#3055A0" aria-label="Eyebrow kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Eyebrow</span><span class="sw__val">#3055A0</span><span class="sw__var">--eyebrow</span></span></button><button class="sw" data-hex="#F5C503" data-var="--cta-bg" style="--c:#F5C503" aria-label="CTA Fläche kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">CTA Fläche</span><span class="sw__val">#F5C503</span><span class="sw__var">--cta-bg</span></span></button><button class="sw sw--dark" data-hex="#020044" data-var="--cta-fg" style="--c:#020044" aria-label="CTA Text kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">CTA Text</span><span class="sw__val">#020044</span><span class="sw__var">--cta-fg</span></span></button><button class="sw sw--dark" data-hex="#020044" data-var="--nav-bg" style="--c:#020044" aria-label="Nav Fläche kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Nav Fläche</span><span class="sw__val">#020044</span><span class="sw__var">--nav-bg</span></span></button><button class="sw sw--light" data-hex="#FFFFFF" data-var="--nav-fg" style="--c:#FFFFFF" aria-label="Nav Text kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Nav Text</span><span class="sw__val">#FFFFFF</span><span class="sw__var">--nav-fg</span></span></button></div><div class="hb-sub">Semantische Rollen — assesi-label.eu (.theme-label)</div><div class="sw-grid"><button class="sw" data-hex="#B4CD00" data-var="--accent" style="--c:#B4CD00" aria-label="Akzent kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Akzent</span><span class="sw__val">#B4CD00</span><span class="sw__var">--accent</span></span></button><button class="sw sw--dark" data-hex="#3055A0" data-var="--accent-2" style="--c:#3055A0" aria-label="Akzent 2 kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Akzent 2</span><span class="sw__val">#3055A0</span><span class="sw__var">--accent-2</span></span></button><button class="sw sw--dark" data-hex="#020044" data-var="--eyebrow" style="--c:#020044" aria-label="Eyebrow kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Eyebrow</span><span class="sw__val">#020044</span><span class="sw__var">--eyebrow</span></span></button><button class="sw" data-hex="#B4CD00" data-var="--cta-bg" style="--c:#B4CD00" aria-label="CTA Fläche kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">CTA Fläche</span><span class="sw__val">#B4CD00</span><span class="sw__var">--cta-bg</span></span></button><button class="sw sw--dark" data-hex="#020044" data-var="--cta-fg" style="--c:#020044" aria-label="CTA Text kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">CTA Text</span><span class="sw__val">#020044</span><span class="sw__var">--cta-fg</span></span></button><button class="sw sw--light" data-hex="#FFFFFF" data-var="--nav-bg" style="--c:#FFFFFF" aria-label="Nav Fläche kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Nav Fläche</span><span class="sw__val">#FFFFFF</span><span class="sw__var">--nav-bg</span></span></button><button class="sw sw--dark" data-hex="#020044" data-var="--nav-fg" style="--c:#020044" aria-label="Nav Text kopieren"><span class="sw__chip"></span><span class="sw__meta"><span class="sw__name">Nav Text</span><span class="sw__val">#020044</span><span class="sw__var">--nav-fg</span></span></button></div><p class="note">Dieselben Rollen-Variablen, andere Werte — daraus entsteht der Charakter. Komponenten lesen nur die Rolle (z. B. <code>--accent</code>), nicht die CI-Farbe direkt.</p></div></section>
+  <section class="hb-sec" id="typografie"><div class="hb-sec__h">Typografie</div><p class="hb-sec__d">Hanken Grotesk für Display, Inter für Fließtext — mit Größen-Skala und Schnitten.</p><div class="hb-card"><div class="font-card"><span class="fc-name">Hanken Grotesk</span><code class="copy" data-hex="'Hanken Grotesk', system-ui, sans-serif" data-var="--font-display">--font-display · Display / Überschriften</code></div><div class="font-card"><span class="fc-name fc-name--body">Inter</span><code class="copy" data-hex="'Inter', system-ui, sans-serif" data-var="--font-body">--font-body · Fließtext</code></div><div class="hb-sub">Größen-Skala</div><div class="ts-row"><div class="ts-sample" style="font-size:var(--fs-2xs)">Ag</div><div class="ts-meta"><code class="copy" data-hex="var(--fs-2xs)" data-var="--fs-2xs">--fs-2xs</code><span class="ts-val">.6875rem</span></div></div><div class="ts-row"><div class="ts-sample" style="font-size:var(--fs-xs)">Ag</div><div class="ts-meta"><code class="copy" data-hex="var(--fs-xs)" data-var="--fs-xs">--fs-xs</code><span class="ts-val">.75rem</span></div></div><div class="ts-row"><div class="ts-sample" style="font-size:var(--fs-sm)">Ag</div><div class="ts-meta"><code class="copy" data-hex="var(--fs-sm)" data-var="--fs-sm">--fs-sm</code><span class="ts-val">.8125rem</span></div></div><div class="ts-row"><div class="ts-sample" style="font-size:var(--fs-base)">Ag</div><div class="ts-meta"><code class="copy" data-hex="var(--fs-base)" data-var="--fs-base">--fs-base</code><span class="ts-val">1.0625rem</span></div></div><div class="ts-row"><div class="ts-sample" style="font-size:var(--fs-md)">Ag</div><div class="ts-meta"><code class="copy" data-hex="var(--fs-md)" data-var="--fs-md">--fs-md</code><span class="ts-val">1.1875rem</span></div></div><div class="ts-row"><div class="ts-sample" style="font-size:var(--fs-lg)">Ag</div><div class="ts-meta"><code class="copy" data-hex="var(--fs-lg)" data-var="--fs-lg">--fs-lg</code><span class="ts-val">1.375rem</span></div></div><div class="ts-row"><div class="ts-sample" style="font-size:var(--fs-xl)">Ag</div><div class="ts-meta"><code class="copy" data-hex="var(--fs-xl)" data-var="--fs-xl">--fs-xl</code><span class="ts-val">clamp(1.5rem,1.10rem + 1.4vw,1.75rem)</span></div></div><div class="ts-row"><div class="ts-sample" style="font-size:var(--fs-2xl)">Ag</div><div class="ts-meta"><code class="copy" data-hex="var(--fs-2xl)" data-var="--fs-2xl">--fs-2xl</code><span class="ts-val">clamp(1.875rem,1.40rem + 2.0vw,2.375rem)</span></div></div><div class="ts-row"><div class="ts-sample" style="font-size:var(--fs-3xl)">Ag</div><div class="ts-meta"><code class="copy" data-hex="var(--fs-3xl)" data-var="--fs-3xl">--fs-3xl</code><span class="ts-val">clamp(2.25rem,1.60rem + 2.8vw,3rem)</span></div></div><div class="ts-row"><div class="ts-sample" style="font-size:var(--fs-display)">Ag</div><div class="ts-meta"><code class="copy" data-hex="var(--fs-display)" data-var="--fs-display">--fs-display</code><span class="ts-val">clamp(2.5rem,1.70rem + 3.6vw,3.875rem)</span></div></div><div class="hb-sub">Schriftschnitte</div><div class="wt-row" style="font-weight:400"><span class="wt-sample">Nachhaltige Versicherer</span><span class="wt-meta">400 · Regular</span></div><div class="wt-row" style="font-weight:500"><span class="wt-sample">Nachhaltige Versicherer</span><span class="wt-meta">500 · Medium</span></div><div class="wt-row" style="font-weight:600"><span class="wt-sample">Nachhaltige Versicherer</span><span class="wt-meta">600 · Semibold</span></div><div class="wt-row" style="font-weight:700"><span class="wt-sample">Nachhaltige Versicherer</span><span class="wt-meta">700 · Bold</span></div><div class="wt-row" style="font-weight:800"><span class="wt-sample">Nachhaltige Versicherer</span><span class="wt-meta">800 · Black</span></div></div></section>
+  <section class="hb-sec" id="formen"><div class="hb-sec__h">Formen &amp; Tiefe</div><p class="hb-sec__d">Radien und Elevation. Die Theme-Rollen kippen den Charakter von sachlich zu warm.</p><div class="hb-card"><div class="hb-sub">Radien (Kern)</div><div class="shape-grid"><div class="shape"><div class="shape__box" style="border-radius:var(--radius-sm)"></div><code class="copy" data-hex="8px" data-var="--radius-sm">--radius-sm</code><span class="shape__val">8px</span></div><div class="shape"><div class="shape__box" style="border-radius:var(--radius-md)"></div><code class="copy" data-hex="12px" data-var="--radius-md">--radius-md</code><span class="shape__val">12px</span></div><div class="shape"><div class="shape__box" style="border-radius:var(--radius-lg)"></div><code class="copy" data-hex="16px" data-var="--radius-lg">--radius-lg</code><span class="shape__val">16px</span></div><div class="shape"><div class="shape__box" style="border-radius:var(--radius-xl)"></div><code class="copy" data-hex="24px" data-var="--radius-xl">--radius-xl</code><span class="shape__val">24px</span></div><div class="shape"><div class="shape__box" style="border-radius:var(--radius-pill)"></div><code class="copy" data-hex="100px" data-var="--radius-pill">--radius-pill</code><span class="shape__val">100px</span></div></div><div class="hb-sub">Radien je Theme</div><table class="tbl"><thead><tr><th>Rolle</th><th>assesi.eu</th><th>assesi-label.eu</th></tr></thead><tbody><tr><td><code>--r-card</code></td><td><span class="rpv" style="border-radius:10px"></span> 10px</td><td><span class="rpv rpv--lime" style="border-radius:22px"></span> 22px</td></tr><tr><td><code>--r-btn</code></td><td><span class="rpv" style="border-radius:10px"></span> 10px</td><td><span class="rpv rpv--lime" style="border-radius:100px"></span> 100px</td></tr><tr><td><code>--r-chip</code></td><td><span class="rpv" style="border-radius:6px"></span> 6px</td><td><span class="rpv rpv--lime" style="border-radius:100px"></span> 100px</td></tr></tbody></table></div><div class="hb-card"><div class="hb-sub">Elevation / Schatten</div><div class="shape-grid"><div class="shape"><div class="shape__box shape__box--white" style="box-shadow:var(--shadow-xs)"></div><code class="copy" data-hex="0 1px 2px rgba(2,0,68,.06)" data-var="--shadow-xs">--shadow-xs</code></div><div class="shape"><div class="shape__box shape__box--white" style="box-shadow:var(--shadow-sm)"></div><code class="copy" data-hex="0 2px 8px rgba(2,0,68,.06)" data-var="--shadow-sm">--shadow-sm</code></div><div class="shape"><div class="shape__box shape__box--white" style="box-shadow:var(--shadow-md)"></div><code class="copy" data-hex="0 8px 24px rgba(2,0,68,.10)" data-var="--shadow-md">--shadow-md</code></div><div class="shape"><div class="shape__box shape__box--white" style="box-shadow:var(--shadow-lg)"></div><code class="copy" data-hex="0 18px 48px rgba(2,0,68,.14)" data-var="--shadow-lg">--shadow-lg</code></div></div><p class="note">assesi.eu nutzt feine Linien (Hairlines) statt Schatten; assesi-label.eu setzt auf weiche Schatten (<code>--card-shadow</code>).</p></div></section>
+  <section class="hb-sec" id="abstaende"><div class="hb-sec__h">Abstände</div><p class="hb-sec__d">Konsistente Spacing-Skala für Rhythmus und Sektionsabstände.</p><div class="hb-card"><div class="hb-sub">Abstands-Skala</div><div class="sp-row"><span class="sp-bar" style="width:var(--space-1)"></span><code class="copy" data-hex=".25rem" data-var="--space-1">--space-1</code><span class="sp-val">.25rem</span></div><div class="sp-row"><span class="sp-bar" style="width:var(--space-2)"></span><code class="copy" data-hex=".5rem" data-var="--space-2">--space-2</code><span class="sp-val">.5rem</span></div><div class="sp-row"><span class="sp-bar" style="width:var(--space-3)"></span><code class="copy" data-hex=".75rem" data-var="--space-3">--space-3</code><span class="sp-val">.75rem</span></div><div class="sp-row"><span class="sp-bar" style="width:var(--space-4)"></span><code class="copy" data-hex="1rem" data-var="--space-4">--space-4</code><span class="sp-val">1rem</span></div><div class="sp-row"><span class="sp-bar" style="width:var(--space-5)"></span><code class="copy" data-hex="1.5rem" data-var="--space-5">--space-5</code><span class="sp-val">1.5rem</span></div><div class="sp-row"><span class="sp-bar" style="width:var(--space-6)"></span><code class="copy" data-hex="2rem" data-var="--space-6">--space-6</code><span class="sp-val">2rem</span></div><div class="sp-row"><span class="sp-bar" style="width:var(--space-7)"></span><code class="copy" data-hex="2.5rem" data-var="--space-7">--space-7</code><span class="sp-val">2.5rem</span></div><div class="sp-row"><span class="sp-bar" style="width:var(--space-8)"></span><code class="copy" data-hex="3rem" data-var="--space-8">--space-8</code><span class="sp-val">3rem</span></div><div class="sp-row"><span class="sp-bar" style="width:var(--space-9)"></span><code class="copy" data-hex="4rem" data-var="--space-9">--space-9</code><span class="sp-val">4rem</span></div><div class="sp-row"><span class="sp-bar" style="width:var(--space-10)"></span><code class="copy" data-hex="5rem" data-var="--space-10">--space-10</code><span class="sp-val">5rem</span></div><div class="sp-row"><span class="sp-bar" style="width:var(--space-11)"></span><code class="copy" data-hex="6rem" data-var="--space-11">--space-11</code><span class="sp-val">6rem</span></div><div class="sp-row"><span class="sp-bar" style="width:var(--space-12)"></span><code class="copy" data-hex="8rem" data-var="--space-12">--space-12</code><span class="sp-val">8rem</span></div></div></section>
+  <section class="hb-sec" id="bewegung"><div class="hb-sec__h">Bewegung</div><p class="hb-sec__d">Dauer und Easing für ruhige, einheitliche Übergänge.</p><div class="hb-card"><div class="hb-sub">Dauer &amp; Easing</div><div class="mo-grid"><code class="copy" data-hex="0.18s" data-var="--dur-fast">--dur-fast · .18s</code><code class="copy" data-hex="0.32s" data-var="--dur-base">--dur-base · .32s</code><code class="copy" data-hex="0.6s" data-var="--dur-slow">--dur-slow · .6s</code><code class="copy" data-hex="cubic-bezier(.22,1,.36,1)" data-var="--ease-out">--ease-out</code><code class="copy" data-hex="cubic-bezier(.65,0,.35,1)" data-var="--ease-inout">--ease-inout</code></div></div></section>
+  <section class="hb-sec" id="komponenten"><div class="hb-sec__h">Komponenten</div><p class="hb-sec__d">Dieselben token-getriebenen Bausteine in beiden Charakteren — links institutionell, rechts wärmer.</p><div class="hb-stage"><section class="panel theme-assesi"><span class="panel__tag">assesi.eu — <b>institutionell</b></span><div class="block"><div class="block__label">Sektionskopf</div><div class="eyebrow">DIN 77237 · Verband</div><h3 class="sec-title">Der europäische Standard für <em>nachhaltige Versicherer</em></h3><p class="sec-lede">Normbasiert, transparent, prüfbar.</p></div><div class="block"><div class="block__label">Buttons</div><div class="btn-row"><a class="btn btn--primary" href="#">Primär</a><a class="btn btn--cta" href="#">CTA</a><a class="btn btn--ghost" href="#">Ghost</a></div></div><div class="block"><div class="block__label">Karten-Raster</div><div class="v-grid"><article class="v-card"><div class="v-card__icon"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div><h4 class="v-card__title">Compliance</h4><p class="v-card__desc">Token-getriebene Karte — Radius und Tiefe kommen aus dem Theme.</p></article></div></div><div class="block"><div class="block__label">Standard-Karte (Hero)</div><aside class="std-card"><div class="std-card__label">Was Mitgliedschaft bedeutet</div><div class="std-row"><span class="std-row__num">01</span><span><span class="std-row__t">Sichtbarkeit</span><span class="std-row__d">Listung im europäischen Verbund.</span></span></div><div class="std-row"><span class="std-row__num">02</span><span><span class="std-row__t">Transparenz</span><span class="std-row__d">Beiträge offen ausgewiesen.</span></span></div><div class="std-card__foot"><span>Getragen von</span><span class="supporter">DBU</span></div></aside></div><div class="block"><div class="block__label">Navigation (Navy)</div><nav class="nav"><div class="nav__in"><a class="brand" href="#"><span class="brand__mark">A</span><span><span class="brand__name">ASSESI</span><span class="brand__tag">Sustainable Insurers</span></span></a><div class="nav__links"><a href="#">Vorteile</a><a href="#">Verlauf</a><a href="#">Mitmachen</a></div><div class="nav__util"><div class="lang"><a href="#" aria-current="true">DE</a><a href="#">EN</a></div><a class="nav__cta" href="#">Mitglied werden</a></div></div></nav></div><div class="block"><div class="block__label">Timeline → Accordion</div><div class="acc" data-acc><div class="acc__item is-done"><button class="acc__head" aria-expanded="false"><span class="acc__dot">✓</span><span class="acc__meta"><span class="acc__date">2023</span><span class="acc__title">Gründung</span></span><span class="acc__chev">▾</span></button><div class="acc__panel"><div class="acc__panel-inner">Zusammenschluss der Gründungsversicherer.</div></div></div><div class="acc__item is-active"><button class="acc__head" aria-expanded="true"><span class="acc__dot">2</span><span class="acc__meta"><span class="acc__date">2025 · laufend</span><span class="acc__title">Pilotmitglieder</span></span><span class="acc__chev">▾</span></button><div class="acc__panel"><div class="acc__panel-inner">Aufbau der Webpräsenz und erste Pilotversicherer.</div></div></div></div></div></section><section class="panel theme-label"><span class="panel__tag">assesi-label.eu — <b>wärmer</b></span><div class="block"><div class="block__label">Sektionskopf</div><div class="eyebrow">EmpCo-konform</div><h3 class="sec-title">Das Siegel für <em>nachhaltige</em> Versicherungsprodukte</h3><p class="sec-lede">Geprüft nach klaren Kriterien.</p></div><div class="block"><div class="block__label">Buttons (Pill)</div><div class="btn-row"><a class="btn btn--primary" href="#">Primär</a><a class="btn btn--cta" href="#">CTA</a><a class="btn btn--ghost" href="#">Ghost</a></div></div><div class="block"><div class="block__label">Karten-Raster</div><div class="v-grid"><article class="v-card"><div class="v-card__icon"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div><h4 class="v-card__title">Compliance</h4><p class="v-card__desc">Token-getriebene Karte — Radius und Tiefe kommen aus dem Theme.</p></article></div></div><div class="block"><div class="block__label">Siegel-Showcase</div><aside class="showcase"><div class="seal"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg><span>Zertifiziert</span></div><div class="showcase__product"><div class="showcase__pname">Nachhaltige Hausratversicherung</div><div class="showcase__issuer">ausgestellt für <b>Muster Versicherung AG</b></div></div><div class="crit"><div class="crit-row"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>Nachhaltige Kapitalanlage</div><div class="crit-row"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>Transparente Schadenregulierung</div></div></aside></div><div class="block"><div class="block__label">Zielgruppen-Karte</div><div class="split"><article class="aud-card"><div class="aud-card__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg></div><div class="aud-card__k">Für Verbraucher</div><h4 class="aud-card__t">Einfach erkennen</h4><p class="aud-card__d">Kein Greenwashing-Rätselraten.</p><ul class="aud-list"><li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>Auf einen Blick erkennbar</li><li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>Unabhängig geprüft</li></ul></article></div></div><div class="block"><div class="block__label">Prozess-Stepper</div><div class="proc"><div class="proc-step"><div class="proc-step__n">1</div><div class="proc-step__t">Antrag</div><div class="proc-step__d">Produktdaten einreichen.</div></div><div class="proc-step is-active"><div class="proc-step__n">2</div><div class="proc-step__t">Prüfung</div><div class="proc-step__d">Abgleich mit dem Katalog.</div></div></div></div><div class="block"><div class="block__label">Such-Mock (Produktdatenbank)</div><div class="search-mock"><input type="text" readonly placeholder="Produkt suchen …" aria-label="Demo"><button type="button">Suchen</button></div></div><div class="block"><div class="block__label">Timeline → Accordion</div><div class="acc" data-acc><div class="acc__item is-done"><button class="acc__head" aria-expanded="false"><span class="acc__dot">✓</span><span class="acc__meta"><span class="acc__date">2023</span><span class="acc__title">Gründung</span></span><span class="acc__chev">▾</span></button><div class="acc__panel"><div class="acc__panel-inner">Zusammenschluss der Gründungsversicherer.</div></div></div><div class="acc__item is-active"><button class="acc__head" aria-expanded="true"><span class="acc__dot">2</span><span class="acc__meta"><span class="acc__date">2025 · laufend</span><span class="acc__title">Pilotmitglieder</span></span><span class="acc__chev">▾</span></button><div class="acc__panel"><div class="acc__panel-inner">Aufbau der Webpräsenz und erste Pilotversicherer.</div></div></div></div></div></section></div></section>
+
+  <footer class="hb-foot">ASSESI Design-System · generiert aus tokens.css + components.css.
+  Lime/Gold nie als Text auf Weiß (WCAG AA).</footer>
+</div>
+
+<script>
+/* Klick-zum-Kopieren: Farb-Swatches (HEX/Wert oder CSS-Variable je nach Modus) */
+function copyText(t){
+  if(navigator.clipboard && navigator.clipboard.writeText){return navigator.clipboard.writeText(t);}
+  return new Promise(function(res){var a=document.createElement('textarea');a.value=t;
+    a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.focus();a.select();
+    try{document.execCommand('copy');}catch(e){}a.remove();res();});
+}
+function mode(){var r=document.querySelector('input[name="cmode"]:checked');return r?r.value:'hex';}
+document.querySelectorAll('.sw').forEach(function(el){
+  el.addEventListener('click',function(){
+    var v=mode()==='var'?el.getAttribute('data-var'):el.getAttribute('data-hex');
+    copyText(v).then(function(){el.classList.add('is-copied');
+      setTimeout(function(){el.classList.remove('is-copied');},1100);});
+  });
+});
+/* Inline-Code-Chips: kopieren den Wert (bzw. Variable im var-Modus) */
+document.querySelectorAll('.copy').forEach(function(el){
+  el.setAttribute('tabindex','0');el.setAttribute('role','button');
+  function go(){var v=mode()==='var'?(el.getAttribute('data-var')||el.getAttribute('data-hex')):el.getAttribute('data-hex');
+    copyText(v).then(function(){el.classList.add('is-copied');
+      setTimeout(function(){el.classList.remove('is-copied');},1100);});}
+  el.addEventListener('click',go);
+  el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});
+});
+/* Accordion (wie ui.js) */
+document.querySelectorAll('[data-acc]').forEach(function(acc){
+  var heads=[].slice.call(acc.querySelectorAll('.acc__head'));
+  function setOpen(h,open){h.setAttribute('aria-expanded',open?'true':'false');
+    var p=h.nextElementSibling;p.style.maxHeight=open?p.scrollHeight+'px':null;}
+  heads.forEach(function(h){
+    if(h.getAttribute('aria-expanded')==='true')setOpen(h,true);
+    h.addEventListener('click',function(){var o=h.getAttribute('aria-expanded')==='true';
+      heads.forEach(function(x){setOpen(x,false);});setOpen(h,!o);});
+  });
+});
+</script>
+
+</body>
+</html>
