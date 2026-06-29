@@ -40,10 +40,11 @@ Assesi/
   als auch native Elementor-Widgets (Icon-Box, Akkordeon) markenkonform.
 - **functions.php** setzt die Theme-Klasse domain-abhängig (`assesi-label.eu` →
   `theme-label`, sonst `theme-assesi`) und bindet `inc/schema.php` ein.
-- **elementor/*.json** sind import-fähige Vorlagen: Startseite (HTML-Route + native
-  Route), Header und Footer (Theme-Builder-Teile).
+- **elementor/*.json** sind import-fähige Vorlagen je Domain: Startseite (HTML-Route +
+  native Route), Header und Footer (Theme-Builder-Teile). Details: `elementor/README.md`.
 
 ## Stand
 
-assesi.eu ist nativ aufgebaut (Header + Startseite + Footer). assesi-label.eu folgt
-im warmen Muster. Details und Versionshinweise: `theme/assesi-child/README.md`.
+assesi.eu und assesi-label.eu sind nativ aufgebaut (Header + Startseite + Footer als
+Elementor-Vorlagen, je HTML- und native Route). Details und Versionshinweise:
+`theme/assesi-child/README.md`.
