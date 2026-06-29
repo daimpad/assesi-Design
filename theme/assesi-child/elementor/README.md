@@ -11,6 +11,8 @@ assesi.eu                              assesi-label.eu
   assesi-eu-startseite.json  (page,HTML) assesi-label-startseite.json  (page,HTML)
   assesi-eu-startseite-nativ.json        assesi-label-startseite-nativ.json
                              (page,nativ)                              (page,nativ)
+  assesi-eu-impressum.json   (page)      assesi-label-impressum.json   (page)
+  assesi-eu-datenschutz.json (page)      assesi-label-datenschutz.json (page)
 ```
 
 Voraussetzung in beiden Fällen: das **ASSESI-Child-Theme ist aktiv** (lädt Tokens,
@@ -52,6 +54,22 @@ Visuals bleiben pixelgenau im HTML-Widget:
 
 Die Label-Titel nutzen in der HTML-Route `<em>` für die Lime-Unterstreichung
 (`.theme-label .sec-title em`); Lime/Gold bleiben Flächen-/Akzentfarben, nie Textfarbe.
+
+## Pflichtseiten (Impressum + Datenschutz)
+
+`*-impressum.json` und `*-datenschutz.json` sind eigenständige Seiten je Domain
+(`type: page`, Default-Template — die Theme-Builder-Kopf-/Fußzeile umrahmt sie). Inhalt
+sind native **Überschrift**-/**Text-Editor**-Widgets, von der Redaktion ohne HTML editierbar.
+
+**Gerüst, kein fertiger Rechtstext.** Jede konkrete Angabe ist als `[TODO]` markiert und
+vor dem Livegang durch die echten Daten zu ersetzen sowie rechtlich zu prüfen — eine
+gelb hinterlegte Hinweisbox oben auf jeder Seite weist darauf hin (vor Veröffentlichung
+entfernen). Impressum folgt § 5 DDG / § 18 MStV, die Datenschutzerklärung der DSGVO.
+
+> **Google Fonts / DSGVO:** Die Datenschutz-Seiten enthalten einen Abschnitt zu Google Fonts.
+> Das Theme lädt die Schriften aktuell vom Google-CDN (`functions.php`), wodurch die
+> Besucher-IP an Google übermittelt wird. Empfehlung: Schriften self-hosten — dann entfällt
+> die Übermittlung. Bis dahin ist der Abschnitt als `[TODO]` markiert.
 
 ## Hinweise
 

@@ -1,0 +1,274 @@
+{
+ "version": "0.4",
+ "title": "Impressum (assesi-label.eu)",
+ "type": "page",
+ "content": [
+  {
+   "id": "lg000049",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "width": {
+     "unit": "px",
+     "size": 880,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "72",
+     "right": "0",
+     "bottom": "96",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "lg000031",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Impressum",
+      "header_size": "h1",
+      "title_color": "#020044",
+      "_css_classes": "sec-title"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000032",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p style=\"background:#FFF8DA;border-left:4px solid #F5C503;border-radius:8px;padding:14px 18px;margin:0 0 32px;color:#020044;font-size:.92rem;line-height:1.6\"><strong>Hinweis (vor Livegang entfernen):</strong> Diese Seite ist ein Ger\u00fcst. Alle mit <code>[TODO]</code> markierten Angaben sind durch die tats\u00e4chlichen Daten zu ersetzen und vor Ver\u00f6ffentlichung rechtlich zu pr\u00fcfen. Mustertexte ersetzen keine Rechtsberatung.</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000033",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Angaben gem\u00e4\u00df \u00a7 5 DDG",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000034",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>[TODO: Name des Diensteanbieters / Rechtsform]<br>[TODO: Stra\u00dfe und Hausnummer]<br>[TODO: PLZ und Ort]<br>[TODO: Land]</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000035",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Vertreten durch",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000036",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>[TODO: vertretungsberechtigte Person(en)]</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000037",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Kontakt",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000038",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Telefon: [TODO]<br>E-Mail: <a href=\"mailto:info@assesi-label.eu\" style=\"color:#3055A0\">info@assesi-label.eu</a><br>Web: <a href=\"https://assesi-label.eu\" style=\"color:#3055A0\">https://assesi-label.eu</a></p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000039",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Registereintrag",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg00003a",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>[TODO: falls eingetragen \u2014 Registergericht und Registernummer, z. B. Vereins-/Handelsregister. Andernfalls diesen Abschnitt entfernen.]</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg00003b",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Umsatzsteuer-Identifikationsnummer",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg00003c",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>[TODO: USt-IdNr. gem\u00e4\u00df \u00a7 27a UStG, falls vorhanden \u2014 sonst entfernen.]</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg00003d",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Redaktionell verantwortlich (\u00a7 18 Abs. 2 MStV)",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg00003e",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>[TODO: Name und Anschrift der verantwortlichen Person]</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg00003f",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "EU-Streitschlichtung",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000040",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Die Europ\u00e4ische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href=\"https://ec.europa.eu/consumers/odr/\" style=\"color:#3055A0\">https://ec.europa.eu/consumers/odr/</a>. Unsere E-Mail-Adresse finden Sie oben in diesem Impressum.</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000041",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Verbraucherstreitbeilegung / Universalschlichtungsstelle",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000042",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>[TODO: Angabe, ob eine Bereitschaft oder Verpflichtung zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle besteht. Standardfall: \u201eWir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.\"]</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000043",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Haftung f\u00fcr Inhalte",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000044",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Als Diensteanbieter sind wir gem\u00e4\u00df \u00a7 7 Abs. 1 DDG f\u00fcr eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach \u00a7\u00a7 8 bis 10 DDG sind wir als Diensteanbieter jedoch nicht verpflichtet, \u00fcbermittelte oder gespeicherte fremde Informationen zu \u00fcberwachen oder nach Umst\u00e4nden zu forschen, die auf eine rechtswidrige T\u00e4tigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unber\u00fchrt.</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000045",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Haftung f\u00fcr Links",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000046",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Unser Angebot enth\u00e4lt gegebenenfalls Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb k\u00f6nnen wir f\u00fcr diese fremden Inhalte auch keine Gew\u00e4hr \u00fcbernehmen. F\u00fcr die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000047",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Urheberrecht",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000048",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beitr\u00e4ge Dritter sind als solche gekennzeichnet. Die Vervielf\u00e4ltigung, Bearbeitung, Verbreitung und jede Art der Verwertung au\u00dferhalb der Grenzen des Urheberrechtes bed\u00fcrfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes"
+ }
+}
