@@ -1,0 +1,254 @@
+{
+ "version": "0.4",
+ "title": "Datenschutzerkl\u00e4rung (assesi.eu)",
+ "type": "page",
+ "content": [
+  {
+   "id": "lg000030",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "width": {
+     "unit": "px",
+     "size": 880,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "72",
+     "right": "0",
+     "bottom": "96",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "lg00001a",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Datenschutzerkl\u00e4rung",
+      "header_size": "h1",
+      "title_color": "#020044",
+      "_css_classes": "sec-title"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg00001b",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p style=\"background:#FFF8DA;border-left:4px solid #F5C503;border-radius:8px;padding:14px 18px;margin:0 0 32px;color:#020044;font-size:.92rem;line-height:1.6\"><strong>Hinweis (vor Livegang entfernen):</strong> Diese Seite ist ein Ger\u00fcst. Alle mit <code>[TODO]</code> markierten Angaben sind durch die tats\u00e4chlichen Daten zu ersetzen und vor Ver\u00f6ffentlichung rechtlich zu pr\u00fcfen. Mustertexte ersetzen keine Rechtsberatung.</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg00001c",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "1. Verantwortlicher",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg00001d",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Verantwortlich f\u00fcr die Datenverarbeitung auf dieser Website ist:</p><p>[TODO: Name / Rechtsform]<br>[TODO: Anschrift]<br>E-Mail: <a href=\"mailto:info@assesi.eu\" style=\"color:#3055A0\">info@assesi.eu</a></p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg00001e",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "2. Hosting",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg00001f",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Diese Website wird bei einem externen Dienstleister gehostet [TODO: Name und Anschrift des Hosting-Anbieters]. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Mit dem Anbieter besteht ein Vertrag \u00fcber Auftragsverarbeitung (AVV) gem\u00e4\u00df Art. 28 DSGVO [TODO: best\u00e4tigen]. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer sicheren und effizienten Bereitstellung).</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000020",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "3. Allgemeine Hinweise und Rechtsgrundlagen",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000021",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Wir verarbeiten personenbezogene Daten nur im Rahmen der gesetzlichen Bestimmungen (DSGVO, BDSG). Soweit wir f\u00fcr Verarbeitungsvorg\u00e4nge Ihre Einwilligung einholen, dient Art. 6 Abs. 1 lit. a DSGVO als Rechtsgrundlage. Bei der Verarbeitung zur Erf\u00fcllung eines Vertrags ist Art. 6 Abs. 1 lit. b DSGVO Rechtsgrundlage; zur Erf\u00fcllung rechtlicher Verpflichtungen Art. 6 Abs. 1 lit. c DSGVO; zur Wahrung berechtigter Interessen Art. 6 Abs. 1 lit. f DSGVO.</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000022",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "4. Server-Logfiles",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000023",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Der Provider der Seiten erhebt und speichert automatisch Informationen in sogenannten Server-Logfiles, die Ihr Browser automatisch \u00fcbermittelt. Dies sind: Browsertyp und -version, verwendetes Betriebssystem, Referrer-URL, Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage und die IP-Adresse. Eine Zusammenf\u00fchrung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. [TODO: Speicherdauer beim Hoster pr\u00fcfen und angeben.]</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000024",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "5. Schriftarten (Google Fonts)",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000025",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Diese Website bindet die Schriftarten \u201eHanken Grotesk\" und \u201eInter\" \u00fcber Google Fonts ein. Anbieter ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Beim Aufruf einer Seite l\u00e4dt Ihr Browser die ben\u00f6tigten Schriften von Servern von Google, um Texte korrekt darzustellen. Dabei wird Ihre IP-Adresse an Google \u00fcbermittelt; eine \u00dcbermittlung in die USA kann nicht ausgeschlossen werden.</p><p style=\"background:#FFF8DA;border-left:4px solid #F5C503;border-radius:8px;padding:12px 16px;color:#020044;font-size:.92rem\"><strong>[TODO / Empfehlung:</strong> Werden Google Fonts vom Google-CDN geladen, ist die IP-\u00dcbermittlung ohne Einwilligung datenschutzrechtlich kritisch (vgl. LG M\u00fcnchen I, Urt. v. 20.01.2022 \u2014 3 O 17493/20). Empfehlung: Schriften <em>self-hosten</em> (lokal ausliefern); dann entf\u00e4llt die \u00dcbermittlung an Google und dieser Abschnitt kann angepasst werden. Andernfalls Rechtsgrundlage/Einwilligung (Consent-Banner) kl\u00e4ren.]</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000026",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "6. Cookies",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000027",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>[TODO: Angabe, ob und welche Cookies gesetzt werden. Das Theme selbst setzt keine Cookies; WordPress, Plugins (z. B. SEO, Consent) oder eingebettete Dienste k\u00f6nnen dies tun. Vor Livegang pr\u00fcfen und ggf. ein Consent-Tool erg\u00e4nzen.]</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000028",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "7. Kontaktaufnahme",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg000029",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Wenn Sie uns per E-Mail kontaktieren, werden Ihre Angaben zur Bearbeitung der Anfrage und f\u00fcr den Fall von Anschlussfragen bei uns gespeichert. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, sofern die Anfrage mit einem Vertrag zusammenh\u00e4ngt, andernfalls Art. 6 Abs. 1 lit. f DSGVO. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg00002a",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "8. Ihre Rechte",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg00002b",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft \u00fcber Ihre gespeicherten personenbezogenen Daten (Art. 15 DSGVO), Berichtigung (Art. 16), L\u00f6schung (Art. 17), Einschr\u00e4nkung der Verarbeitung (Art. 18), Daten\u00fcbertragbarkeit (Art. 20) sowie ein Widerspruchsrecht (Art. 21). Eine erteilte Einwilligung k\u00f6nnen Sie jederzeit mit Wirkung f\u00fcr die Zukunft widerrufen. Wenden Sie sich hierzu an <a href=\"mailto:info@assesi.eu\" style=\"color:#3055A0\">info@assesi.eu</a>.</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg00002c",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "9. Beschwerderecht bei der Aufsichtsbeh\u00f6rde",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg00002d",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Ihnen steht ein Beschwerderecht bei einer Datenschutz-Aufsichtsbeh\u00f6rde zu, insbesondere in dem Mitgliedstaat Ihres Aufenthaltsorts, Arbeitsplatzes oder des Orts des mutma\u00dflichen Versto\u00dfes. [TODO: zust\u00e4ndige Landes-/Aufsichtsbeh\u00f6rde nach Sitz des Verantwortlichen angeben.]</p>"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg00002e",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "10. Aktualit\u00e4t und \u00c4nderung dieser Datenschutzerkl\u00e4rung",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "lg00002f",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Diese Datenschutzerkl\u00e4rung hat den Stand [TODO: Datum]. Durch die Weiterentwicklung der Website oder ge\u00e4nderte gesetzliche bzw. beh\u00f6rdliche Vorgaben kann es notwendig werden, sie anzupassen.</p>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes"
+ }
+}

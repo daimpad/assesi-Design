@@ -71,6 +71,9 @@ demselben Muster mit den jeweiligen Seiten.
   **nicht** Textfarbe auf Weiß (Kontrast < WCAG AA).
 - Logo ist Platzhalter, bis die Wortbildmarke final ist; die Token-Struktur bleibt
   davon unberührt.
+- Version 0.13.0 — Pflichtseiten Impressum + Datenschutzerklärung als eigenständige
+  Vorlagen je Domain (Gerüst mit `[TODO]`-Platzhaltern, nativ editierbar; inkl.
+  Google-Fonts/DSGVO-Hinweis). Siehe `elementor/README.md`.
 - Version 0.12.0 — assesi-label.eu nativ als Elementor-Vorlagen (Header, Footer,
   Startseite HTML-Route + native Route) im warmen Muster, parallel zu assesi.eu;
   siehe `elementor/README.md`.
