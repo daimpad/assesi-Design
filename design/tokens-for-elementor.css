@@ -50,8 +50,8 @@
   --space-11:6rem; --space-12:8rem;
   --section-y:clamp(4rem,8vw,6rem); --section-x:clamp(1.25rem,5vw,3.5rem);
 
-  /* ---- Radien ---- */
-  --radius-sm:8px; --radius-md:12px; --radius-lg:16px; --radius-xl:24px; --radius-pill:100px;
+  /* ---- Radien: das System sind drei Rollen — Karte/Button/Chip — je Theme gesetzt
+     (siehe --r-card/--r-btn/--r-chip weiter unten). Keine separate Stufen-Skala nötig. ---- */
 
   /* ---- Elevation (Navy-getönt) ---- */
   --shadow-xs:0 1px 2px rgba(2,0,68,.06); --shadow-sm:0 2px 8px rgba(2,0,68,.06);

@@ -78,6 +78,10 @@ demselben Muster mit den jeweiligen Seiten.
   **nicht** Textfarbe auf Weiß (Kontrast < WCAG AA).
 - Logo ist Platzhalter, bis die Wortbildmarke final ist; die Token-Struktur bleibt
   davon unberührt.
+- Version 0.17.0 — Handbuch-Feinschliff: Größen-Skala in beiden Schriften, Schnitte je
+  Schrift; ungenutzte Radien-Kern-Skala entfernt (System = drei Rollen Karte/Button/Chip);
+  Domains im Text gefettet, Geviertstriche zu Bindestrichen; Bewegungs-Button mit
+  CI-Farbzyklus; „Als PDF speichern" mit eigenem Druck-Stylesheet; Intro in Absätze.
 - Version 0.16.0 — CI-Handbuch unter sauberer URL `/handbuch` (beide Domains,
   `inc/handbook-route.php`). Driftfrei: Handbuch liest Token-Werte zur Laufzeit,
   `elementor-globals.php` parst die CI-Hex aus `tokens.css`. Konsistenz-Werkzeug
