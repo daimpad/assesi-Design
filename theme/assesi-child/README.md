@@ -14,7 +14,8 @@ assesi-child/
 ├─ style.css              Theme-Header + Platz für Overrides
 ├─ functions.php          Enqueue (Fonts, Tokens, Components, JS) + Body-Klasse
 ├─ inc/
-│  └─ schema.php          Schema.org JSON-LD (Organization, WebSite, Breadcrumbs)
+│  ├─ schema.php          Schema.org JSON-LD (Organization, WebSite, Breadcrumbs)
+│  └─ elementor-globals.php  Global Colors/Fonts der CI in den Elementor-Kit (Code)
 └─ assets/
    ├─ css/
    │  ├─ tokens.css       Design-Tokens — Single Source of Truth
@@ -48,11 +49,16 @@ demselben Muster mit den jeweiligen Seiten.
   aktiv ist — auch in Elementor-Widgets, sofern diese die CSS-Variablen nutzen oder die
   Komponenten-Klassen tragen. Die zusätzliche, UI-editierbare Token-Quelle in
   **Customizer → Zusätzliches CSS** wird später ausgegeben und überschreibt die Basis.
-- **Global Colors** in Elementor zusätzlich auf Navy/Blau/Gold/Lime mappen, damit
-  der Editor dieselben Werte anbietet.
-- **Global Fonts**: Display = Hanken Grotesk, Body = Inter. Greift `functions.php`,
-  kann die Basis-Bindung in `components.css` (Body/Headings) entfallen — dort
-  entsprechend auskommentieren.
+- **Global Colors & Global Fonts** werden automatisch gesetzt: `inc/elementor-globals.php`
+  schreibt die CI-Farben (System: Navy/Blau/Navy/Gold; zusätzlich CI Gold/Navy/Blau/Lime)
+  und die Schriften (Display = Hanken Grotesk, Fließtext = Inter) einmalig in den aktiven
+  Elementor-Kit. So bietet der Editor von sich aus die Markenwerte an — kein manuelles
+  Pflegen. Bei CI-Änderung `ASSESI_KIT_VERSION` erhöhen, dann wird neu gesetzt.
+- Die Schriften sind als **self-hosted** registriert; Elementors Google-Fonts-Ausgabe ist
+  abgeschaltet (`elementor/frontend/print_google_fonts`), damit keine Schriften doch von
+  Google geladen werden.
+- **Produktionsbasis ist die native Route** der Startseiten-Vorlagen; HTML-Route und
+  One-Pager sind pixelgenaue Referenzen zur Abnahme.
 - Komponenten lassen sich als HTML-Widget oder Elementor-Template mit den
   dokumentierten Klassen (`.hero`, `.v-card`, `.acc`, `.cta-band`, `.footer` …) einsetzen.
 
@@ -71,6 +77,10 @@ demselben Muster mit den jeweiligen Seiten.
   **nicht** Textfarbe auf Weiß (Kontrast < WCAG AA).
 - Logo ist Platzhalter, bis die Wortbildmarke final ist; die Token-Struktur bleibt
   davon unberührt.
+- Version 0.15.0 — Elementor-Integration: Global Colors + Global Fonts werden per
+  Code aus der CI in den Elementor-Kit gesetzt (`inc/elementor-globals.php`),
+  Schriften als self-hosted registriert und Elementors Google-Fonts abgeschaltet.
+  Native Route als Produktionsbasis dokumentiert.
 - Version 0.14.0 — Schriften selbst gehostet (Hanken Grotesk + Inter unter
   `assets/fonts/`, kein Google-CDN → keine IP-Übermittlung; Datenschutz-Vorlagen
   entsprechend angepasst). CI-Handbuch `handbook.html` überarbeitet und über
