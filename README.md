@@ -25,7 +25,9 @@ Assesi/
 │  ├─ functions.php           Enqueue + domain-abhängige Body-Klasse
 │  └─ style.css               Theme-Header (Version)
 └─ design/                    Referenzen & Snippets (nicht deploybar)
-   ├─ styleguide.html         Lebende Komponenten-Referenz (beide Themes)
+   ├─ handbook.html           CI-Handbuch (beide Präsenzen): Farben klick-kopierbar,
+   │                          Typografie, Formen, Tiefe, Abstände, Komponenten
+   ├─ styleguide.html         Komponenten-Referenz, beide Themes nebeneinander
    ├─ assesi-eu-onepager.html      Validierte HTML-Referenz assesi.eu
    ├─ assesi-label-onepager.html   Validierte HTML-Referenz assesi-label.eu
    └─ tokens-for-elementor.css     Tokens zum Einfügen in Customizer/Elementor
