@@ -21,6 +21,7 @@ if ( ! function_exists( 'assesi_is_label' ) ) {
 /* Module */
 require_once get_stylesheet_directory() . '/inc/schema.php';
 require_once get_stylesheet_directory() . '/inc/elementor-globals.php';
+require_once get_stylesheet_directory() . '/inc/handbook-route.php';
 
 /* ------------------------------------------------------------
  * Assets laden (Reihenfolge: Parent → Fonts → Tokens → Components → JS)

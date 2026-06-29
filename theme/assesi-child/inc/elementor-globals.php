@@ -16,6 +16,32 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 /* Bei CI-Änderung erhöhen — dann wird der Kit erneut aus den CI-Werten gesetzt. */
 if ( ! defined( 'ASSESI_KIT_VERSION' ) ) { define( 'ASSESI_KIT_VERSION', '1' ); }
 
+/**
+ * CI-Kernfarben aus tokens.css lesen (Single Source of Truth).
+ * Fällt auf die verbindlichen Werte zurück, falls die Datei fehlt/unlesbar ist.
+ */
+function assesi_ci_colors() {
+	$defaults = array(
+		'gold' => '#F5C503', 'navy' => '#020044', 'blue' => '#3055A0',
+		'lime' => '#B4CD00', 'white' => '#FFFFFF',
+	);
+	$file = get_stylesheet_directory() . '/assets/css/tokens.css';
+	if ( ! is_readable( $file ) ) { return $defaults; }
+
+	$css = file_get_contents( $file );
+	$map = array(
+		'gold' => '--ci-gold', 'navy' => '--ci-navy', 'blue' => '--ci-blue',
+		'lime' => '--ci-lime', 'white' => '--ci-white',
+	);
+	$out = $defaults;
+	foreach ( $map as $key => $var ) {
+		if ( preg_match( '/' . preg_quote( $var, '/' ) . '\s*:\s*(#[0-9A-Fa-f]{3,8})/', $css, $m ) ) {
+			$out[ $key ] = strtoupper( $m[1] );
+		}
+	}
+	return $out;
+}
+
 /* ------------------------------------------------------------
  * 1) Schriften als self-hosted bei Elementor registrieren
  *    -> erscheinen im Font-Picker unter eigener Gruppe; Elementor versucht NICHT,
@@ -56,20 +82,22 @@ add_action( 'admin_init', function () {
 		$settings = get_post_meta( $kit_id, '_elementor_page_settings', true );
 		if ( ! is_array( $settings ) ) { $settings = array(); }
 
+		$c = assesi_ci_colors(); // aus tokens.css
+
 		// Die vier System-Farbrollen des Editors
 		$settings['system_colors'] = array(
-			array( '_id' => 'primary',   'title' => 'Navy',      'color' => '#020044' ),
-			array( '_id' => 'secondary', 'title' => 'Blau',      'color' => '#3055A0' ),
-			array( '_id' => 'text',      'title' => 'Navy Text', 'color' => '#020044' ),
-			array( '_id' => 'accent',    'title' => 'Gold',      'color' => '#F5C503' ),
+			array( '_id' => 'primary',   'title' => 'Navy',      'color' => $c['navy'] ),
+			array( '_id' => 'secondary', 'title' => 'Blau',      'color' => $c['blue'] ),
+			array( '_id' => 'text',      'title' => 'Navy Text', 'color' => $c['navy'] ),
+			array( '_id' => 'accent',    'title' => 'Gold',      'color' => $c['gold'] ),
 		);
 
 		// Zusätzliche Marken-Swatches (alle vier CI-Farben benannt verfügbar)
 		$settings['custom_colors'] = array(
-			array( '_id' => 'assesigold', 'title' => 'CI Gold', 'color' => '#F5C503' ),
-			array( '_id' => 'assesinavy', 'title' => 'CI Navy', 'color' => '#020044' ),
-			array( '_id' => 'assesiblue', 'title' => 'CI Blau', 'color' => '#3055A0' ),
-			array( '_id' => 'assesilime', 'title' => 'CI Lime', 'color' => '#B4CD00' ),
+			array( '_id' => 'assesigold', 'title' => 'CI Gold', 'color' => $c['gold'] ),
+			array( '_id' => 'assesinavy', 'title' => 'CI Navy', 'color' => $c['navy'] ),
+			array( '_id' => 'assesiblue', 'title' => 'CI Blau', 'color' => $c['blue'] ),
+			array( '_id' => 'assesilime', 'title' => 'CI Lime', 'color' => $c['lime'] ),
 		);
 
 		// System-Schriften: Display = Hanken Grotesk, Fließtext = Inter

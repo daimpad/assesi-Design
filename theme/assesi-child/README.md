@@ -15,7 +15,8 @@ assesi-child/
 ├─ functions.php          Enqueue (Fonts, Tokens, Components, JS) + Body-Klasse
 ├─ inc/
 │  ├─ schema.php          Schema.org JSON-LD (Organization, WebSite, Breadcrumbs)
-│  └─ elementor-globals.php  Global Colors/Fonts der CI in den Elementor-Kit (Code)
+│  ├─ elementor-globals.php  Global Colors/Fonts der CI in den Elementor-Kit (Code)
+│  └─ handbook-route.php  Serviert handbook.html unter /handbuch (beide Domains)
 └─ assets/
    ├─ css/
    │  ├─ tokens.css       Design-Tokens — Single Source of Truth
@@ -77,6 +78,11 @@ demselben Muster mit den jeweiligen Seiten.
   **nicht** Textfarbe auf Weiß (Kontrast < WCAG AA).
 - Logo ist Platzhalter, bis die Wortbildmarke final ist; die Token-Struktur bleibt
   davon unberührt.
+- Version 0.16.0 — CI-Handbuch unter sauberer URL `/handbuch` (beide Domains,
+  `inc/handbook-route.php`). Driftfrei: Handbuch liest Token-Werte zur Laufzeit,
+  `elementor-globals.php` parst die CI-Hex aus `tokens.css`. Konsistenz-Werkzeug
+  `tools/tokens.py` (Check + Spiegel-Generator); README auf die Kern­zusammenhänge
+  eingedampft.
 - Version 0.15.0 — Elementor-Integration: Global Colors + Global Fonts werden per
   Code aus der CI in den Elementor-Kit gesetzt (`inc/elementor-globals.php`),
   Schriften als self-hosted registriert und Elementors Google-Fonts abgeschaltet.
