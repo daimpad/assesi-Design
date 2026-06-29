@@ -78,6 +78,9 @@ demselben Muster mit den jeweiligen Seiten.
   **nicht** Textfarbe auf Weiß (Kontrast < WCAG AA).
 - Logo ist Platzhalter, bis die Wortbildmarke final ist; die Token-Struktur bleibt
   davon unberührt.
+- Version 0.17.1 — Handbuch: große „Ag"-Schriftproben nicht mehr abgeschnitten;
+  „Als PDF speichern" erzeugt EINE durchgehende lange Seite (kein A4-Schnitt) mit
+  Seitenrändern; Bausteine brechen als Fallback nicht über Seitengrenzen.
 - Version 0.17.0 — Handbuch-Feinschliff: Größen-Skala in beiden Schriften, Schnitte je
   Schrift; ungenutzte Radien-Kern-Skala entfernt (System = drei Rollen Karte/Button/Chip);
   Domains im Text gefettet, Geviertstriche zu Bindestrichen; Bewegungs-Button mit
