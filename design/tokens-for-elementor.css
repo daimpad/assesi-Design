@@ -1,6 +1,6 @@
 /* ASSESI — TOKENS für Elementor (Site-Einstellungen → Benutzerdefiniertes CSS).
-   Deine globale Stellschraube für Farben/Größen/Abstände. Komponenten-Overrides
-   kannst du unten anhängen. Änderungen gelegentlich in tokens.css (Repo) spiegeln. */
+   GENERIERT aus theme/assesi-child/assets/css/tokens.css — NICHT direkt bearbeiten.
+   Aktualisieren: python3 tools/tokens.py --fix   ·   Prüfen: python3 tools/tokens.py */
 
 /* ============================================================
    ASSESI — DESIGN TOKENS (Kit, konsolidiert)
