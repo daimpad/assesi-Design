@@ -71,6 +71,7 @@ Assesi/
 
 ## Mehr Details
 
+- **Installation & Einbindung (Schritt für Schritt): `docs/INSTALL.md`**
 - Theme, Elementor-Verhältnis, Schema, Versionshinweise: `theme/assesi-child/README.md`
 - Import der Vorlagen, HTML- vs. native Route: `theme/assesi-child/elementor/README.md`
 
