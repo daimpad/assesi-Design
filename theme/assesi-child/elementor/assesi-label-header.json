@@ -53,7 +53,7 @@
       "header_size": "h2",
       "title_color": "#020044",
       "typography_typography": "custom",
-      "typography_font_family": "Hanken Grotesk",
+      "typography_font_family": "Noto Sans",
       "typography_font_weight": "800",
       "typography_font_size": {
        "unit": "px",
@@ -74,7 +74,7 @@
       "color_menu_item_hover": "#3055A0",
       "color_menu_item_active": "#3055A0",
       "menu_typography_typography": "custom",
-      "menu_typography_font_family": "Inter",
+      "menu_typography_font_family": "Instrument Sans",
       "menu_typography_font_weight": "600",
       "menu_typography_font_size": {
        "unit": "px",

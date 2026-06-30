@@ -52,7 +52,7 @@ demselben Muster mit den jeweiligen Seiten.
   **Customizer → Zusätzliches CSS** wird später ausgegeben und überschreibt die Basis.
 - **Global Colors & Global Fonts** werden automatisch gesetzt: `inc/elementor-globals.php`
   schreibt die CI-Farben (System: Navy/Blau/Navy/Gold; zusätzlich CI Gold/Navy/Blau/Lime)
-  und die Schriften (Display = Hanken Grotesk, Fließtext = Inter) einmalig in den aktiven
+  und die Schriften (Display = Noto Sans, Fließtext = Instrument Sans) einmalig in den aktiven
   Elementor-Kit. So bietet der Editor von sich aus die Markenwerte an — kein manuelles
   Pflegen. Bei CI-Änderung `ASSESI_KIT_VERSION` erhöhen, dann wird neu gesetzt.
 - Die Schriften sind als **self-hosted** registriert; Elementors Google-Fonts-Ausgabe ist
@@ -78,6 +78,15 @@ demselben Muster mit den jeweiligen Seiten.
   **nicht** Textfarbe auf Weiß (Kontrast < WCAG AA).
 - Logo ist Platzhalter, bis die Wortbildmarke final ist; die Token-Struktur bleibt
   davon unberührt.
+- Version 0.18.0 — Schriftwechsel: Noto Sans (Display) + Instrument Sans (Fließtext)
+  ersetzen Hanken Grotesk/Inter, selbst gehostet, überall durchgezogen (Tokens,
+  Elementor-Globals/-Kit, native Widget-Typografie, Legal-Texte, Handbuch,
+  Referenz-HTML). `.theme-assesi` rundet jetzt maßvoll mit leichtem Schatten
+  (Karte 16px/Button 12px/Chip 8px, `--card-shadow` gesetzt) — näher am
+  gewünschten Referenz-Stil, aber dezenter als `.theme-label` (22px/Pill/
+  kräftigerer Schatten); Differenzierung bleibt über Akzentfarbe/Navigation
+  erhalten. Neuer Lime-CTA „Zum Siegel" in der assesi.eu-Navigation (Desktop +
+  Mobile + natives Header-Template), verlinkt auf assesi-label.eu.
 - Version 0.17.1 — Handbuch: große „Ag"-Schriftproben nicht mehr abgeschnitten;
   „Als PDF speichern" erzeugt EINE durchgehende lange Seite (kein A4-Schnitt) mit
   Seitenrändern; Bausteine brechen als Fallback nicht über Seitengrenzen.

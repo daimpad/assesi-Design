@@ -34,7 +34,7 @@ add_action( 'wp_enqueue_scripts', function () {
 	// Parent-Theme (Hello Elementor)
 	wp_enqueue_style( 'hello-elementor', get_template_directory_uri() . '/style.css', array(), null );
 
-	// Schriften: selbst gehostet (Hanken Grotesk + Inter, OFL). Kein Google-CDN —
+	// Schriften: selbst gehostet (Noto Sans + Instrument Sans, OFL). Kein Google-CDN —
 	// keine Übermittlung der Besucher-IP an Google (DSGVO). Variable Fonts unter
 	// assets/fonts/, eingebunden über fonts.css.
 	wp_enqueue_style( 'assesi-fonts', $uri . '/assets/fonts/fonts.css', array(), $ver );
@@ -63,7 +63,7 @@ add_action( 'wp_enqueue_scripts', function () {
  * ---------------------------------------------------------- */
 add_action( 'wp_head', function () {
 	$uri = get_stylesheet_directory_uri();
-	foreach ( array( 'hanken-grotesk-latin', 'inter-latin' ) as $f ) {
+	foreach ( array( 'noto-sans-latin', 'instrument-sans-latin' ) as $f ) {
 		echo '<link rel="preload" as="font" type="font/woff2" crossorigin href="'
 			. esc_url( $uri . '/assets/fonts/' . $f . '.woff2' ) . '">' . "\n";
 	}

@@ -5,7 +5,7 @@
  * Editor automatisch markenkonform ist (keine manuelle UI-Pflege):
  *   1) Global Colors + Global Fonts einmalig aus der CI in den aktiven Kit setzen.
  *   2) Schriften als self-hosted registrieren und Elementors Google-Fonts-Ausgabe
- *      abschalten — sonst lädt Elementor Hanken/Inter doch wieder von Google.
+ *      abschalten — sonst lädt Elementor die Schriften doch wieder von Google.
  *
  * Single Source of Truth bleibt tokens.css; dies spiegelt nur dieselben Werte in
  * den Elementor-Kit, damit der Editor dieselben Swatches/Schriften anbietet.
@@ -14,7 +14,7 @@
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 /* Bei CI-Änderung erhöhen — dann wird der Kit erneut aus den CI-Werten gesetzt. */
-if ( ! defined( 'ASSESI_KIT_VERSION' ) ) { define( 'ASSESI_KIT_VERSION', '1' ); }
+if ( ! defined( 'ASSESI_KIT_VERSION' ) ) { define( 'ASSESI_KIT_VERSION', '2' ); }
 
 /**
  * CI-Kernfarben aus tokens.css lesen (Single Source of Truth).
@@ -53,8 +53,8 @@ add_filter( 'elementor/fonts/groups', function ( $groups ) {
 } );
 
 add_filter( 'elementor/fonts/additional_fonts', function ( $fonts ) {
-	$fonts['Hanken Grotesk'] = 'assesi';
-	$fonts['Inter']          = 'assesi';
+	$fonts['Noto Sans']       = 'assesi';
+	$fonts['Instrument Sans'] = 'assesi';
 	return $fonts;
 } );
 
@@ -100,14 +100,14 @@ add_action( 'admin_init', function () {
 			array( '_id' => 'assesilime', 'title' => 'CI Lime', 'color' => $c['lime'] ),
 		);
 
-		// System-Schriften: Display = Hanken Grotesk, Fließtext = Inter
-		$hanken = array( 'typography_typography' => 'custom', 'typography_font_family' => 'Hanken Grotesk' );
-		$inter  = array( 'typography_typography' => 'custom', 'typography_font_family' => 'Inter' );
+		// System-Schriften: Display = Noto Sans, Fließtext = Instrument Sans
+		$noto = array( 'typography_typography' => 'custom', 'typography_font_family' => 'Noto Sans' );
+		$instr = array( 'typography_typography' => 'custom', 'typography_font_family' => 'Instrument Sans' );
 		$settings['system_typography'] = array(
-			array_merge( array( '_id' => 'primary',   'title' => 'Display (Hanken)',  'typography_font_weight' => '800' ), $hanken ),
-			array_merge( array( '_id' => 'secondary', 'title' => 'Display Medium',     'typography_font_weight' => '700' ), $hanken ),
-			array_merge( array( '_id' => 'text',      'title' => 'Fließtext (Inter)',  'typography_font_weight' => '400' ), $inter ),
-			array_merge( array( '_id' => 'accent',    'title' => 'Akzent (Inter)',     'typography_font_weight' => '600' ), $inter ),
+			array_merge( array( '_id' => 'primary',   'title' => 'Display (Noto Sans)',       'typography_font_weight' => '800' ), $noto ),
+			array_merge( array( '_id' => 'secondary', 'title' => 'Display Medium',             'typography_font_weight' => '700' ), $noto ),
+			array_merge( array( '_id' => 'text',      'title' => 'Fließtext (Instrument Sans)','typography_font_weight' => '400' ), $instr ),
+			array_merge( array( '_id' => 'accent',    'title' => 'Akzent (Instrument Sans)',   'typography_font_weight' => '600' ), $instr ),
 		);
 
 		update_post_meta( $kit_id, '_elementor_page_settings', $settings );

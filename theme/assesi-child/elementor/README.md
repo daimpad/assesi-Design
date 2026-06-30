@@ -74,7 +74,7 @@ sich auch direkt im Browser öffnen.
 `kit/` enthält ein importierbares **Elementor-Kit** mit den globalen Farben und Schriften
 der CI (`manifest.json` + `site-settings.json`). Import: Elementor → Tools →
 **Import/Export Kit → Kit importieren** → ZIP → „Site Settings" auswählen. Das setzt Global
-Colors (Navy/Blau/Gold/Lime) und Global Fonts (Hanken/Inter). Details: `kit/README.md`.
+Colors (Navy/Blau/Gold/Lime) und Global Fonts (Noto Sans/Instrument Sans). Details: `kit/README.md`.
 Das Theme setzt dieselben Globals ohnehin automatisch — das Kit ist die manuell
 importierbare Alternative.
 
@@ -103,15 +103,15 @@ vor dem Livegang durch die echten Daten zu ersetzen sowie rechtlich zu prüfen �
 gelb hinterlegte Hinweisbox oben auf jeder Seite weist darauf hin (vor Veröffentlichung
 entfernen). Impressum folgt § 5 DDG / § 18 MStV, die Datenschutzerklärung der DSGVO.
 
-> **Google Fonts / DSGVO:** Die Datenschutz-Seiten enthalten einen Abschnitt zu Google Fonts.
-> Das Theme lädt die Schriften aktuell vom Google-CDN (`functions.php`), wodurch die
-> Besucher-IP an Google übermittelt wird. Empfehlung: Schriften self-hosten — dann entfällt
-> die Übermittlung. Bis dahin ist der Abschnitt als `[TODO]` markiert.
+> **Schriften / DSGVO:** erledigt. Die Datenschutz-Seiten beschreiben Noto Sans + Instrument
+> Sans als self-hosted (kein Google-CDN, keine IP-Übermittlung) — kein `[TODO]` mehr nötig.
 
 ## Hinweise
 
 - Cross-Domain-Links zeigen auf die jeweils andere Domain (`https://assesi.eu/` ↔
   `https://assesi-label.eu/`). Interne Sprünge sind Anker (`#warum`, `#prozess`, `#produkte`).
+  Die Nav von assesi.eu trägt zusätzlich einen soliden Lime-CTA „Zum Siegel" links neben dem
+  goldenen „Mitglied werden"-Button (`.nav__lime`), der direkt auf assesi-label.eu verweist.
 - Impressum/Datenschutz sind im Footer als Platzhalter (`#`) verlinkt — die eigenständigen
   Pflichtseiten je Domain folgen separat.
 - Elementor-Template-JSON ist versionsabhängig. Falls beim Import ein Abschnitt hakt, ist er
