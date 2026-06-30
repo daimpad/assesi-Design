@@ -69,6 +69,15 @@ CSS-Variable), Typografie, Formen/Tiefe je Präsenz, Abstände, Bewegung (mit
 Hover-/Klick-Beispiel) und alle Komponenten in beiden Charakteren. Die Datei lässt
 sich auch direkt im Browser öffnen.
 
+## Design-System als Elementor-Kit
+
+`kit/` enthält ein importierbares **Elementor-Kit** mit den globalen Farben und Schriften
+der CI (`manifest.json` + `site-settings.json`). Import: Elementor → Tools →
+**Import/Export Kit → Kit importieren** → ZIP → „Site Settings" auswählen. Das setzt Global
+Colors (Navy/Blau/Gold/Lime) und Global Fonts (Hanken/Inter). Details: `kit/README.md`.
+Das Theme setzt dieselben Globals ohnehin automatisch — das Kit ist die manuell
+importierbare Alternative.
+
 ## Globales Seitentemplate + Element-Bibliothek
 
 - **`assesi-single-page.json`** (`type: single-page`) — globales Seitentemplate für den
