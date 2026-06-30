@@ -1,0 +1,1230 @@
+{
+ "version": "0.4",
+ "title": "ASSESI \u2013 Element-Bibliothek (Atome + Komponenten)",
+ "type": "page",
+ "content": [
+  {
+   "id": "xx000003",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "56",
+     "right": "0",
+     "bottom": "16",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "xx000001",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Element-Bibliothek",
+      "header_size": "h1",
+      "title_color": "#020044",
+      "_css_classes": "sec-title"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx000002",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p class=\"sec-lede\">Alle atomaren Elemente und Komponenten zum Ansehen und Kopieren. Native Elementor-Widgets sind direkt editierbar; HTML-Komponenten tragen die Token-Klassen (von components.css gestylt).</p>",
+      "_css_classes": "sec-lede"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "xx00000c",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "xx00000b",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "\u00dcberschriften (H1\u2013H6)",
+      "header_size": "h6",
+      "title_color": "#3055A0",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      },
+      "_css_classes": "el-label"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx000004",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "\u00dcberschrift H1",
+      "header_size": "h1",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx000005",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "\u00dcberschrift H2",
+      "header_size": "h2",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx000006",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "\u00dcberschrift H3",
+      "header_size": "h3",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx000007",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "\u00dcberschrift H4",
+      "header_size": "h4",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx000008",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "\u00dcberschrift H5",
+      "header_size": "h5",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx000009",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "\u00dcberschrift H6",
+      "header_size": "h6",
+      "title_color": "#020044"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx00000a",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Sektionstitel mit <em>Akzent</em>",
+      "header_size": "h2",
+      "title_color": "#020044",
+      "_css_classes": "sec-title"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "xx000010",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "xx00000f",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Text",
+      "header_size": "h6",
+      "title_color": "#3055A0",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      },
+      "_css_classes": "el-label"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx00000d",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p class=\"sec-lede\">Lede / Einleitungstext (Klasse sec-lede) - etwas gr\u00f6\u00dfer und ruhiger.</p>",
+      "_css_classes": "sec-lede"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx00000e",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>Flie\u00dftext-Absatz (Text-Editor). Inter, gut lesbar. <a href=\"#\">Beispiel-Link</a> im Text.</p>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "xx000016",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "xx000015",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Buttons \u2014 nativ (Elementor, CI-Farben)",
+      "header_size": "h6",
+      "title_color": "#3055A0",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      },
+      "_css_classes": "el-label"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx000014",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_wrap": "wrap",
+      "flex_align_items": "center",
+      "flex_gap": {
+       "column": "12",
+       "row": "12",
+       "unit": "px",
+       "isLinked": false
+      },
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "xx000011",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Prim\u00e4r",
+        "link": {
+         "url": "#",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "background_color": "#020044",
+        "button_text_color": "#FFFFFF",
+        "border_radius": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": true
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "xx000012",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Call-to-Action",
+        "link": {
+         "url": "#",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "background_color": "#F5C503",
+        "button_text_color": "#020044",
+        "border_radius": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": true
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "xx000013",
+       "elType": "widget",
+       "widgetType": "button",
+       "settings": {
+        "text": "Ghost",
+        "link": {
+         "url": "#",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "background_color": "#FFFFFF00",
+        "button_text_color": "#020044",
+        "border_radius": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": true
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_color": "#02004433"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "xx000019",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "xx000018",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Buttons \u2014 Komponente (.btn, token-getrieben)",
+      "header_size": "h6",
+      "title_color": "#3055A0",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      },
+      "_css_classes": "el-label"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx000017",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<div class=\"btn-row\"><a class=\"btn btn--primary\" href=\"#\">Prim\u00e4r</a><a class=\"btn btn--cta\" href=\"#\">Call-to-Action</a><a class=\"btn btn--ghost\" href=\"#\">Ghost</a></div>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "xx00001f",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "xx00001e",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Icon-Box (nativ)",
+      "header_size": "h6",
+      "title_color": "#3055A0",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      },
+      "_css_classes": "el-label"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx00001d",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_wrap": "wrap",
+      "flex_align_items": "center",
+      "flex_gap": {
+       "column": "18",
+       "row": "18",
+       "unit": "px",
+       "isLinked": false
+      },
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "xx00001a",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-shield-alt",
+         "library": "fa-solid"
+        },
+        "title_text": "Compliance",
+        "description_text": "Kurzer Beschreibungstext.",
+        "position": "top",
+        "title_color": "#020044",
+        "description_color": "#5a5a78",
+        "primary_color": "#3055A0",
+        "_background_background": "classic",
+        "_background_color": "#FFFFFF",
+        "_border_border": "solid",
+        "_border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "_border_color": "#02004420",
+        "_border_radius": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": true
+        },
+        "_padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "26",
+         "bottom": "28",
+         "left": "26",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "xx00001b",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-file-invoice-dollar",
+         "library": "fa-solid"
+        },
+        "title_text": "Transparenz",
+        "description_text": "Kurzer Beschreibungstext.",
+        "position": "top",
+        "title_color": "#020044",
+        "description_color": "#5a5a78",
+        "primary_color": "#3055A0",
+        "_background_background": "classic",
+        "_background_color": "#FFFFFF",
+        "_border_border": "solid",
+        "_border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "_border_color": "#02004420",
+        "_border_radius": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": true
+        },
+        "_padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "26",
+         "bottom": "28",
+         "left": "26",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "xx00001c",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-project-diagram",
+         "library": "fa-solid"
+        },
+        "title_text": "Vernetzung",
+        "description_text": "Kurzer Beschreibungstext.",
+        "position": "top",
+        "title_color": "#020044",
+        "description_color": "#5a5a78",
+        "primary_color": "#3055A0",
+        "_background_background": "classic",
+        "_background_color": "#FFFFFF",
+        "_border_border": "solid",
+        "_border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "_border_color": "#02004420",
+        "_border_radius": {
+         "unit": "px",
+         "top": "10",
+         "right": "10",
+         "bottom": "10",
+         "left": "10",
+         "isLinked": true
+        },
+        "_padding": {
+         "unit": "px",
+         "top": "28",
+         "right": "26",
+         "bottom": "28",
+         "left": "26",
+         "isLinked": false
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "xx000022",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "xx000021",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Akkordeon (nativ)",
+      "header_size": "h6",
+      "title_color": "#3055A0",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      },
+      "_css_classes": "el-label"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx000020",
+     "elType": "widget",
+     "widgetType": "accordion",
+     "settings": {
+      "title_color": "#020044",
+      "tab_active_color": "#3055A0",
+      "tabs": [
+       {
+        "tab_title": "Erstes Element",
+        "tab_content": "<p>Inhalt des ersten Akkordeon-Elements.</p>",
+        "_id": "acc01"
+       },
+       {
+        "tab_title": "Zweites Element",
+        "tab_content": "<p>Inhalt des zweiten Akkordeon-Elements.</p>",
+        "_id": "acc02"
+       },
+       {
+        "tab_title": "Drittes Element",
+        "tab_content": "<p>Inhalt des dritten Akkordeon-Elements.</p>",
+        "_id": "acc03"
+       }
+      ]
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "xx000029",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "xx000028",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Trenner & Icon (Atoms)",
+      "header_size": "h6",
+      "title_color": "#3055A0",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      },
+      "_css_classes": "el-label"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx000023",
+     "elType": "widget",
+     "widgetType": "divider",
+     "settings": {
+      "color": "#02004420",
+      "weight": {
+       "unit": "px",
+       "size": 1,
+       "sizes": []
+      },
+      "gap": {
+       "unit": "px",
+       "size": 18,
+       "sizes": []
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "xx000027",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_wrap": "wrap",
+      "flex_align_items": "center",
+      "flex_gap": {
+       "column": "12",
+       "row": "12",
+       "unit": "px",
+       "isLinked": false
+      },
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "xx000024",
+       "elType": "widget",
+       "widgetType": "icon",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-leaf",
+         "library": "fa-solid"
+        },
+        "primary_color": "#3055A0",
+        "size": {
+         "unit": "px",
+         "size": 28,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "xx000025",
+       "elType": "widget",
+       "widgetType": "icon",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-check",
+         "library": "fa-solid"
+        },
+        "primary_color": "#3055A0",
+        "size": {
+         "unit": "px",
+         "size": 28,
+         "sizes": []
+        }
+       },
+       "elements": []
+      },
+      {
+       "id": "xx000026",
+       "elType": "widget",
+       "widgetType": "icon",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-arrow-right",
+         "library": "fa-solid"
+        },
+        "primary_color": "#3055A0",
+        "size": {
+         "unit": "px",
+         "size": 28,
+         "sizes": []
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "xx00002c",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "xx00002b",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Farben (Atoms)",
+      "header_size": "h6",
+      "title_color": "#3055A0",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      },
+      "_css_classes": "el-label"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx00002a",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<div style=\"display:flex;flex-wrap:wrap;gap:10px\"><span style=\"display:inline-flex;align-items:center;gap:8px;font-size:.82rem\"><span style=\"width:34px;height:34px;border-radius:8px;background:var(--ci-gold)\"></span>Gold</span><span style=\"display:inline-flex;align-items:center;gap:8px;font-size:.82rem\"><span style=\"width:34px;height:34px;border-radius:8px;background:var(--ci-navy)\"></span>Navy</span><span style=\"display:inline-flex;align-items:center;gap:8px;font-size:.82rem\"><span style=\"width:34px;height:34px;border-radius:8px;background:var(--ci-blue)\"></span>Blau</span><span style=\"display:inline-flex;align-items:center;gap:8px;font-size:.82rem\"><span style=\"width:34px;height:34px;border-radius:8px;background:var(--ci-lime)\"></span>Lime</span></div>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "xx00002f",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "xx00002e",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Karten-Raster (Komponente)",
+      "header_size": "h6",
+      "title_color": "#3055A0",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      },
+      "_css_classes": "el-label"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx00002d",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<div class=\"v-grid\"><article class=\"v-card\"><div class=\"v-card__icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z\"/><path d=\"M9 12l2 2 4-4\"/></svg></div><h3 class=\"v-card__title\">Karte A</h3><p class=\"v-card__desc\">Token-getriebene Karte - Radius und Tiefe aus dem Theme.</p></article><article class=\"v-card\"><div class=\"v-card__icon\"><svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M9 12l2 2 4-4\"/></svg></div><h3 class=\"v-card__title\">Karte B</h3><p class=\"v-card__desc\">Zweite Beispielkarte im Raster.</p></article><article class=\"v-card\"><div class=\"v-card__icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M4 20l1-4L16 5l3 3L8 19l-4 1z\"/></svg></div><h3 class=\"v-card__title\">Karte C</h3><p class=\"v-card__desc\">Dritte Beispielkarte im Raster.</p></article></div>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "xx000034",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "xx000033",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Standard- & Preis-Karte (Komponenten)",
+      "header_size": "h6",
+      "title_color": "#3055A0",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      },
+      "_css_classes": "el-label"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx000032",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_wrap": "wrap",
+      "flex_align_items": "center",
+      "flex_gap": {
+       "column": "18",
+       "row": "18",
+       "unit": "px",
+       "isLinked": false
+      },
+      "flex_direction_mobile": "column"
+     },
+     "elements": [
+      {
+       "id": "xx000030",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<aside class=\"std-card\"><div class=\"std-card__label\">Standard-Karte</div><div class=\"std-row\"><span class=\"std-row__num\">01</span><span><span class=\"std-row__t\">Punkt eins</span><span class=\"std-row__d\">Kurzbeschreibung.</span></span></div><div class=\"std-row\"><span class=\"std-row__num\">02</span><span><span class=\"std-row__t\">Punkt zwei</span><span class=\"std-row__d\">Kurzbeschreibung.</span></span></div><div class=\"std-card__foot\"><span>Fu\u00df</span><span class=\"supporter\">Chip</span></div></aside>"
+       },
+       "elements": []
+      },
+      {
+       "id": "xx000031",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<aside class=\"price-card\"><div class=\"price-card__label\">Preis-Karte</div><ul class=\"price-list\"><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Leistung eins</li><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Leistung zwei</li><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Leistung drei</li></ul><div class=\"price-foot\"><div class=\"price-foot__k\">Beitrag</div><div class=\"price-foot__v\">Auf Anfrage<small>Platzhalter.</small></div></div></aside>"
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "xx000037",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "xx000036",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Siegel-Showcase (Komponente)",
+      "header_size": "h6",
+      "title_color": "#3055A0",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      },
+      "_css_classes": "el-label"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx000035",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<aside class=\"showcase\"><div class=\"seal\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg><span>Zertifiziert</span></div><div class=\"showcase__product\"><div class=\"showcase__pname\">Siegel-Showcase</div><div class=\"showcase__issuer\">ausgestellt f\u00fcr <b>Muster AG</b></div></div><div class=\"crit\"><div class=\"crit-row\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Kriterium eins</div><div class=\"crit-row\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Kriterium zwei</div></div></aside>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "xx00003a",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "xx000039",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Zielgruppen-Split (Komponente)",
+      "header_size": "h6",
+      "title_color": "#3055A0",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      },
+      "_css_classes": "el-label"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx000038",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<div class=\"split\"><article class=\"aud-card\"><div class=\"aud-card__icon\"><svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"8\" r=\"3.5\"/><path d=\"M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7\"/></svg></div><div class=\"aud-card__k\">Zielgruppe</div><h3 class=\"aud-card__t\">Zielgruppen-Karte</h3><p class=\"aud-card__d\">Beschreibung der Zielgruppe.</p><ul class=\"aud-list\"><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Vorteil eins</li><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Vorteil zwei</li></ul></article><article class=\"aud-card\"><div class=\"aud-card__icon\"><svg viewBox=\"0 0 24 24\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"13\" rx=\"2\"/><path d=\"M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2\"/></svg></div><div class=\"aud-card__k\">Zielgruppe</div><h3 class=\"aud-card__t\">Zweite Karte</h3><p class=\"aud-card__d\">Beschreibung der Zielgruppe.</p><ul class=\"aud-list\"><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Vorteil eins</li><li><svg viewBox=\"0 0 24 24\"><path d=\"M5 13l4 4L19 7\"/></svg>Vorteil zwei</li></ul></article></div>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "xx00003d",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "xx00003c",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Prozess-Stepper (Komponente)",
+      "header_size": "h6",
+      "title_color": "#3055A0",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      },
+      "_css_classes": "el-label"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx00003b",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<div class=\"proc\"><div class=\"proc-step\"><div class=\"proc-step__n\">1</div><div class=\"proc-step__t\">Schritt eins</div><div class=\"proc-step__d\">Beschreibung.</div></div><div class=\"proc-step is-active\"><div class=\"proc-step__n\">2</div><div class=\"proc-step__t\">Schritt zwei</div><div class=\"proc-step__d\">Beschreibung.</div></div><div class=\"proc-step\"><div class=\"proc-step__n\">3</div><div class=\"proc-step__t\">Schritt drei</div><div class=\"proc-step__d\">Beschreibung.</div></div><div class=\"proc-step\"><div class=\"proc-step__n\">4</div><div class=\"proc-step__t\">Schritt vier</div><div class=\"proc-step__d\">Beschreibung.</div></div></div>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "xx000040",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "0",
+     "bottom": "40",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "xx00003f",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "Such-Mock (Komponente)",
+      "header_size": "h6",
+      "title_color": "#3055A0",
+      "typography_typography": "custom",
+      "typography_text_transform": "uppercase",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 13,
+       "sizes": []
+      },
+      "typography_font_weight": "700",
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": 1.5,
+       "sizes": []
+      },
+      "_css_classes": "el-label"
+     },
+     "elements": []
+    },
+    {
+     "id": "xx00003e",
+     "elType": "widget",
+     "widgetType": "html",
+     "settings": {
+      "html": "<div class=\"search-mock\"><input type=\"text\" readonly placeholder=\"Suchen \u2026\" aria-label=\"Demo\"><button type=\"button\">Suchen</button></div>"
+     },
+     "elements": []
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "hide_title": "yes"
+ }
+}

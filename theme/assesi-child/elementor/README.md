@@ -69,6 +69,20 @@ CSS-Variable), Typografie, Formen/Tiefe je Präsenz, Abstände, Bewegung (mit
 Hover-/Klick-Beispiel) und alle Komponenten in beiden Charakteren. Die Datei lässt
 sich auch direkt im Browser öffnen.
 
+## Globales Seitentemplate + Element-Bibliothek
+
+- **`assesi-single-page.json`** (`type: single-page`) — globales Seitentemplate für den
+  **Theme Builder** (Single → Page): Titelband mit dynamischem Seitentitel plus
+  Inhalts-Bereich (`theme-post-content`). Nach dem Import im Theme Builder mit der
+  Anzeigebedingung **„Alle Seiten"** veröffentlichen — dann bekommt jede Seite denselben
+  Rahmen (zusammen mit der globalen Kopf-/Fußzeile). Erfordert Elementor Pro; der
+  dynamische Titel nutzt den „Post Title"-Tag.
+- **`assesi-elemente.json`** (`type: page`) — importierbare **Element-Bibliothek**: alle
+  atomaren Elemente (Überschriften H1–H6, Text/Lede, Buttons nativ + `.btn`-Komponente,
+  Icon-Box, Akkordeon, Trenner, Icons, Farben) und die Komponenten (Karten-Raster,
+  Standard-/Preis-Karte, Siegel-Showcase, Zielgruppen-Split, Prozess-Stepper, Such-Mock).
+  Native Widgets sind direkt editierbar, HTML-Komponenten tragen die Token-Klassen.
+
 ## Pflichtseiten (Impressum + Datenschutz)
 
 `*-impressum.json` und `*-datenschutz.json` sind eigenständige Seiten je Domain
