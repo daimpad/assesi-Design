@@ -1,0 +1,88 @@
+{
+ "version": "0.4",
+ "title": "ASSESI \u2013 Globales Seitentemplate (Single Page)",
+ "type": "single-page",
+ "content": [
+  {
+   "id": "xx000043",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "background_background": "classic",
+    "background_color": "#F7F7F5",
+    "padding": {
+     "unit": "px",
+     "top": "56",
+     "right": "0",
+     "bottom": "56",
+     "left": "0",
+     "isLinked": false
+    },
+    "border_border": "solid",
+    "border_width": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "1",
+     "left": "0",
+     "isLinked": false
+    },
+    "border_color": "rgba(2,0,68,.10)"
+   },
+   "elements": [
+    {
+     "id": "xx000042",
+     "elType": "container",
+     "settings": {
+      "content_width": "boxed"
+     },
+     "elements": [
+      {
+       "id": "xx000041",
+       "elType": "widget",
+       "widgetType": "heading",
+       "settings": {
+        "title": "Seitentitel",
+        "header_size": "h1",
+        "title_color": "#020044",
+        "_css_classes": "sec-title",
+        "__dynamic__": {
+         "title": "[elementor-tag id=\"pgttl1\" name=\"post-title\" settings=\"%7B%7D\"]"
+        }
+       },
+       "elements": []
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "xx000045",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "48",
+     "right": "0",
+     "bottom": "72",
+     "left": "0",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "xx000044",
+     "elType": "widget",
+     "widgetType": "theme-post-content",
+     "settings": {},
+     "elements": []
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}
