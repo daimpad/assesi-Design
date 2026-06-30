@@ -1,0 +1,24 @@
+{
+ "name": "assesi-design-system",
+ "title": "ASSESI Design System",
+ "description": "Globale Farben und Schriften der ASSESI-CI (Navy/Blau/Gold/Lime, Hanken Grotesk + Inter).",
+ "author": "ASSESI",
+ "version": "1.0.0",
+ "elementor_version": "3.21.0",
+ "created": "2026-06-30 00:00:00",
+ "thumbnail": false,
+ "site-settings": [
+  "global-colors",
+  "global-typography"
+ ],
+ "templates": {},
+ "content": {},
+ "plugins": [
+  {
+   "name": "Elementor",
+   "plugin": "elementor/elementor",
+   "pluginUri": "https://elementor.com/",
+   "version": "3.21.0"
+  }
+ ]
+}

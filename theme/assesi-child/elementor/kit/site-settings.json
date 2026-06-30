@@ -1,0 +1,83 @@
+{
+ "settings": {
+  "system_colors": [
+   {
+    "_id": "primary",
+    "title": "Navy",
+    "color": "#020044"
+   },
+   {
+    "_id": "secondary",
+    "title": "Blau",
+    "color": "#3055A0"
+   },
+   {
+    "_id": "text",
+    "title": "Navy Text",
+    "color": "#020044"
+   },
+   {
+    "_id": "accent",
+    "title": "Gold",
+    "color": "#F5C503"
+   }
+  ],
+  "custom_colors": [
+   {
+    "_id": "assesigold",
+    "title": "CI Gold",
+    "color": "#F5C503"
+   },
+   {
+    "_id": "assesinavy",
+    "title": "CI Navy",
+    "color": "#020044"
+   },
+   {
+    "_id": "assesiblue",
+    "title": "CI Blau",
+    "color": "#3055A0"
+   },
+   {
+    "_id": "assesilime",
+    "title": "CI Lime",
+    "color": "#B4CD00"
+   }
+  ],
+  "system_typography": [
+   {
+    "_id": "primary",
+    "title": "Display (Hanken)",
+    "typography_font_weight": "800",
+    "typography_typography": "custom",
+    "typography_font_family": "Hanken Grotesk"
+   },
+   {
+    "_id": "secondary",
+    "title": "Display Medium",
+    "typography_font_weight": "700",
+    "typography_typography": "custom",
+    "typography_font_family": "Hanken Grotesk"
+   },
+   {
+    "_id": "text",
+    "title": "Flie\u00dftext (Inter)",
+    "typography_font_weight": "400",
+    "typography_typography": "custom",
+    "typography_font_family": "Inter"
+   },
+   {
+    "_id": "accent",
+    "title": "Akzent (Inter)",
+    "typography_font_weight": "600",
+    "typography_typography": "custom",
+    "typography_font_family": "Inter"
+   }
+  ],
+  "custom_typography": []
+ },
+ "theme": {
+  "name": "ASSESI Child",
+  "slug": "assesi-child"
+ }
+}
