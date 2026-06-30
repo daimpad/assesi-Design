@@ -16,8 +16,8 @@ domain-abhängig am `<body>`.
 | Navy | `#020044` |
 | Blau | `#3055A0` |
 | Lime | `#B4CD00` |
-| Schrift Display | Hanken Grotesk |
-| Schrift Fließtext | Inter |
+| Schrift Display | Noto Sans |
+| Schrift Fließtext | Instrument Sans |
 
 Navy/Weiß/Blau sind Textfarben; Lime und Gold sind Flächen-/Akzentfarben (nie Text auf Weiß).
 Schriften sind selbst gehostet (kein Google-CDN). Die vollständige, klickbare Referenz ist

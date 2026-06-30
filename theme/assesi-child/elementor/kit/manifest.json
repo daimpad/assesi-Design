@@ -1,7 +1,7 @@
 {
  "name": "assesi-design-system",
  "title": "ASSESI Design System",
- "description": "Globale Farben und Schriften der ASSESI-CI (Navy/Blau/Gold/Lime, Hanken Grotesk + Inter).",
+ "description": "Globale Farben und Schriften der ASSESI-CI (Navy/Blau/Gold/Lime, Noto Sans + Instrument Sans).",
  "author": "ASSESI",
  "version": "1.0.0",
  "elementor_version": "3.21.0",

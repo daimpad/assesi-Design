@@ -140,7 +140,7 @@
      "elType": "widget",
      "widgetType": "text-editor",
      "settings": {
-      "editor": "<p>Diese Website verwendet die Schriftarten \u201eHanken Grotesk\" und \u201eInter\". Die Schriften werden lokal vom Server dieser Website ausgeliefert (Self-Hosting). Es besteht dabei keine Verbindung zu Servern von Google; eine \u00dcbermittlung Ihrer IP-Adresse an Google oder Dritte findet durch die Schriftauslieferung nicht statt.</p>"
+      "editor": "<p>Diese Website verwendet die Schriftarten \u201eNoto Sans\" und \u201eInstrument Sans\". Die Schriften werden lokal vom Server dieser Website ausgeliefert (Self-Hosting). Es besteht dabei keine Verbindung zu Servern von Google; eine \u00dcbermittlung Ihrer IP-Adresse an Google oder Dritte findet durch die Schriftauslieferung nicht statt.</p>"
      },
      "elements": []
     },

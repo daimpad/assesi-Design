@@ -58,7 +58,7 @@
           "header_size": "h4",
           "title_color": "#FFFFFF",
           "typography_typography": "custom",
-          "typography_font_family": "Hanken Grotesk",
+          "typography_font_family": "Noto Sans",
           "typography_font_weight": "800",
           "typography_font_size": {
            "unit": "px",
@@ -142,7 +142,7 @@
           "header_size": "h4",
           "title_color": "rgba(255,255,255,.5)",
           "typography_typography": "custom",
-          "typography_font_family": "Hanken Grotesk",
+          "typography_font_family": "Noto Sans",
           "typography_font_weight": "700",
           "typography_font_size": {
            "unit": "px",
@@ -191,7 +191,7 @@
           "header_size": "h4",
           "title_color": "rgba(255,255,255,.5)",
           "typography_typography": "custom",
-          "typography_font_family": "Hanken Grotesk",
+          "typography_font_family": "Noto Sans",
           "typography_font_weight": "700",
           "typography_font_size": {
            "unit": "px",
@@ -240,7 +240,7 @@
           "header_size": "h4",
           "title_color": "rgba(255,255,255,.5)",
           "typography_typography": "custom",
-          "typography_font_family": "Hanken Grotesk",
+          "typography_font_family": "Noto Sans",
           "typography_font_weight": "700",
           "typography_font_size": {
            "unit": "px",

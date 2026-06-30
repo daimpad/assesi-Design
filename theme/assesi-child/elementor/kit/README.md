@@ -13,7 +13,7 @@ Site Settings, damit der Editor von sich aus die Markenwerte anbietet.
 - `manifest.json` — Kit-Metadaten und Liste der enthaltenen Site-Settings-Tabs
   (`global-colors`, `global-typography`).
 - `site-settings.json` — die Werte: System-Farben (Navy/Blau/Navy/Gold) + Marken-Swatches
-  (Gold/Navy/Blau/Lime) sowie System-Schriften (Display = Hanken Grotesk, Fließtext = Inter).
+  (Gold/Navy/Blau/Lime) sowie System-Schriften (Display = Noto Sans, Fließtext = Instrument Sans).
 
 ## Import
 
@@ -31,7 +31,7 @@ cd theme/assesi-child/elementor/kit && zip ../../../../assesi-design-system.zip 
 
 ## Schriften
 
-Die Globals referenzieren „Hanken Grotesk" und „Inter". Diese werden vom Theme **self-hosted**
+Die Globals referenzieren „Noto Sans" und „Instrument Sans". Diese werden vom Theme **self-hosted**
 ausgeliefert; Elementors Google-Fonts-Ausgabe ist abgeschaltet. Ohne das ASSESI-Theme müssten
 die Schriften anderweitig (z. B. als Custom Fonts) bereitgestellt werden.
 

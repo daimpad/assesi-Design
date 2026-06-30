@@ -1,6 +1,6 @@
 {
  "version": "0.4",
- "title": "ASSESI – Startseite NATIV (assesi.eu)",
+ "title": "ASSESI \u2013 Startseite NATIV (assesi.eu)",
  "type": "page",
  "content": [
   {
@@ -23,7 +23,7 @@
      "elType": "widget",
      "widgetType": "html",
      "settings": {
-      "html": "<nav class=\"nav\" aria-label=\"Hauptnavigation\"><div class=\"nav__in\"><a class=\"brand\" href=\"#\"><span class=\"brand__mark\">A</span><span><span class=\"brand__name\">ASSESI</span><span class=\"brand__tag\">Sustainable Insurers</span></span></a><div class=\"nav__links\"><a href=\"#vorteile\">Vorteile</a><a href=\"#verlauf\">Verlauf</a><a href=\"#mitmachen\">Mitmachen</a></div><div class=\"nav__util\"><div class=\"lang\"><a href=\"#\" aria-current=\"true\">DE</a><a href=\"#\">EN</a></div><a class=\"nav__cross\" href=\"#\">&rarr; Label-Seite</a><a class=\"nav__cta\" href=\"#mitmachen\">Mitglied werden</a><button class=\"nav__burger\" aria-label=\"Men&uuml;\" aria-expanded=\"false\" aria-controls=\"navPanel\">&#9776;</button></div></div><div class=\"nav__panel\" id=\"navPanel\"><a href=\"#vorteile\">Vorteile</a><a href=\"#verlauf\">Verlauf</a><a href=\"#mitmachen\">Mitmachen</a><a href=\"#\" class=\"nav__panel-cross\">&rarr; assesi-label.eu</a><a href=\"#mitmachen\" class=\"btn btn--cta nav__panel-cta\">Mitglied werden</a></div></nav>"
+      "html": "<nav class=\"nav\" aria-label=\"Hauptnavigation\"><div class=\"nav__in\"><a class=\"brand\" href=\"#\"><span class=\"brand__mark\">A</span><span><span class=\"brand__name\">ASSESI</span><span class=\"brand__tag\">Sustainable Insurers</span></span></a><div class=\"nav__links\"><a href=\"#vorteile\">Vorteile</a><a href=\"#verlauf\">Verlauf</a><a href=\"#mitmachen\">Mitmachen</a></div><div class=\"nav__util\"><div class=\"lang\"><a href=\"#\" aria-current=\"true\">DE</a><a href=\"#\">EN</a></div><a class=\"nav__lime\" href=\"https://assesi-label.eu/\">Zum Siegel</a><a class=\"nav__cta\" href=\"#mitmachen\">Mitglied werden</a><button class=\"nav__burger\" aria-label=\"Men&uuml;\" aria-expanded=\"false\" aria-controls=\"navPanel\">&#9776;</button></div></div><div class=\"nav__panel\" id=\"navPanel\"><a href=\"#vorteile\">Vorteile</a><a href=\"#verlauf\">Verlauf</a><a href=\"#mitmachen\">Mitmachen</a><a href=\"https://assesi-label.eu/\" class=\"btn nav__panel-lime\">Zum Siegel</a><a href=\"#mitmachen\" class=\"btn btn--cta nav__panel-cta\">Mitglied werden</a></div></nav>"
      },
      "elements": []
     }
@@ -148,10 +148,10 @@
             "button_text_color": "#FFFFFF",
             "border_radius": {
              "unit": "px",
-             "top": "10",
-             "right": "10",
-             "bottom": "10",
-             "left": "10",
+             "top": "12",
+             "right": "12",
+             "bottom": "12",
+             "left": "12",
              "isLinked": true
             }
            },
@@ -172,10 +172,10 @@
             "button_text_color": "#020044",
             "border_radius": {
              "unit": "px",
-             "top": "10",
-             "right": "10",
-             "bottom": "10",
-             "left": "10",
+             "top": "12",
+             "right": "12",
+             "bottom": "12",
+             "left": "12",
              "isLinked": true
             }
            },
@@ -196,10 +196,10 @@
             "button_text_color": "#020044",
             "border_radius": {
              "unit": "px",
-             "top": "10",
-             "right": "10",
-             "bottom": "10",
-             "left": "10",
+             "top": "12",
+             "right": "12",
+             "bottom": "12",
+             "left": "12",
              "isLinked": true
             },
             "border_border": "solid",
@@ -354,13 +354,13 @@
          "left": "1",
          "isLinked": true
         },
-        "_border_color": "#02004420",
+        "_border_color": "#0200440F",
         "_border_radius": {
          "unit": "px",
-         "top": "10",
-         "right": "10",
-         "bottom": "10",
-         "left": "10",
+         "top": "16",
+         "right": "16",
+         "bottom": "16",
+         "left": "16",
          "isLinked": true
         },
         "_padding": {
@@ -376,6 +376,14 @@
          "unit": "%",
          "size": 23,
          "sizes": []
+        },
+        "_box_shadow_box_shadow_type": "yes",
+        "_box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 10,
+         "blur": 28,
+         "spread": 0,
+         "color": "rgba(2,0,68,0.08)"
         }
        },
        "elements": []
@@ -406,13 +414,13 @@
          "left": "1",
          "isLinked": true
         },
-        "_border_color": "#02004420",
+        "_border_color": "#0200440F",
         "_border_radius": {
          "unit": "px",
-         "top": "10",
-         "right": "10",
-         "bottom": "10",
-         "left": "10",
+         "top": "16",
+         "right": "16",
+         "bottom": "16",
+         "left": "16",
          "isLinked": true
         },
         "_padding": {
@@ -428,6 +436,14 @@
          "unit": "%",
          "size": 23,
          "sizes": []
+        },
+        "_box_shadow_box_shadow_type": "yes",
+        "_box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 10,
+         "blur": 28,
+         "spread": 0,
+         "color": "rgba(2,0,68,0.08)"
         }
        },
        "elements": []
@@ -458,13 +474,13 @@
          "left": "1",
          "isLinked": true
         },
-        "_border_color": "#02004420",
+        "_border_color": "#0200440F",
         "_border_radius": {
          "unit": "px",
-         "top": "10",
-         "right": "10",
-         "bottom": "10",
-         "left": "10",
+         "top": "16",
+         "right": "16",
+         "bottom": "16",
+         "left": "16",
          "isLinked": true
         },
         "_padding": {
@@ -480,6 +496,14 @@
          "unit": "%",
          "size": 23,
          "sizes": []
+        },
+        "_box_shadow_box_shadow_type": "yes",
+        "_box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 10,
+         "blur": 28,
+         "spread": 0,
+         "color": "rgba(2,0,68,0.08)"
         }
        },
        "elements": []
@@ -510,13 +534,13 @@
          "left": "1",
          "isLinked": true
         },
-        "_border_color": "#02004420",
+        "_border_color": "#0200440F",
         "_border_radius": {
          "unit": "px",
-         "top": "10",
-         "right": "10",
-         "bottom": "10",
-         "left": "10",
+         "top": "16",
+         "right": "16",
+         "bottom": "16",
+         "left": "16",
          "isLinked": true
         },
         "_padding": {
@@ -532,6 +556,14 @@
          "unit": "%",
          "size": 23,
          "sizes": []
+        },
+        "_box_shadow_box_shadow_type": "yes",
+        "_box_shadow_box_shadow": {
+         "horizontal": 0,
+         "vertical": 10,
+         "blur": 28,
+         "spread": 0,
+         "color": "rgba(2,0,68,0.08)"
         }
        },
        "elements": []
@@ -610,22 +642,22 @@
       "tab_active_color": "#3055A0",
       "tabs": [
        {
-        "tab_title": "2023 — Gr&uuml;ndung des Verbands",
+        "tab_title": "2023 \u2014 Gr&uuml;ndung des Verbands",
         "tab_content": "<p>Zusammenschluss der Gr&uuml;ndungsversicherer; Definition von Auftrag und Governance.</p>",
         "_id": "8c9de909"
        },
        {
-        "tab_title": "2024 — DIN-Normungsverfahren 77237",
+        "tab_title": "2024 \u2014 DIN-Normungsverfahren 77237",
         "tab_content": "<p>Einbringung des Standards in das formelle Normungsverfahren.</p>",
         "_id": "571750f4"
        },
        {
-        "tab_title": "2025 — DBU-F&ouml;rderung &amp; Pilotmitglieder",
+        "tab_title": "2025 \u2014 DBU-F&ouml;rderung &amp; Pilotmitglieder",
         "tab_content": "<p>Aufbau der Webpr&auml;senz und Gewinnung erster Pilotversicherer.</p>",
         "_id": "7e8a2a86"
        },
        {
-        "tab_title": "2026 — Anschlussfinanzierung",
+        "tab_title": "2026 \u2014 Anschlussfinanzierung",
         "tab_content": "<p>Tragf&auml;higkeit &uuml;ber Mitgliedsbeitr&auml;ge nach Auslaufen der F&ouml;rderung.</p>",
         "_id": "6f6771d9"
        }
@@ -756,10 +788,10 @@
             "button_text_color": "#020044",
             "border_radius": {
              "unit": "px",
-             "top": "10",
-             "right": "10",
-             "bottom": "10",
-             "left": "10",
+             "top": "12",
+             "right": "12",
+             "bottom": "12",
+             "left": "12",
              "isLinked": true
             }
            },
@@ -780,10 +812,10 @@
             "button_text_color": "#FFFFFF",
             "border_radius": {
              "unit": "px",
-             "top": "10",
-             "right": "10",
-             "bottom": "10",
-             "left": "10",
+             "top": "12",
+             "right": "12",
+             "bottom": "12",
+             "left": "12",
              "isLinked": true
             },
             "border_border": "solid",

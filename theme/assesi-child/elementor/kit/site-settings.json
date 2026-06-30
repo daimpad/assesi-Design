@@ -47,31 +47,31 @@
   "system_typography": [
    {
     "_id": "primary",
-    "title": "Display (Hanken)",
+    "title": "Display (Noto Sans)",
     "typography_font_weight": "800",
     "typography_typography": "custom",
-    "typography_font_family": "Hanken Grotesk"
+    "typography_font_family": "Noto Sans"
    },
    {
     "_id": "secondary",
     "title": "Display Medium",
     "typography_font_weight": "700",
     "typography_typography": "custom",
-    "typography_font_family": "Hanken Grotesk"
+    "typography_font_family": "Noto Sans"
    },
    {
     "_id": "text",
-    "title": "Flie\u00dftext (Inter)",
+    "title": "Flie\u00dftext (Instrument Sans)",
     "typography_font_weight": "400",
     "typography_typography": "custom",
-    "typography_font_family": "Inter"
+    "typography_font_family": "Instrument Sans"
    },
    {
     "_id": "accent",
-    "title": "Akzent (Inter)",
+    "title": "Akzent (Instrument Sans)",
     "typography_font_weight": "600",
     "typography_typography": "custom",
-    "typography_font_family": "Inter"
+    "typography_font_family": "Instrument Sans"
    }
   ],
   "custom_typography": []

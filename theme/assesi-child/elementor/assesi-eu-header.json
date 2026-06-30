@@ -43,7 +43,7 @@
       "header_size": "h2",
       "title_color": "#FFFFFF",
       "typography_typography": "custom",
-      "typography_font_family": "Hanken Grotesk",
+      "typography_font_family": "Noto Sans",
       "typography_font_weight": "800",
       "typography_font_size": {
        "unit": "px",
@@ -64,7 +64,7 @@
       "color_menu_item_hover": "#FFFFFF",
       "color_menu_item_active": "#FFFFFF",
       "menu_typography_typography": "custom",
-      "menu_typography_font_family": "Inter",
+      "menu_typography_font_family": "Instrument Sans",
       "menu_typography_font_weight": "500",
       "menu_typography_font_size": {
        "unit": "px",
@@ -79,6 +79,37 @@
        "unit": "px",
        "size": 24,
        "sizes": []
+      }
+     },
+     "elements": []
+    },
+    {
+     "id": "c1ime001",
+     "elType": "widget",
+     "widgetType": "button",
+     "settings": {
+      "text": "Zum Siegel",
+      "link": {
+       "url": "https://assesi-label.eu/",
+       "is_external": "yes",
+       "nofollow": ""
+      },
+      "background_color": "#B4CD00",
+      "button_text_color": "#020044",
+      "typography_typography": "custom",
+      "typography_font_weight": "700",
+      "typography_font_size": {
+       "unit": "px",
+       "size": 14,
+       "sizes": []
+      },
+      "border_radius": {
+       "unit": "px",
+       "top": "12",
+       "right": "12",
+       "bottom": "12",
+       "left": "12",
+       "isLinked": true
       }
      },
      "elements": []
@@ -105,10 +136,10 @@
       },
       "border_radius": {
        "unit": "px",
-       "top": "10",
-       "right": "10",
-       "bottom": "10",
-       "left": "10",
+       "top": "12",
+       "right": "12",
+       "bottom": "12",
+       "left": "12",
        "isLinked": true
       }
      },
